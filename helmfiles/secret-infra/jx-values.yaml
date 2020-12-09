@@ -33,7 +33,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 34.105.215.237.nip.io
     externalDNS: false
     namespaceSubDomain: -secret-infra.
     tls:

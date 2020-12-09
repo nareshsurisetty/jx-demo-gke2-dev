@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-gke2-dev
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.34.105.215.237.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
