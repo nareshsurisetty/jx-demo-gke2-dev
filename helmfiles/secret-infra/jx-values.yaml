@@ -14,16 +14,22 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
-    devEnvApprovers:
-    - todo
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: jstrachan-tekton2
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    gke:
+      projectNumber: "688875092189"
+    project: jenkins-x-labs-bdd
     provider: gke
     registry: gcr.io
+    zone: europe-west2-a
   environments:
   - key: dev
+    owner: jstrachan
+    repository: jx-demo-gke2-dev
   - key: staging
   - key: production
   ingress:
@@ -33,9 +39,18 @@ jxRequirements:
     tls:
       email: ""
       enabled: false
-      production: false
+      production: true
+  pipelineUser:
+    username: jstrachan
   repository: nexus
   secretStorage: gsm
+  storage:
+  - name: logs
+    url: gs://logs-jstrachan-tekton2-d3ca9654053a
+  - name: reports
+    url: gs://reports-jstrachan-tekton2-d3ca9654053a
+  - name: repository
+    url: gs://repository-jstrachan-tekton2-d3ca9654053a
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
