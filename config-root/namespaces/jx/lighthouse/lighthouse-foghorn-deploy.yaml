@@ -11,7 +11,7 @@ metadata:
   namespace: jx
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: 'a231b77defbb6dfe71534396ce863bad79865bfefdb4fa2453120b9c9cb5ccef'
+    jenkins-x.io/hash: '67df2498a98da7f3bca851fcf05898dcf312c9eccafbdacbf40d92f59745a766'
 spec:
   replicas: 1
   selector:
@@ -27,7 +27,7 @@ spec:
       serviceAccountName: lighthouse-foghorn
       containers:
         - name: lighthouse-foghorn
-          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.0-SNAPSHOT-PR-1164-12
+          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.0-SNAPSHOT-PR-1175-4
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"

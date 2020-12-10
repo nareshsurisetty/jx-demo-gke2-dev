@@ -25,7 +25,7 @@ jxRequirements:
     project: jenkins-x-labs-bdd
     provider: gke
     registry: gcr.io
-    zone: europe-west2-a
+    zone: europe-west2-b
   environments:
   - key: dev
     owner: jstrachan
@@ -33,7 +33,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: 34.105.215.237.nip.io
+    domain: 34.105.246.143.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
