@@ -231,7 +231,7 @@ push-pr-branch:
 	jx gitops pr push --ignore-no-pr
 
 	# now lets label the Pull Request so that lighthouse keeper can auto merge it
-	jx gitops pr label --name updatebot --matches "env/.*" --ignore-no-pr
+	#jx gitops pr label --name updatebot --matches "env/.*" --ignore-no-pr
 
 .PHONY: push
 push:
