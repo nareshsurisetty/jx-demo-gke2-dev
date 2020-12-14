@@ -13,13 +13,10 @@ releases:
   name: nodey545
   values:
   - jx-values.yaml
-  forceNamespace: ""
-  skipDeps: null
 - chart: dev/nodey534
   version: 1.0.10
   name: nodey534
-  forceNamespace: ""
-  skipDeps: null
+  values:
+  - jx-values.yaml
 templates: {}
-missingFileHandler: ""
 renderedvalues: {}
