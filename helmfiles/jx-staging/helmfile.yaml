@@ -9,9 +9,12 @@ repositories:
   url: http://chartmuseum-jx.34.105.246.143.nip.io/
 releases:
 - chart: dev/nodey545
-  version: 1.0.8
+  version: 1.0.9
   name: nodey545
   values:
   - jx-values.yaml
+  forceNamespace: ""
+  skipDeps: null
 templates: {}
+missingFileHandler: ""
 renderedvalues: {}
