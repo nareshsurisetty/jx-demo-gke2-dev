@@ -9,6 +9,7 @@ data:
       enabled:
         jstrachan/jx-demo-gke2-dev: true
         jstrachan/nodey534: true
+        jstrachan/nodey536: true
         jstrachan/nodey545: true
     plank: {}
     pod_namespace: jx
@@ -23,6 +24,7 @@ data:
       merge_method:
         jstrachan/jx-demo-gke2-dev: merge
         jstrachan/nodey534: merge
+        jstrachan/nodey536: merge
         jstrachan/nodey545: merge
       queries:
       - labels:
@@ -36,6 +38,7 @@ data:
         repos:
         - jstrachan/jx-demo-gke2-dev
         - jstrachan/nodey534
+        - jstrachan/nodey536
         - jstrachan/nodey545
       - labels:
         - updatebot
@@ -48,6 +51,7 @@ data:
         repos:
         - jstrachan/jx-demo-gke2-dev
         - jstrachan/nodey534
+        - jstrachan/nodey536
         - jstrachan/nodey545
       target_url: http://dashboard-jx.34.105.246.143.nip.io
 kind: ConfigMap
