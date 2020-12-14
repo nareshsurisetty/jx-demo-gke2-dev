@@ -1,0 +1,14 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.34.105.246.143.nip.io/
+releases:
+- chart: dev/nodey545
+  version: 1.0.1
+  name: nodey545
+  forceNamespace: ""
+  skipDeps: null
+templates: {}
+missingFileHandler: ""
+renderedvalues: {}
