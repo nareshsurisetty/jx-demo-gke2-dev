@@ -13,8 +13,5 @@ releases:
   name: nodey545
   values:
   - jx-values.yaml
-  forceNamespace: ""
-  skipDeps: null
 templates: {}
-missingFileHandler: ""
 renderedvalues: {}

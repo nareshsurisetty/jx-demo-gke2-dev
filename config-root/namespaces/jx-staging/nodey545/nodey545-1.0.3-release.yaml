@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-10T10:11:37Z"
+  creationTimestamp: "2020-12-14T08:44:12Z"
   deletionTimestamp: null
-  name: 'nodey545-1.0.1'
+  name: 'nodey545-1.0.3'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.1
-      sha: 5e09f11287f68843759ee3b6c31b88c4f95745b6
+        chore: release 1.0.3
+      sha: 95faa226f8ddceba77ba9a9461a1005d6a44706e
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,21 +29,11 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 5a5926c40cd1482cab4d12136c3b8c4852057769
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: Jenkins X build pack
-      sha: c7730637f441f9045297c1e20dccf8842e2d14b1
+      sha: dd78e6132e2e86b310aa6da80aa2d53531fe3687
   gitHttpUrl: https://github.com/jstrachan/nodey545
   gitOwner: jstrachan
   gitRepository: nodey545
   name: 'nodey545'
-  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v1.0.1
-  version: v1.0.1
+  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v1.0.3
+  version: v1.0.3
 status: {}
