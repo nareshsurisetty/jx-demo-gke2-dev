@@ -27,7 +27,7 @@ spec:
         - scriptscript: |
             #!/usr/bin/env sh
             jx gitops git merge --baseSHA $PULL_BASE_SHA --sha $PULL_PULL_SHA --baseBranch $PULL_BASE_REF
-          image: gcr.io/jenkinsxio/jx-gitops:0.0.0-SNAPSHOT-PR-449-2
+          image: gcr.io/jenkinsxio/jx-gitops:0.0.0-SNAPSHOT-PR-449-3
           name: merge
         - args:
           - pr
