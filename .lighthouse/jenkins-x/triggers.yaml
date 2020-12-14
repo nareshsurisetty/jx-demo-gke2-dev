@@ -6,45 +6,15 @@ spec:
     context: "verify"
     always_run: true
     optional: false
-    trigger: "/test"
-    rerun_command: "/retest"
+    trigger: (?m)^/test( all| verify),?(s+|$)
+    rerun_command: /test verify
     source: "pullrequest.yaml"
-    queries:
-    - excludedBranches: {}
-      included_branches: {}
-      labels:
-        entries:
-        - approved
-      milestone: ""
-      missingLabels:
-        entries:
-        - do-not-merge
-        - do-not-merge/hold
-        - do-not-merge/work-in-progress
-        - needs-ok-to-test
-        - needs-rebase
-      review_approved_required: false
-    - excludedBranches: {}
-      included_branches: {}
-      labels:
-        entries:
-        - env/staging
-        - updatebot
-      milestone: ""
-      missingLabels:
-        entries:
-        - do-not-merge
-        - do-not-merge/hold
-        - do-not-merge/work-in-progress
-        - needs-ok-to-test
-        - needs-rebase
-      review_approved_required: false
   - name: rebase
     context: "rebase"
-    always_run: true
+    always_run: false
     optional: false
-    trigger: "/test rebase"
-    rerun_command: "/rebase"
+    trigger: (?m)^/test( all| rebase),?(s+|$)
+    rerun_command: /test rebase
     source: "rebase.yaml"
   postsubmits:
   - name: release
