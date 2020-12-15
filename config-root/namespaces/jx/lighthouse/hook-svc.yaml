@@ -5,6 +5,7 @@ metadata:
   name: hook
   labels:
     chart: "lighthouse-0.0.885"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations: {}
   namespace: jx
 spec:

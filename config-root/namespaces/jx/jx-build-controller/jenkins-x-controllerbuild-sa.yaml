@@ -8,6 +8,7 @@ metadata:
     chart: jx-build-controller-0.0.17
     release: jx-build-controller
     heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     iam.gke.io/gcp-service-account: jstrachan-tekton2-bc@jenkins-x-labs-bdd.iam.gserviceaccount.com
   namespace: jx

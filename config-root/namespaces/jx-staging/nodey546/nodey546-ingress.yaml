@@ -6,6 +6,8 @@ metadata:
     kubernetes.io/ingress.class: nginx
   name: nodey546
   namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   rules:
     - http:

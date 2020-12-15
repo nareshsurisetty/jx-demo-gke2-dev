@@ -8,7 +8,10 @@ metadata:
     chart: jx-build-controller-0.0.17
     release: jx-build-controller
     heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
     matchLabels:

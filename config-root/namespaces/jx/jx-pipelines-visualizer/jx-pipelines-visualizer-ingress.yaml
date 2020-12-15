@@ -9,6 +9,7 @@ metadata:
     helm.sh/chart: jx-pipelines-visualizer-0.0.60
     app.kubernetes.io/version: "latest"
     app.kubernetes.io/managed-by: "Helm"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     nginx.ingress.kubernetes.io/auth-realm: Authentication Required - Jenkins X Pipeline Dashboard
     nginx.ingress.kubernetes.io/auth-secret: jx-basic-auth-htpasswd

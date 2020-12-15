@@ -10,6 +10,7 @@ metadata:
     app.kubernetes.io/version: "0.41.2"
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: controller
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: ingress-nginx-controller
   namespace: nginx
 spec:

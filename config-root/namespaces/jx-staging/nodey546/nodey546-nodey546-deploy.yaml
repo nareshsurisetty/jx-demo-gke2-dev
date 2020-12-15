@@ -6,7 +6,10 @@ metadata:
   labels:
     draft: draft-app
     chart: "nodey546-1.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
     matchLabels:

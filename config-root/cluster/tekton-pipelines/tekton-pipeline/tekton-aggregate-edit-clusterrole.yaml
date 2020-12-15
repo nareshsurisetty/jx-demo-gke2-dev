@@ -22,6 +22,7 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     rbac.authorization.k8s.io/aggregate-to-edit: "true"
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
+    gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
   - apiGroups:
       - tekton.dev

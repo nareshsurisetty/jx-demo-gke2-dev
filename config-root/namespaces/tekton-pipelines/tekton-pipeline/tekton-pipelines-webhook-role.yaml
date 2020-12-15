@@ -8,6 +8,7 @@ metadata:
     app.kubernetes.io/component: webhook
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   - apiGroups: [""]
     resources: ["configmaps"]

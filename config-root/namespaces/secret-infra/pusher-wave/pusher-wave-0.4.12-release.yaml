@@ -6,6 +6,8 @@ metadata:
   deletionTimestamp: null
   name: 'pusher-wave-0.4.12'
   namespace: secret-infra
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:

@@ -6,6 +6,8 @@ metadata:
   annotations:
     iam.gke.io/gcp-service-account: jstrachan-tekton2-tekton@jenkins-x-labs-bdd.iam.gserviceaccount.com
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 secrets:
   - name: tekton-container-registry-auth
   - name: tekton-git

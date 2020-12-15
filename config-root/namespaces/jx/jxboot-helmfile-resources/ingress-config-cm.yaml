@@ -10,3 +10,5 @@ kind: ConfigMap
 metadata:
   name: ingress-config
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

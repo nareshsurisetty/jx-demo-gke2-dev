@@ -21,6 +21,7 @@ metadata:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     knative.dev/crd-install: "true"
+    gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: caching.internal.knative.dev
   version: v1alpha1

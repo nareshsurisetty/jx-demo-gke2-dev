@@ -9,7 +9,10 @@ metadata:
     helm.sh/chart: jx-pipelines-visualizer-0.0.60
     app.kubernetes.io/version: "latest"
     app.kubernetes.io/managed-by: "Helm"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1
   revisionHistoryLimit: 2

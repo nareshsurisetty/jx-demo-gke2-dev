@@ -3,10 +3,10 @@ kind: SourceRepository
 metadata:
   creationTimestamp: null
   labels:
-    gitops.jenkins-x.io/pipeline: namespaces
     owner: jstrachan
     provider: github
     repository: nodey536
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jstrachan-nodey536
   namespace: jx
 spec:

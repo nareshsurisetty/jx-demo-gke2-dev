@@ -22,6 +22,7 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     pipeline.tekton.dev/release: "v0.18.0"
     version: "v0.18.0"
+    gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: tekton.dev
   versions:

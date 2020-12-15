@@ -13,6 +13,7 @@ metadata:
     # labels below are related to istio and should not be used for resource lookup
     app: tekton-pipelines-webhook
     version: "v0.18.0"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: tekton-pipelines-webhook
   namespace: tekton-pipelines
 spec:
