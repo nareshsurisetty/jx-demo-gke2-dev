@@ -16,11 +16,6 @@ repositories:
 - name: jenkinsci
   url: https://charts.jenkins.io
 releases:
-#- chart: jenkinsci/jenkins
-#  name: jenkins
-#  values:
-#  - ../../versionStream/charts/jenkinsci/jenkins/values.yaml.gotmpl
-#  - jx-values.yaml
 - chart: bitnami/external-dns
   version: 3.2.0
   condition: jxRequirementsIngressExternalDNS.enabled
