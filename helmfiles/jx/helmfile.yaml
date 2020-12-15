@@ -18,6 +18,9 @@ repositories:
 releases:
 - chart: jenkinsci/jenkins
   name: jenkins2
+  values:
+  - ../../versionStream/charts/jenkinsci/jenkins/values.yaml.gotmpl
+  - jx-values.yaml
 - chart: jenkinsci/jenkins
   name: jenkins
   values:
