@@ -5,7 +5,6 @@ metadata:
   labels:
     env: "staging"
     team: jx
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: "staging"
   namespace: jx
 spec:

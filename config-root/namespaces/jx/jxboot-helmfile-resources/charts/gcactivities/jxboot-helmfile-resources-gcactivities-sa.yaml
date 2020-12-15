@@ -8,6 +8,5 @@ metadata:
     chart: gcactivities-2.0.1143
     release: jxboot-helmfile-resources
     heritage: Helm
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
   namespace: jx

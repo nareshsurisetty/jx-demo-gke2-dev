@@ -4,5 +4,3 @@ kind: ServiceAccount
 metadata:
   name: nodey546-nodey546
   namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

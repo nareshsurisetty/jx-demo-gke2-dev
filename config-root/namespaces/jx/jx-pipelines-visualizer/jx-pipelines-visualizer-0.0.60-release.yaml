@@ -6,8 +6,6 @@ metadata:
   deletionTimestamp: null
   name: 'jx-pipelines-visualizer-0.0.60'
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:

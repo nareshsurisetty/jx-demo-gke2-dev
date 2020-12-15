@@ -6,8 +6,6 @@ metadata:
   deletionTimestamp: null
   name: 'jenkins-x-crds-3.0.5'
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:

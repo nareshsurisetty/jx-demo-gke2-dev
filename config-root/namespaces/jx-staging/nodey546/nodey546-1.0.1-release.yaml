@@ -6,8 +6,6 @@ metadata:
   deletionTimestamp: null
   name: 'nodey546-1.0.1'
   namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:

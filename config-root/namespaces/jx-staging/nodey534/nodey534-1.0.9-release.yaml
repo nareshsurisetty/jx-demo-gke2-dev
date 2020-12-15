@@ -6,8 +6,6 @@ metadata:
   deletionTimestamp: null
   name: 'nodey534-1.0.9'
   namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   gitCloneUrl: https://github.com/jstrachan/nodey534.git
   gitHttpUrl: https://github.com/jstrachan/nodey534

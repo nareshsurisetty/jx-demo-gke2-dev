@@ -8,7 +8,6 @@ metadata:
     chart: chartmuseum-2.4.1
     heritage: "Helm"
     release: "chartmuseum"
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
 spec:
   type: ClusterIP

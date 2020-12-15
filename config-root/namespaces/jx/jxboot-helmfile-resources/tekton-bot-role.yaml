@@ -4,8 +4,6 @@ kind: Role
 metadata:
   name: "tekton-bot"
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   - apiGroups:
       - "*"

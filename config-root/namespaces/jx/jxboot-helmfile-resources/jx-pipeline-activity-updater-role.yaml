@@ -4,8 +4,6 @@ kind: Role
 metadata:
   name: jx-pipeline-activity-updater
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   - apiGroups:
       - jenkins.io

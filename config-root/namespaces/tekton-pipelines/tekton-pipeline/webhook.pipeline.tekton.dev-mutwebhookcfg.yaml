@@ -8,7 +8,6 @@ metadata:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     pipeline.tekton.dev/release: "v0.18.0"
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: tekton-pipelines
 webhooks:
   - admissionReviewVersions: ["v1beta1", "v1"]

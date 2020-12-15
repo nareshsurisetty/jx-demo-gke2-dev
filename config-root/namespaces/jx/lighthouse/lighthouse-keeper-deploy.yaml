@@ -7,11 +7,7 @@ metadata:
     draft: draft-app
     chart: "lighthouse-0.0.885"
     app: lighthouse-keeper
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
-  annotations:
-    wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: '45e2f1d394f42fc9c0b554f1aac85d33385b5ebc109a9ca3fa5b491cc7a1f3fd'
 spec:
   replicas: 1
   strategy:

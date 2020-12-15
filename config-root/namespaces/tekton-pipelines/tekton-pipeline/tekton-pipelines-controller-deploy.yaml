@@ -28,9 +28,6 @@ metadata:
     pipeline.tekton.dev/release: "v0.18.0"
     # labels below are related to istio and should not be used for resource lookup
     version: "v0.18.0"
-    gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1
   selector:

@@ -6,8 +6,6 @@ metadata:
     kubernetes.io/ingress.class: nginx
   name: nodey545
   namespace: jx-production
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   rules:
     - http:

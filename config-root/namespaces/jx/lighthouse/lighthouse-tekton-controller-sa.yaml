@@ -4,5 +4,3 @@ apiVersion: v1
 metadata:
   name: lighthouse-tekton-controller
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

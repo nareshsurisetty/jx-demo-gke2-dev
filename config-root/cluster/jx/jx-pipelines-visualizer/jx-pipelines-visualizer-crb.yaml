@@ -9,7 +9,6 @@ metadata:
     helm.sh/chart: jx-pipelines-visualizer-0.0.60
     app.kubernetes.io/version: "latest"
     app.kubernetes.io/managed-by: "Helm"
-    gitops.jenkins-x.io/pipeline: 'cluster'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

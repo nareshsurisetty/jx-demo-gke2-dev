@@ -21,7 +21,6 @@ metadata:
     app.kubernetes.io/component: controller
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     iam.gke.io/gcp-service-account: jstrachan-tekton2-tekton@jenkins-x-labs-bdd.iam.gserviceaccount.com
 secrets:

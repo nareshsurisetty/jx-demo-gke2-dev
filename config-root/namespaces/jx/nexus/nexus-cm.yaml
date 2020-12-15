@@ -6,7 +6,5 @@ metadata:
   annotations:
     expose.config.fabric8.io/path-key: context.path
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   context.path: /

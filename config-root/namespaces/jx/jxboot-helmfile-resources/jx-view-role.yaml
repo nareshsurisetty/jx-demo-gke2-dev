@@ -4,8 +4,6 @@ kind: Role
 metadata:
   name: jx-view
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   - apiGroups:
       - jenkins.io

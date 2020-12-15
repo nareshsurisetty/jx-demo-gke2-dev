@@ -4,8 +4,6 @@ kind: Role
 metadata:
   name: gcactivities
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   - apiGroups:
       - jenkins.io

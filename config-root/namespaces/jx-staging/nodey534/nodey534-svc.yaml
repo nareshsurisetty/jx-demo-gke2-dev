@@ -5,7 +5,6 @@ metadata:
   name: nodey534
   labels:
     chart: "nodey534-1.0.9"
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
     fabric8.io/ingress.annotations: 'kubernetes.io/ingress.class: nginx'

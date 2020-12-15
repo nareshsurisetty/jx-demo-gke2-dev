@@ -9,7 +9,6 @@ metadata:
     helm.sh/chart: jx-pipelines-visualizer-0.0.60
     app.kubernetes.io/version: "latest"
     app.kubernetes.io/managed-by: "Helm"
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     iam.gke.io/gcp-service-account: jstrachan-tekton2-jxui@jenkins-x-labs-bdd.iam.gserviceaccount.com
   namespace: jx

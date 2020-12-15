@@ -8,10 +8,8 @@ metadata:
     chart: nexus-0.1.35
     release: nexus
     heritage: Helm
-    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     configmap.fabric8.io/update-on-change: nexus
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
 spec:
   selector:
