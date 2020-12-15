@@ -26,8 +26,8 @@ spec:
         steps:
         - script: |
             #!/usr/bin/env sh
-            jx gitops git merge --baseSHA $PULL_BASE_SHA --sha $PULL_PULL_SHA --baseBranch $PULL_BASE_REF
-          image: gcr.io/jenkinsxio/jx-gitops:0.0.0-SNAPSHOT-PR-449-3
+            jx gitops git merge --exclude-comment="^chore: regenerate"
+          image: gcr.io/jenkinsxio/jx-gitops:0.0.0-SNAPSHOT-PR-449-1	
           name: merge
         - args:
           - all
