@@ -3,7 +3,7 @@ environments:
   default:
     values:
     - jx-values.yaml
-namespace: jx
+namespace: jenkins
 repositories:
 - name: jenkinsci
   url: https://charts.jenkins.io
