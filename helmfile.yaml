@@ -7,5 +7,9 @@ helmfiles:
 - path: helmfiles/tekton-pipelines/helmfile.yaml
 - path: helmfiles/jx-staging/helmfile.yaml
 - path: helmfiles/jx-production/helmfile.yaml
+releases:
+- chart: jenkinsci/jenkins
+  name: jenkins
+  namespace: jenkins
 templates: {}
 renderedvalues: {}
