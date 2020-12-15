@@ -1,0 +1,9 @@
+filepath: ""
+repositories:
+- name: jenkinsci
+  url: https://charts.jenkins.io
+releases:
+- chart: jenkinsci/jenkins
+  namespace: myjenkins
+templates: {}
+renderedvalues: {}
