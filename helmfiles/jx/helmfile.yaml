@@ -16,6 +16,8 @@ repositories:
 - name: jenkinsci
   url: https://charts.jenkins.io
 releases:
+- chart: jenkinsci/jenkins
+  name: jenkins
 - chart: bitnami/external-dns
   version: 3.2.0
   condition: jxRequirementsIngressExternalDNS.enabled
