@@ -28,7 +28,7 @@ spec:
             #!/usr/bin/env sh
             echo "rebasing commits"
             jx gitops git merge --exclude-comment="^chore: regenerate"
-          image: gcr.io/jenkinsxio/jx-gitops:0.0.0-SNAPSHOT-PR-449-1	
+          image: gcr.io/jenkinsxio/jx-gitops:0.0.0-SNAPSHOT-PR-449-4	
           name: merge
         - args:
           - all
