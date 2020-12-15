@@ -1,0 +1,14 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx
+repositories:
+- name: jenkinsci
+  url: https://charts.jenkins.io
+releases:
+- chart: jenkinsci/jenkins
+  name: jenkins
+templates: {}
+renderedvalues: {}
