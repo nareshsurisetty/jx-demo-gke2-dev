@@ -1,24 +1,16 @@
 controller:
   JCasC:
     configScripts:
-      initialJobs: >
-        multibranchPipelineJob('image-jenkins') {
-          branchSources {
-            github {
-              // The id option in the Git and GitHub branch source contexts is now mandatory (JENKINS-43693).
-              id('12312313') // IMPORTANT: use a constant and unique identifier
-              scanCredentialsId('github')
-              repoOwner('jstrachan')
-              repository('hello-world-jenkinsfile')
-              //apiUri('http://my-github-server/api/v3') // Optional, needed for private github enterprise servers
-            }
-          }
-          orphanedItemStrategy {
-            discardOldItems {
-              numToKeep(1)
-            }
-          }
-          triggers {
-            periodic(5)
-          }
-        }
+      mysetup:
+        jenkins:
+          systemMessage: Welcome to our CI\CD server.  This Jenkins is configured and managed 'as code'.
+        jobs:
+          - script: |
+              multibranchPipelineJob('configuration-as-code') {
+                  branchSources {
+                      git {
+                          id = 'jstrachan-hello-world-jenkinsfile'
+                          remote('https://github.com/jstrachan/hello-world-jenkinsfile.git')
+                      }
+                  }
+              }
