@@ -13,7 +13,6 @@ spec:
     - name: nodey545
     - name: nodey546
     scheduler: in-repo
-  jenkinsXmlTemplate: jenkins/templates/default.xml.gotmpl
   jenkinsServers:
   - groups:
     - owner: jstrachan
