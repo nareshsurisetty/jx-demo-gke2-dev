@@ -26,7 +26,7 @@ spec:
         "app.kubernetes.io/instance": "cheese"
         "app.kubernetes.io/component": "jenkins-controller"
       annotations:
-        checksum/config: 728e2f58adac612efefc52643f7adbea548dcdabdb287d04f95172efee94d665
+        checksum/config: f1890fd9670c046fc2eca5409e77a6548b304f0a60d8e62b5464ce7e808b4665
     spec:
       securityContext:
         runAsUser: 1000
