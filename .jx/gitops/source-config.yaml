@@ -13,3 +13,11 @@ spec:
     - name: nodey545
     - name: nodey546
     scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: jstrachan
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: hello-world-jenkinsfile
+    server: cheese
