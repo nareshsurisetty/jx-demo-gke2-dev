@@ -2,37 +2,37 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: cheese-jenkins
+  name: jenkins
   namespace: cheese
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "helm.sh/chart": "jenkins-3.0.8"
     "app.kubernetes.io/managed-by": "Helm"
-    "app.kubernetes.io/instance": "cheese"
+    "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
-  serviceName: cheese-jenkins
+  serviceName: jenkins
   replicas: 1
   selector:
     matchLabels:
       "app.kubernetes.io/component": "jenkins-controller"
-      "app.kubernetes.io/instance": "cheese"
+      "app.kubernetes.io/instance": "jenkins"
   template:
     metadata:
       labels:
         "app.kubernetes.io/name": 'jenkins'
         "app.kubernetes.io/managed-by": "Helm"
-        "app.kubernetes.io/instance": "cheese"
+        "app.kubernetes.io/instance": "jenkins"
         "app.kubernetes.io/component": "jenkins-controller"
       annotations:
-        checksum/config: f1890fd9670c046fc2eca5409e77a6548b304f0a60d8e62b5464ce7e808b4665
+        checksum/config: 35b8bf2a623a500ce46d188be6b83df9827616dce9583f8b8bbd3be8a017dda8
     spec:
       securityContext:
         runAsUser: 1000
         fsGroup: 1000
         runAsNonRoot: true
-      serviceAccountName: "cheese-jenkins"
+      serviceAccountName: "jenkins"
       initContainers:
         - name: "init"
           image: "jenkins/jenkins:2.263.1"
@@ -134,7 +134,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.name
             - name: LABEL
-              value: "cheese-jenkins-jenkins-config"
+              value: "jenkins-jenkins-config"
             - name: FOLDER
               value: "/var/jenkins_home/casc_configs"
             - name: NAMESPACE
@@ -156,14 +156,14 @@ spec:
           emptyDir: {}
         - name: jenkins-config
           configMap:
-            name: cheese-jenkins
+            name: jenkins
         - name: plugin-dir
           emptyDir: {}
         - name: jenkins-home
           persistentVolumeClaim:
-            claimName: cheese-jenkins
+            claimName: jenkins
         - name: sc-config-volume
           emptyDir: {}
         - name: admin-secret
           secret:
-            secretName: cheese-jenkins
+            secretName: jenkins

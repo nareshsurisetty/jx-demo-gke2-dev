@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cheese-jenkins
+  name: jenkins
   namespace: cheese
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "app.kubernetes.io/managed-by": "Helm"
-    "app.kubernetes.io/instance": "cheese"
+    "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
