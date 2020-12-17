@@ -8,7 +8,7 @@ repositories:
   url: https://charts.jenkins.io
 releases:
 - chart: jenkinsci/jenkins
-  name: cheese
+  name: jenkins
   namespace: cheese
   values:
   - job-values.yaml
