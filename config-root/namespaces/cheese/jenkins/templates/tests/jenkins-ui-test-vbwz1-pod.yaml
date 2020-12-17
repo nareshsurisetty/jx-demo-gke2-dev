@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-ns6di"
+  name: "jenkins-ui-test-vbwz1"
   namespace: cheese
   annotations:
     "helm.sh/hook": test-success
