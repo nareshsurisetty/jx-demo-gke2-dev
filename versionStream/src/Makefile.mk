@@ -52,7 +52,7 @@ fetch: init
 	jx gitops image -s .jx/git-operator
 
 	# lets generate any jenkins job values.yaml files to import projects into Jenkins
-	jx gitops jenkins jobs
+	# jx gitops jenkins jobs
 
 	# this line avoids the next helmfile command failing...
 	helm repo add jx http://chartmuseum.jenkins-x.io
