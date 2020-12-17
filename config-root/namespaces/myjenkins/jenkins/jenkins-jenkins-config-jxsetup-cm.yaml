@@ -16,10 +16,10 @@ data:
   jxsetup.yaml: |-
     jobs:
       - script: |
-          multibranchPipelineJob('jstrachan/hello-world-jenkinsfile') {
+          multibranchPipelineJob('jstrachan-hello-world-jenkinsfile') {
               branchSources {
                   git {
-                      id = 'jstrachan/hello-world-jenkinsfile'
+                      id = 'jstrachan-hello-world-jenkinsfile'
                       remote('https://github.com/jstrachan/hello-world-jenkinsfile.git')
                   }
               }
