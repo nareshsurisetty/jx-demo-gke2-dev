@@ -13,5 +13,6 @@ releases:
   values:
   - ../../versionStream/charts/jenkinsci/jenkins/values.yaml.gotmpl
   - jx-values.yaml
+  - job-values.yaml
 templates: {}
 renderedvalues: {}
