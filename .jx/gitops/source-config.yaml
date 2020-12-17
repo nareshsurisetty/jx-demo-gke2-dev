@@ -20,4 +20,5 @@ spec:
       providerKind: github
       repositories:
       - name: hello-world-jenkinsfile
+      - name: spring-boot-maven-jenkinsfile
     server: cheese
