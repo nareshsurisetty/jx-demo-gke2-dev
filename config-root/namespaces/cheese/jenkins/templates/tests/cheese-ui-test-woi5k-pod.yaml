@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "cheese-ui-test-atr6c"
+  name: "cheese-ui-test-woi5k"
   namespace: cheese
   annotations:
     "helm.sh/hook": test-success
