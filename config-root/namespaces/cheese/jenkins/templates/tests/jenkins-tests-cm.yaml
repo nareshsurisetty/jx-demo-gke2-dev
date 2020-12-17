@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cheese-jenkins-tests
+  name: jenkins-tests
   namespace: cheese
   annotations:
     "helm.sh/hook": test
@@ -11,5 +11,5 @@ metadata:
 data:
   run.sh: |-
     @test "Testing Jenkins UI is accessible" {
-      curl --retry 48 --retry-delay 10 cheese-jenkins:8080/login
+      curl --retry 48 --retry-delay 10 jenkins:8080/login
     }

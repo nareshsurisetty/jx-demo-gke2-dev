@@ -1,13 +1,19 @@
-# Source: jenkins/templates/service-account.yaml
+# Source: jenkins/templates/home-pvc.yaml
+kind: PersistentVolumeClaim
 apiVersion: v1
-kind: ServiceAccount
 metadata:
-  name: cheese-jenkins
+  name: jenkins
   namespace: cheese
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "helm.sh/chart": "jenkins-3.0.8"
     "app.kubernetes.io/managed-by": "Helm"
-    "app.kubernetes.io/instance": "cheese"
+    "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  accessModes:
+    - "ReadWriteOnce"
+  resources:
+    requests:
+      storage: "8Gi"

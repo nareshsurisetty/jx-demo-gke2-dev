@@ -2,15 +2,15 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cheese-jenkins-jenkins-config-jxsetup
+  name: jenkins-jenkins-config-jxsetup
   namespace: cheese
   labels:
     "app.kubernetes.io/name": jenkins
     "helm.sh/chart": "jenkins-3.0.8"
     "app.kubernetes.io/managed-by": "Helm"
-    "app.kubernetes.io/instance": "cheese"
+    "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
-    cheese-jenkins-jenkins-config: "true"
+    jenkins-jenkins-config: "true"
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   jxsetup.yaml: |-
