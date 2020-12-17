@@ -9,10 +9,10 @@ controller:
         jobs:
           - script: |
               // from template: jenkins/templates/default.job.gotmpl
-              multibranchPipelineJob('jstrachan/hello-world-jenkinsfile') {
+              multibranchPipelineJob('jstrachan-hello-world-jenkinsfile') {
                   branchSources {
                       git {
-                          id = 'jstrachan/hello-world-jenkinsfile'
+                          id = 'jstrachan-hello-world-jenkinsfile'
                           remote('https://github.com/jstrachan/hello-world-jenkinsfile.git')
                       }
                   }
