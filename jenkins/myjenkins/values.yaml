@@ -5,11 +5,9 @@
 controller:
   JCasC:
     configScripts:
-      jxsetup:
-        jenkins:
-          systemMessage: Welcome to our CI\CD server.  This Jenkins is configured and managed 'as code'.
+      jxsetup: |
         jobs:
-          - script: >
+          - script: |
               multibranchPipelineJob('jstrachan/hello-world-jenkinsfile') {
                   branchSources {
                       git {
