@@ -1,0 +1,13 @@
+filepath: ""
+repositories:
+- name: jenkinsci
+  url: https://charts.jenkins.io
+releases:
+- chart: jenkinsci/jenkins
+  name: cheese
+  namespace: cheese
+  values:
+  - job-values.yaml
+  - values.yaml
+templates: {}
+renderedvalues: {}

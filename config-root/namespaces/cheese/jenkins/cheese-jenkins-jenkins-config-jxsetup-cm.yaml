@@ -1,0 +1,27 @@
+# Source: jenkins/templates/jcasc-config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cheese-jenkins-jenkins-config-jxsetup
+  namespace: cheese
+  labels:
+    "app.kubernetes.io/name": jenkins
+    "helm.sh/chart": "jenkins-3.0.8"
+    "app.kubernetes.io/managed-by": "Helm"
+    "app.kubernetes.io/instance": "cheese"
+    "app.kubernetes.io/component": "jenkins-controller"
+    cheese-jenkins-jenkins-config: "true"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+data:
+  jxsetup.yaml: |-
+    jobs:
+      - script: |
+          // from template: jenkins/templates/default.job.gotmpl
+          multibranchPipelineJob('jstrachan-hello-world-jenkinsfile') {
+              branchSources {
+                  git {
+                      id = 'jstrachan-hello-world-jenkinsfile'
+                      remote('https://github.com/jstrachan/hello-world-jenkinsfile.git')
+                  }
+              }
+          }
