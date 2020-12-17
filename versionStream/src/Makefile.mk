@@ -148,7 +148,7 @@ verify-ignore: verify-ingress-ignore
 secrets-populate:
 	# lets populate any missing secrets we have a generator in `charts/repoName/chartName/secret-schema.yaml`
 	# they can be modified/regenerated at any time via `jx secret edit`
-	-VAULT_ADDR=$(VAULT_ADDR) jx secret populate -n jx
+	-VAULT_ADDR=$(VAULT_ADDR) jx secret populate
 
 .PHONY: secrets-wait
 secrets-wait:
