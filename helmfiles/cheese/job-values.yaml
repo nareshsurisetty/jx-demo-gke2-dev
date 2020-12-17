@@ -21,3 +21,13 @@ controller:
                   }
               }
                             
+              // from template: versionStream/jenkins/templates/job.gotmpl
+              multibranchPipelineJob('jstrachan/spring-boot-maven-jenkinsfile') {
+                  branchSources {
+                      git {
+                          id = 'jstrachan-spring-boot-maven-jenkinsfile'
+                          remote('https://github.com/jstrachan/spring-boot-maven-jenkinsfile.git')
+                      }
+                  }
+              }
+                            
