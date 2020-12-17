@@ -1,0 +1,25 @@
+# Source: jenkins/templates/jcasc-config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jenkins-jenkins-config-jx-init
+  namespace: myjenkins
+  labels:
+    "app.kubernetes.io/name": jenkins
+    "helm.sh/chart": "jenkins-3.0.8"
+    "app.kubernetes.io/managed-by": "Helm"
+    "app.kubernetes.io/instance": "jenkins"
+    "app.kubernetes.io/component": "jenkins-controller"
+    jenkins-jenkins-config: "true"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+data:
+  jx-init.yaml: |-
+    // from template jenkins/templates/default.job.gotmpl
+    multibranchPipelineJob('jstrachan/hello-world-jenkinsfile') {
+        branchSources {
+            git {
+                id = 'jstrachan/hello-world-jenkinsfile'
+                remote('https://github.com/jstrachan/hello-world-jenkinsfile.git')
+            }
+        }
+    }
