@@ -20,6 +20,9 @@ controller:
   # enable the job DSL so we can use JCasC and GitOps to populate jobs
   - job-dsl:1.77
 
+  # allow jenkins to get credentials from kubernetes secrets & support External Secrets for vault / cloud secret managers
+  - kubernetes-credentials-provider:0.15
+
   # uncomment when there is a new version with updated dependencies so that jenkins
   # jobs get reported as PipelineActivity resources so they appear in the jx UIs
   # - jx-resources:1.0.38
