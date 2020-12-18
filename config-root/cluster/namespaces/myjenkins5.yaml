@@ -3,9 +3,9 @@ kind: Namespace
 metadata:
   creationTimestamp: null
   labels:
-    name: myjenkins4
+    name: myjenkins5
     gitops.jenkins-x.io/pipeline: 'cluster'
     team: 'jx'
-  name: myjenkins4
+  name: myjenkins5
 spec: {}
 status: {}
