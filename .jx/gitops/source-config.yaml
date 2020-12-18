@@ -12,6 +12,7 @@ spec:
     - name: nodey536
     - name: nodey545
     - name: nodey546
+    - name: nodey553
     scheduler: in-repo
   jenkinsServers:
   - groups:
