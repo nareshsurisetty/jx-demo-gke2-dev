@@ -16,10 +16,14 @@ controller:
   # the jenkins jobs configuration with the contents of Jobs every time the pod starts.
   overwriteJobs: true
 
-  additionalPlugins:
-  # upgrade git
-  - git:4.5.0
+  # List of plugins to be install during Jenkins controller start
+  installPlugins:
+    - kubernetes:1.27.6
+    - workflow-aggregator:2.6
+    - git:4.5.0
+    - configuration-as-code:1.46
 
+  additionalPlugins:
   # enable the job DSL so we can use JCasC and GitOps to populate jobs
   - job-dsl:1.77
 
