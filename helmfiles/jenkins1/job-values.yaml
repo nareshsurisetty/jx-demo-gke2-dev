@@ -14,9 +14,11 @@ controller:
               // from template: versionStream/jenkins/templates/job.gotmpl
               multibranchPipelineJob('jstrachan/my-boot-jenkinsfile') {
                   branchSources {
-                      git {
+                      github {
                           id = 'jstrachan-my-boot-jenkinsfile'
-                          remote('https://github.com/jstrachan/my-boot-jenkinsfile.git')
+                          scanCredentialsId('tekton-git')
+                          repoOwner('jstrachan')
+                          repository('my-boot-jenkinsfile')
                       }
                   }
               }
