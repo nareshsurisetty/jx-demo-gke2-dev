@@ -33,9 +33,8 @@ controller:
   # allow jenkins to get credentials from kubernetes secrets & support External Secrets for vault / cloud secret managers
   - kubernetes-credentials-provider:0.15
 
-  # uncomment when there is a new version with updated dependencies so that jenkins
-  # jobs get reported as PipelineActivity resources so they appear in the jx UIs
-  # - jx-resources:1.0.38
+  # jobs get reported as PipelineActivity resources so they appear in the jx UIs like octant
+  - jx-resources:1.0.38
 
 
   ingress:
