@@ -42,6 +42,9 @@ fetch: init
 	# lets configure the cluster gitops repository URL on the requirements if its missing
 	jx gitops repository resolve --source-dir $(OUTPUT_DIR)/namespaces
 
+	# lets generate any jenkins job-values.yaml files to import projects into Jenkins
+	jx gitops jenkins jobs
+
 	# set any missing defaults in the secrets mapping file
 	jx secret convert edit
 
@@ -50,9 +53,6 @@ fetch: init
 
 	# lets make sure we are using the latest jx-cli in the git operator Job
 	jx gitops image -s .jx/git-operator
-
-	# lets generate any jenkins job-values.yaml files to import projects into Jenkins
-	jx gitops jenkins jobs
 
 	# this line avoids the next helmfile command failing...
 	helm repo add jx http://chartmuseum.jenkins-x.io
