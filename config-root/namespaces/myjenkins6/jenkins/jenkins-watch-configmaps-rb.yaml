@@ -3,10 +3,10 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: jenkins-watch-configmaps
-  namespace: myjenkins5
+  namespace: myjenkins6
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.0.9"
+    "helm.sh/chart": "jenkins-3.0.10"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -18,4 +18,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: jenkins
-    namespace: myjenkins5
+    namespace: myjenkins6

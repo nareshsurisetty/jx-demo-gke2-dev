@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: jenkins
-  namespace: myjenkins5
+  namespace: myjenkins6
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "app.kubernetes.io/managed-by": "Helm"
@@ -39,3 +39,4 @@ data:
     job-dsl:1.77
     github-branch-source:2.9.2
     kubernetes-credentials-provider:0.15
+    jx-resources:1.0.38

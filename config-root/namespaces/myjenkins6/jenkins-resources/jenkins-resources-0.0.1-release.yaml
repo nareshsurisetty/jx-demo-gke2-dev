@@ -5,7 +5,7 @@ metadata:
   creationTimestamp: "2020-12-18T11:45:33Z"
   deletionTimestamp: null
   name: 'jenkins-resources-0.0.1'
-  namespace: myjenkins5
+  namespace: myjenkins6
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
