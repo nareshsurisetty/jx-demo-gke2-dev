@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: jenkins
-  namespace: myjenkins2
+  namespace: myjenkins3
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "app.kubernetes.io/managed-by": "Helm"
@@ -32,9 +32,9 @@ data:
     yes n | cp -i /usr/share/jenkins/ref/plugins/* /var/jenkins_plugins/;
     echo "finished initialization"
   plugins.txt: |-
-    kubernetes:1.27.6
+    kubernetes:1.28.4
     workflow-aggregator:2.6
-    git:4.4.5
+    git:4.5.0
     configuration-as-code:1.46
     job-dsl:1.77
     github-branch-source:2.9.2
