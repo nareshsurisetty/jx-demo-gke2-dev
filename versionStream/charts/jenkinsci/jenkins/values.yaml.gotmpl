@@ -27,6 +27,7 @@ controller:
   # jobs get reported as PipelineActivity resources so they appear in the jx UIs
   # - jx-resources:1.0.38
 
+
   ingress:
     enabled: true
 {{- if .Values.jxRequirements.ingress.domain }}
@@ -37,3 +38,8 @@ controller:
       enabled: true
 rbac:
   create: true
+
+  # lets allow jenkins to read secrets in its namespace
+  # by default so that we can use Kubernetes External Secrets to populate kubernetes Secretes for Jenkins
+  # which are then converted to Jenkins Credentials via https://plugins.jenkins.io/kubernetes-credentials-provider/
+  readSecrets: true
