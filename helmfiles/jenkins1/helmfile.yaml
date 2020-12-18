@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 repositories:
 - name: jenkinsci
   url: https://charts.jenkins.io
@@ -10,5 +14,6 @@ releases:
   - ../../versionStream/charts/jenkinsci/jenkins/values.yaml.gotmpl
   - job-values.yaml
   - values.yaml
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
