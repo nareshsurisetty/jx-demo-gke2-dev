@@ -7,6 +7,7 @@ releases:
   name: jenkins
   namespace: jenkins1
   values:
+  - ../../versionStream/charts/jenkinsci/jenkins/values.yaml.gotmpl
   - job-values.yaml
   - values.yaml
 templates: {}
