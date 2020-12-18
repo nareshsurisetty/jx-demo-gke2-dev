@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-18T16:46:43Z"
+  creationTimestamp: "2020-12-18T16:52:49Z"
   deletionTimestamp: null
-  name: 'nodey553-1.0.1'
+  name: 'nodey553-1.0.2'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.1
-      sha: 3ba1fe8c119d8a9273f7c9b7cc98b28a1ff3409c
+        chore: release 1.0.2
+      sha: 3d5a92b23c86ece51b02383f38daaadcae07b1a4
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,21 +29,20 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 34ccbe756212bd72f4341c3dddb29ae99d3da31e
+      sha: 7f28a9bc1839a6989ecba50236d9324ed99cd03e
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
       branch: master
       committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: Jenkins X build pack
-      sha: 68cb0c18c912a5b1e3a87e42a1bf07f7b21144b2
+        email: noreply@github.com
+        name: GitHub
+      message: 'chore: try pr'
+      sha: 36250bf792f479b4e115d1d12a788465f0584db6
   gitHttpUrl: https://github.com/jstrachan/nodey553
   gitOwner: jstrachan
   gitRepository: nodey553
   name: 'nodey553'
-  releaseNotesURL: https://github.com/jstrachan/nodey553/releases/tag/v1.0.1
-  version: v1.0.1
+  releaseNotesURL: https://github.com/jstrachan/nodey553/releases/tag/v1.0.2
+  version: v1.0.2
 status: {}
