@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: jenkins
-  namespace: myjenkins3
+  namespace: myjenkins4
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "helm.sh/chart": "jenkins-3.0.9"
@@ -26,7 +26,7 @@ spec:
         "app.kubernetes.io/instance": "jenkins"
         "app.kubernetes.io/component": "jenkins-controller"
       annotations:
-        checksum/config: 309bc7780fc02f8105a8088ba8334638884b6ad3f1485b61d704474f558df9e8
+        checksum/config: 2ac4836d5f557a30075c3b4be8371e21a440188a10620f404432f61963eee209
     spec:
       securityContext:
         runAsUser: 1000
@@ -138,7 +138,7 @@ spec:
             - name: FOLDER
               value: "/var/jenkins_home/casc_configs"
             - name: NAMESPACE
-              value: "myjenkins3"
+              value: "myjenkins4"
             - name: REQ_URL
               value: "http://localhost:8080/reload-configuration-as-code/?casc-reload-token=$(POD_NAME)"
             - name: REQ_METHOD
