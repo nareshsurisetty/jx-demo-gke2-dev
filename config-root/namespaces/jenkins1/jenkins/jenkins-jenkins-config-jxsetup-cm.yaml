@@ -1,0 +1,16 @@
+# Source: jenkins/templates/jcasc-config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jenkins-jenkins-config-jxsetup
+  namespace: jenkins1
+  labels:
+    "app.kubernetes.io/name": jenkins
+    "helm.sh/chart": "jenkins-3.0.9"
+    "app.kubernetes.io/managed-by": "Helm"
+    "app.kubernetes.io/instance": "jenkins"
+    "app.kubernetes.io/component": "jenkins-controller"
+    jenkins-jenkins-config: "true"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+data:
+  jxsetup.yaml: "jobs:\n  - script: |\n      // from template: versionStream/jenkins/templates/folder.gotmpl\n      folder('jstrachan')\n                    \n      // from template: versionStream/jenkins/templates/job.gotmpl\n      multibranchPipelineJob('jstrachan/my-boot-jenkinsfile') {\n          branchSources {\n              git {\n                  id = 'jstrachan-my-boot-jenkinsfile'\n                  remote('https://github.com/jstrachan/my-boot-jenkinsfile.git')\n              }\n          }\n      }"
