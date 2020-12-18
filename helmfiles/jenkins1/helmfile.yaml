@@ -15,5 +15,10 @@ releases:
   - values.yaml
   - ../../versionStream/charts/jenkinsci/jenkins/values.yaml.gotmpl
   - jx-values.yaml
+- chart: jx3/jenkins-resources
+  name: jenkins-resources
+  namespace: jenkins1
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
