@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: jenkins-jenkins-config-jxsetup
-  namespace: myjenkins
+  namespace: myjenkins2
   labels:
     "app.kubernetes.io/name": jenkins
     "helm.sh/chart": "jenkins-3.0.9"

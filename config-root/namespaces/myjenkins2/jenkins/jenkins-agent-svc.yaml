@@ -1,9 +1,9 @@
-# Source: jenkins/templates/jenkins-controller-svc.yaml
+# Source: jenkins/templates/jenkins-agent-svc.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: jenkins
-  namespace: myjenkins
+  name: jenkins-agent
+  namespace: myjenkins2
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "helm.sh/chart": "jenkins-3.0.9"
@@ -13,9 +13,9 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   ports:
-    - port: 8080
-      name: http
-      targetPort: 8080
+    - port: 50000
+      targetPort: 50000
+      name: agent-listener
   selector:
     "app.kubernetes.io/component": "jenkins-controller"
     "app.kubernetes.io/instance": "jenkins"

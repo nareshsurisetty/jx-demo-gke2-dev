@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: jenkins-tests
-  namespace: myjenkins
+  namespace: myjenkins2
   annotations:
     "helm.sh/hook": test
   labels:
