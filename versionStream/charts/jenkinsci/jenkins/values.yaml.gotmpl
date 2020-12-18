@@ -20,6 +20,9 @@ controller:
   # enable the job DSL so we can use JCasC and GitOps to populate jobs
   - job-dsl:1.77
 
+  # allow github multi branch projects to be used
+  - github-branch-source:2.9.2
+
   # allow jenkins to get credentials from kubernetes secrets & support External Secrets for vault / cloud secret managers
   - kubernetes-credentials-provider:0.15
 
