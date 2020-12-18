@@ -1,0 +1,49 @@
+# Source: nodey553/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-18T16:46:43Z"
+  deletionTimestamp: null
+  name: 'nodey553-1.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.1
+      sha: 3ba1fe8c119d8a9273f7c9b7cc98b28a1ff3409c
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 34ccbe756212bd72f4341c3dddb29ae99d3da31e
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: Jenkins X build pack
+      sha: 68cb0c18c912a5b1e3a87e42a1bf07f7b21144b2
+  gitHttpUrl: https://github.com/jstrachan/nodey553
+  gitOwner: jstrachan
+  gitRepository: nodey553
+  name: 'nodey553'
+  releaseNotesURL: https://github.com/jstrachan/nodey553/releases/tag/v1.0.1
+  version: v1.0.1
+status: {}
