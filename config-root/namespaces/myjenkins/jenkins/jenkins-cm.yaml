@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: jenkins
-  namespace: cooljenkins
+  namespace: myjenkins
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "app.kubernetes.io/managed-by": "Helm"
