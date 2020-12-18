@@ -20,4 +20,4 @@ spec:
       providerKind: github
       repositories:
       - name: my-boot-jenkins
-    server: myjenkins7
+    server: myjenkins8
