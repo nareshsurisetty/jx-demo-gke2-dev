@@ -4,6 +4,5 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-staging
-releases: []
 templates: {}
 renderedvalues: {}
