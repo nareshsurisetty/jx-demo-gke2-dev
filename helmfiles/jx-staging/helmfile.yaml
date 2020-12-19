@@ -4,29 +4,6 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-staging
-repositories:
-- name: dev
-  url: http://chartmuseum-jx.34.105.246.143.nip.io/
-releases:
-- chart: dev/nodey545
-  version: 1.0.13
-  name: nodey545
-  values:
-  - jx-values.yaml
-- chart: dev/nodey534
-  version: 1.0.9
-  name: nodey534
-  values:
-  - jx-values.yaml
-- chart: dev/nodey546
-  version: 1.0.2
-  name: nodey546
-  values:
-  - jx-values.yaml
-- chart: dev/nodey553
-  version: 1.0.2
-  name: nodey553
-  values:
-  - jx-values.yaml
+releases: []
 templates: {}
 renderedvalues: {}
