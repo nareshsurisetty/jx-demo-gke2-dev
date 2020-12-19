@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: nodey554
   labels:
-    chart: "nodey554-1.0.2"
+    chart: "nodey554-1.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
