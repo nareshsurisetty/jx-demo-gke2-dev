@@ -13,6 +13,7 @@ data:
         jstrachan/nodey545: true
         jstrachan/nodey546: true
         jstrachan/nodey553: true
+        jstrachan/nodey554: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -30,6 +31,7 @@ data:
         jstrachan/nodey545: merge
         jstrachan/nodey546: merge
         jstrachan/nodey553: merge
+        jstrachan/nodey554: merge
       queries:
       - labels:
         - approved
@@ -46,6 +48,7 @@ data:
         - jstrachan/nodey545
         - jstrachan/nodey546
         - jstrachan/nodey553
+        - jstrachan/nodey554
       - labels:
         - updatebot
         missingLabels:
@@ -61,6 +64,7 @@ data:
         - jstrachan/nodey545
         - jstrachan/nodey546
         - jstrachan/nodey553
+        - jstrachan/nodey554
       target_url: http://dashboard-jx.34.105.246.143.nip.io
 kind: ConfigMap
 metadata:
