@@ -9,7 +9,7 @@ repositories:
   url: http://chartmuseum-jx.34.105.246.143.nip.io/
 releases:
 - chart: dev/nodey554
-  version: 1.0.2
+  version: 1.0.4
   name: nodey554
   values:
   - jx-values.yaml
