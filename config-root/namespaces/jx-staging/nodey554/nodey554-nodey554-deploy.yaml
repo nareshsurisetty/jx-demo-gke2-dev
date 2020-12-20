@@ -5,7 +5,7 @@ metadata:
   name: nodey554-nodey554
   labels:
     draft: draft-app
-    chart: "nodey554-1.0.6"
+    chart: "nodey554-1.0.9"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: nodey554-nodey554
       containers:
         - name: nodey554
-          image: "gcr.io/jenkins-x-labs-bdd/nodey554:1.0.6"
+          image: "gcr.io/jenkins-x-labs-bdd/nodey554:1.0.9"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 1.0.6
+              value: 1.0.9
           envFrom: null
           ports:
             - containerPort: 8080
