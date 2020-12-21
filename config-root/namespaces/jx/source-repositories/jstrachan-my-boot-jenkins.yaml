@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: my-boot-jenkins
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jstrachan-my-boot-jenkins
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jstrachan/my-boot-jenkins.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: my-boot-jenkins
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jstrachan/my-boot-jenkins
