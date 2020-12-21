@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-21T07:28:45Z"
+  creationTimestamp: "2020-12-21T12:14:10Z"
   deletionTimestamp: null
-  name: 'nodey554-1.0.10'
+  name: 'nodey554-1.0.11'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.10
-      sha: 89926f8a77db1c8d57d0048a7b6823ef535ee815
+        chore: release 1.0.11
+      sha: 8d1ba32a4d97536ca48476c198fd1f013e3840f8
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: b414ac80943ee43b42583dd9685fd42eaced92b2
+      sha: 641bb70fdfd80b35b0ce8152b74554f0cc53dde2
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -37,12 +37,12 @@ spec:
       committer:
         email: noreply@github.com
         name: GitHub
-      message: Update index.html
-      sha: ca161c26b943bd148990eb2f95e8ac81e2996a67
+      message: 'fix: enable knative'
+      sha: b21f866b537369eab3b95ab076b7ab45f3f53c60
   gitHttpUrl: https://github.com/jstrachan/nodey554
   gitOwner: jstrachan
   gitRepository: nodey554
   name: 'nodey554'
-  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.10
-  version: v1.0.10
+  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.11
+  version: v1.0.11
 status: {}
