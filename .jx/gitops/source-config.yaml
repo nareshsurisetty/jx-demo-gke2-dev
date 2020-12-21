@@ -3,6 +3,7 @@ kind: SourceConfig
 metadata:
   creationTimestamp: null
 spec:
+  bad: abc
   groups:
   - owner: jstrachan
     provider: https://github.com
