@@ -5,5 +5,5 @@ metadata:
 spec:
   repositories:
   - gitRef: ba7deea329b2215b3f19566f12292152e0e5b63d
-    gitUrl: https://github.com/jstrachan/jx3-pipeline-catalog
+    gitUrl: https://github.com/jenkins-x/jx3-pipeline-catalog
     label: JX3 Pipeline Catalog
