@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-21T13:41:51Z"
+  creationTimestamp: "2020-12-21T14:46:07Z"
   deletionTimestamp: null
-  name: 'nodey554-1.0.13'
+  name: 'nodey554-1.0.14'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.13
-      sha: 4fc69727d212b8a7e22c3c1a76ab1cde3b6f1d1c
+        chore: release 1.0.14
+      sha: efb423df19002bed4eba20cc2ef63849a1357dc1
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 97fd879d659e2847a658f0d456e9abb053b9dbda
+      sha: 1cf85bb99c5454637a32354d156e2c5be598ff55
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -38,11 +38,20 @@ spec:
         email: noreply@github.com
         name: GitHub
       message: Update index.html
-      sha: 3f8146482dcb76bb798de1b6fd3e5f6a41d7b2fd
+      sha: 2187121e32e490e7f05a4d66671f8aa858f84041
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update index.html
+      sha: 4a87f924c21409143f6e88178abcca553a1549b8
   gitHttpUrl: https://github.com/jstrachan/nodey554
   gitOwner: jstrachan
   gitRepository: nodey554
   name: 'nodey554'
-  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.13
-  version: v1.0.13
+  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.14
+  version: v1.0.14
 status: {}
