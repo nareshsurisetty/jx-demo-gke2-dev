@@ -7,11 +7,6 @@ namespace: jx-staging
 repositories:
 - name: dev
   url: http://chartmuseum-jx.34.105.246.143.nip.io/
-releases:
-- chart: dev/nodey554
-  version: 1.0.10
-  name: nodey554
-  values:
-  - jx-values.yaml
+releases: []
 templates: {}
 renderedvalues: {}
