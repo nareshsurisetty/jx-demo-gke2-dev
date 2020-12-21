@@ -69,7 +69,7 @@ data:
         - jstrachan/nodey546
         - jstrachan/nodey553
         - jstrachan/nodey554
-      target_url: http://dashboard-jx.34.105.246.143.nip.io
+      target_url: http://dashboard-jx.34.105.246.143.xip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null

@@ -37,7 +37,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: 34.105.246.143.nip.io
+    domain: 34.105.246.143.xip.io
     externalDNS: false
     namespaceSubDomain: -nginx.
     tls:
