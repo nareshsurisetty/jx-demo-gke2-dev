@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jstrachan/my-boot-jenkins
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/nodey534
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -46,6 +50,22 @@ data:
     plugins:
       jstrachan/jx-demo-gke2-dev:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jstrachan/my-boot-jenkins:
       - approve
       - assign
       - blunderbuss
@@ -168,6 +188,9 @@ data:
     triggers:
     - repos:
       - jstrachan/jx-demo-gke2-dev
+      trusted_org: todo
+    - repos:
+      - jstrachan/my-boot-jenkins
       trusted_org: todo
     - repos:
       - jstrachan/nodey534
