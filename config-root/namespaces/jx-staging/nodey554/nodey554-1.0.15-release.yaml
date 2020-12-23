@@ -1,0 +1,48 @@
+# Source: nodey554/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-23T09:43:10Z"
+  deletionTimestamp: null
+  name: 'nodey554-1.0.15'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.15
+      sha: cd27978dd044b3dc96a494a7842bcdbcd3758ba8
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 89bfa766af0ce4ab8c8aa878a2f893924d8e94bd
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: 'chore: my preview'
+      sha: 9e04da92e9763885655b0377394d1127c8e75081
+  gitHttpUrl: https://github.com/jstrachan/nodey554
+  gitOwner: jstrachan
+  gitRepository: nodey554
+  name: 'nodey554'
+  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.15
+  version: v1.0.15
+status: {}
