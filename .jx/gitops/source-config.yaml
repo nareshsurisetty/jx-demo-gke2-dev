@@ -15,6 +15,6 @@ spec:
     - name: nodey546
     - name: nodey553
     - name: nodey554
-    scheduler: in-repo
+    scheduler: in-repojx
   jenkinsServers:
-  - server: myjenkins9
+  - server: myjenkinsa
