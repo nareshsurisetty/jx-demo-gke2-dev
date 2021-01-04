@@ -1,9 +1,9 @@
-# Source: jenkins/templates/home-pvc.yaml
-kind: PersistentVolumeClaim
+# Source: jenkins/templates/jenkins-controller-svc.yaml
 apiVersion: v1
+kind: Service
 metadata:
   name: jenkins
-  namespace: myjenkins9
+  namespace: myjenkinsa
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "helm.sh/chart": "jenkins-3.0.14"
@@ -12,8 +12,11 @@ metadata:
     "app.kubernetes.io/component": "jenkins-controller"
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
-  accessModes:
-    - "ReadWriteOnce"
-  resources:
-    requests:
-      storage: "8Gi"
+  ports:
+    - port: 8080
+      name: http
+      targetPort: 8080
+  selector:
+    "app.kubernetes.io/component": "jenkins-controller"
+    "app.kubernetes.io/instance": "jenkins"
+  type: ClusterIP

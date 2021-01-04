@@ -18,5 +18,5 @@ spec:
   repo: nodey534
   scheduler:
     kind: ""
-    name: in-repo
+    name: in-repojx
   url: https://github.com/jstrachan/nodey534
