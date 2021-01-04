@@ -18,5 +18,5 @@ spec:
   repo: my-boot-jenkins
   scheduler:
     kind: ""
-    name: in-repojx
+    name: in-repo
   url: https://github.com/jstrachan/my-boot-jenkins

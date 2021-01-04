@@ -191,25 +191,25 @@ data:
       trusted_org: todo
     - repos:
       - jstrachan/my-boot-jenkins
-      trusted_org: jstrachan
+      trusted_org: todo
     - repos:
       - jstrachan/nodey534
-      trusted_org: jstrachan
+      trusted_org: todo
     - repos:
       - jstrachan/nodey536
-      trusted_org: jstrachan
+      trusted_org: todo
     - repos:
       - jstrachan/nodey545
-      trusted_org: jstrachan
+      trusted_org: todo
     - repos:
       - jstrachan/nodey546
-      trusted_org: jstrachan
+      trusted_org: todo
     - repos:
       - jstrachan/nodey553
-      trusted_org: jstrachan
+      trusted_org: todo
     - repos:
       - jstrachan/nodey554
-      trusted_org: jstrachan
+      trusted_org: todo
     welcome:
     - message_template: Welcome
 kind: ConfigMap
