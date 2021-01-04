@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-04T08:47:58Z"
+  creationTimestamp: "2021-01-04T15:36:26Z"
   deletionTimestamp: null
-  name: 'nodey554-1.0.18'
+  name: 'nodey554-1.0.19'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.18
-      sha: a95076c82ad089eacbb6cc82955b1730bd207afd
+        chore: release 1.0.19
+      sha: 7fb269098bbe779e81230394688e951f67be803e
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: d25e894c826fea190928b12449c3cf9e5ef99987
+      sha: 2e2b7fe47f7f110b3fa4bf32858b8dffb26a0b6b
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -38,11 +38,11 @@ spec:
         email: noreply@github.com
         name: GitHub
       message: Update index.html
-      sha: efd3c8542a0d393bf1cebda3085cda57c8299d25
+      sha: 04384bdced874a44b3065853ecdcfd801394ee45
   gitHttpUrl: https://github.com/jstrachan/nodey554
   gitOwner: jstrachan
   gitRepository: nodey554
   name: 'nodey554'
-  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.18
-  version: v1.0.18
+  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.19
+  version: v1.0.19
 status: {}
