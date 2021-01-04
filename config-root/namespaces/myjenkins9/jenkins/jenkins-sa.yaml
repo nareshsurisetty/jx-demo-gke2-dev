@@ -1,9 +1,9 @@
-# Source: jenkins/templates/jenkins-controller-svc.yaml
+# Source: jenkins/templates/service-account.yaml
 apiVersion: v1
-kind: Service
+kind: ServiceAccount
 metadata:
   name: jenkins
-  namespace: myjenkins8
+  namespace: myjenkins9
   labels:
     "app.kubernetes.io/name": 'jenkins'
     "helm.sh/chart": "jenkins-3.0.14"
@@ -11,12 +11,3 @@ metadata:
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-spec:
-  ports:
-    - port: 8080
-      name: http
-      targetPort: 8080
-  selector:
-    "app.kubernetes.io/component": "jenkins-controller"
-    "app.kubernetes.io/instance": "jenkins"
-  type: ClusterIP
