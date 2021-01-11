@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-11T11:58:24Z"
+  creationTimestamp: "2021-01-11T14:45:07Z"
   deletionTimestamp: null
-  name: 'nodey545-1.0.15'
+  name: 'nodey545-1.0.16'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.15
-      sha: de98071a318370495a981453c9a6b2e0a955e9ba
+        chore: release 1.0.16
+      sha: 88650d5c802c29b308ed0cab754e893d0bc78b80
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,37 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: c151da47a905b36365f803d057101e421be81446
+      sha: 212c2017aeb6368078fa1e59ccb10bd53c266f38
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: switch to docker builds
+      sha: 9d4d0bcbc295d2497e96937c58f61a352fc34e3e
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: regen kaniko
+      sha: 127d3ccb29ef923571e3f2bd3eb5a934f84c48ff
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: fix up kaniko
+      sha: 94f62e277aeb61a10d90f5847d242587933618d3
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -39,51 +69,11 @@ spec:
         name: James Strachan
       message: |
         chore: try fix kaniko
-      sha: 3a16c95f2d1a6d883132ddcab5a97d6a47f50a3d
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: regen
-      sha: ad953190dbd6643bf8ecbb8f8458cedd4e0148aa
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: try better CLI
-      sha: e0b274a637a814bc63aff4b34e241924b01a5c1b
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: regen
-      sha: 033a3f289172f2b18e579bf94b9a41630b98a09d
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: better checkout for release
-      sha: 6350685d7b9e4df020233e6d410d263d1ea7c9f6
+      sha: 61691866218c4b57d1ee1c894b2010761e439b5c
   gitHttpUrl: https://github.com/jstrachan/nodey545
   gitOwner: jstrachan
   gitRepository: nodey545
   name: 'nodey545'
-  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v1.0.15
-  version: v1.0.15
+  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v1.0.16
+  version: v1.0.16
 status: {}
