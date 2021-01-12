@@ -11,5 +11,7 @@ releases:
 - chart: dev/nodey545
   version: 3.0.2
   name: nodey545
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
