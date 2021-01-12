@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-12T11:27:17Z"
+  creationTimestamp: "2021-01-12T11:57:11Z"
   deletionTimestamp: null
-  name: 'nodey545-3.0.21'
+  name: 'nodey545-3.0.25'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 3.0.21
-      sha: 569da60902705eb2eef72ead1d290f6fbbdb2d28
+        chore: release 3.0.25
+      sha: 32ba409cb752b5c0195c333d4c98fd406699b9c1
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: a1867a71a9f27f055ed6402b9ed630c28c31dc28
+      sha: c827ffc2856047dba9536589489040fd0e8cf1bd
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -38,12 +38,12 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: avoid env
-      sha: e373bfce75576f6aede315d5527d17f48c2c6d96
+        fix: debug
+      sha: 674a029ec817058654d0166a1add9423e1a2f10e
   gitHttpUrl: https://github.com/jstrachan/nodey545
   gitOwner: jstrachan
   gitRepository: nodey545
   name: 'nodey545'
-  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v3.0.21
-  version: v3.0.21
+  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v3.0.25
+  version: v3.0.25
 status: {}
