@@ -4,5 +4,12 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-production
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.34.105.246.143.xip.io/
+releases:
+- chart: dev/nodey545
+  version: 3.0.25
+  name: nodey545
 templates: {}
 renderedvalues: {}
