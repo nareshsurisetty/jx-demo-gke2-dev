@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-11T14:55:54Z"
+  creationTimestamp: "2021-01-12T08:47:31Z"
   deletionTimestamp: null
-  name: 'nodey545-1.0.17'
+  name: 'nodey545-3.0.2'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.17
-      sha: 4a4490727c6352a818de8bc3f886b2c9801ab1e2
+        chore: release 3.0.2
+      sha: 660e8baa8e2a492fd21807c65f5325e3e7c51a27
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: b43568143a729fc685c474dc901a9112c7e20a9a
+      sha: 1960d7e1ee53c2b16abd856cfd90d6f7510b5558
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -38,8 +38,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: docker ignore .jx
-      sha: 71fa5ba86042d3bfbe7d748c9e386f2f1be436a7
+        chore: regen with new sh entrypoint
+      sha: 22d4c94342dfbb2362bb30320449cbc6a2eca106
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -48,12 +48,22 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: docker ignore .jx
-      sha: a46e7ef4cb820fa57eb5b0c75edd40abad156882
+        update preview (https://github.com/jenkins-x/jx3-gitops-template) from master (6cffb711a45624236e061c26c23f72da7b45acc3) to master (cd501cf5c185c592663d68273b60e3413c0278fb)
+      sha: 31171e7c761095c13176e5a325e0a42dd0aaff84
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        update jenkins-x (https://github.com/jenkins-x/jx3-pipeline-catalog) from master (1c5ac65040d7a8411ba55ededd4cd136a9cae346) to master (e9f8ecde4db67e6ef121bb5302b9eb1444666579)
+      sha: 0d2193c4728e088666214825eec6333ba8231829
   gitHttpUrl: https://github.com/jstrachan/nodey545
   gitOwner: jstrachan
   gitRepository: nodey545
   name: 'nodey545'
-  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v1.0.17
-  version: v1.0.17
+  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v3.0.2
+  version: v3.0.2
 status: {}
