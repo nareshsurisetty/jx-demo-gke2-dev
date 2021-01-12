@@ -1,0 +1,49 @@
+# Source: nodey545/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-12T09:55:06Z"
+  deletionTimestamp: null
+  name: 'nodey545-3.0.8'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 3.0.8
+      sha: ab14f6641968fa4001e6c03b7c4b089aa7fedd95
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 36783168ab5b745dc24191aeba4877f802ed228d
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add helm token
+      sha: 5ee3cec025f7d2b797e1157301b6472a87b97ea4
+  gitHttpUrl: https://github.com/jstrachan/nodey545
+  gitOwner: jstrachan
+  gitRepository: nodey545
+  name: 'nodey545'
+  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v3.0.8
+  version: v3.0.8
+status: {}
