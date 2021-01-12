@@ -1,0 +1,49 @@
+# Source: nodey545/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-12T10:55:43Z"
+  deletionTimestamp: null
+  name: 'nodey545-3.0.16'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 3.0.16
+      sha: 3db2aa3d8a2a4533b262c7226eb7d5a1be6135bd
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: f2a4dc05c4819a48fdb0ddba61148249cd738d3b
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add user
+      sha: 54c7752827d555cfb25b8f12c06cb01712f4ecfb
+  gitHttpUrl: https://github.com/jstrachan/nodey545
+  gitOwner: jstrachan
+  gitRepository: nodey545
+  name: 'nodey545'
+  releaseNotesURL: https://github.com/jstrachan/nodey545/releases/tag/v3.0.16
+  version: v3.0.16
+status: {}
