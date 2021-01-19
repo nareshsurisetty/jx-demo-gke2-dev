@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-uv54y"
+  name: "jenkins-ui-test-s1fta"
   namespace: myjenkinsa
   annotations:
     "helm.sh/hook": test-success
@@ -25,7 +25,7 @@ spec:
           name: tools
   containers:
     - name: jenkins-ui-test
-      image: jenkins/jenkins:2.263.1
+      image: jenkins/jenkins:2.263.2
       command: ["/tools/bats/bin/bats", "-t", "/tests/run.sh"]
       volumeMounts:
         - mountPath: /tests

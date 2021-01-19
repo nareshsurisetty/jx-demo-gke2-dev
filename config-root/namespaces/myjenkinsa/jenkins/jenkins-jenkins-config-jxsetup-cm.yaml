@@ -6,7 +6,7 @@ metadata:
   namespace: myjenkinsa
   labels:
     "app.kubernetes.io/name": jenkins
-    "helm.sh/chart": "jenkins-3.1.0"
+    "helm.sh/chart": "jenkins-3.1.2"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
