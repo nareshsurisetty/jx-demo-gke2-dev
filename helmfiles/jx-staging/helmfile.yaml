@@ -7,6 +7,8 @@ namespace: jx-staging
 repositories:
 - name: dev
   url: http://chartmuseum-jx.34.105.246.143.xip.io/
+- name: dev2
+  url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
 releases:
 - chart: dev/nodey554
   version: 1.0.21
@@ -18,5 +20,8 @@ releases:
   name: nodey545
   values:
   - jx-values.yaml
+- chart: dev2/nodey553
+  version: 2.0.1302
+  name: nodey553
 templates: {}
 renderedvalues: {}
