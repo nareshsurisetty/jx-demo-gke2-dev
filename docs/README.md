@@ -36,6 +36,12 @@
 	      <td></td>
 	    </tr>
     <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey553 </a></td>
+	      <td>2.1.1</td>
+	      <td><a href='http://nodey553-jx-staging.34.105.246.143.xip.io'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
@@ -64,7 +70,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
-	      <td>1.1.1</td>
+	      <td>1.1.2</td>
 	      <td><a href='http://dashboard-jx.34.105.246.143.xip.io'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
