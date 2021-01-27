@@ -1,0 +1,58 @@
+# Source: nodey554/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-27T10:23:36Z"
+  deletionTimestamp: null
+  name: 'nodey554-1.0.22'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.22
+      sha: 6dfd93117bd991b2f78bc389e920c344b9ca25db
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 2831e5b7a269eee9794605df2eb72f4839c06f64
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: upgrade pipelines
+      sha: fe3fe5d70f94d81039a77c1c1aa9a1d793cb12e0
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update index.html
+      sha: 35cb6735be61d04298b6545fb12102d89e948c12
+  gitHttpUrl: https://github.com/jstrachan/nodey554
+  gitOwner: jstrachan
+  gitRepository: nodey554
+  name: 'nodey554'
+  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.22
+  version: v1.0.22
+status: {}

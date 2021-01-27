@@ -11,7 +11,7 @@ repositories:
   url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
 releases:
 - chart: dev/nodey554
-  version: 1.0.21
+  version: 1.0.22
   name: nodey554
   values:
   - jx-values.yaml
@@ -23,6 +23,11 @@ releases:
 - chart: dev2/nodey553
   version: 2.1.1
   name: nodey553
+  values:
+  - jx-values.yaml
+- chart: dev/nodey546
+  version: 1.0.3
+  name: nodey546
   values:
   - jx-values.yaml
 templates: {}
