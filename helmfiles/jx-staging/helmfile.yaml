@@ -4,29 +4,5 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-staging
-repositories:
-- name: dev
-  url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-releases:
-- chart: dev/bdd-gh-1612282705
-  version: 0.0.1
-  name: bdd-gh-1612282705
-  values:
-  - jx-values.yaml
-- chart: dev/bdd-gh-1612284286
-  version: 0.0.1
-  name: bdd-gh-1612284286
-  values:
-  - jx-values.yaml
-- chart: dev/bdd-gh-1612285135
-  version: 0.0.1
-  name: bdd-gh-1612285135
-  values:
-  - jx-values.yaml
-- chart: dev/bdd-gh-1612286125
-  version: 0.0.1
-  name: bdd-gh-1612286125
-  values:
-  - jx-values.yaml
 templates: {}
 renderedvalues: {}
