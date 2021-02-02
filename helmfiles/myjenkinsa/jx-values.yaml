@@ -20,7 +20,7 @@ jxRequirements:
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: jstrachan-tekton2
-    environmentGitOwner: todo
+    environmentGitOwner: jstrachan
     gitKind: github
     gitName: github
     gitServer: https://github.com
