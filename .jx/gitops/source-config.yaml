@@ -11,6 +11,7 @@ spec:
     - name: bdd-gh-1612282705
     - name: bdd-gh-1612284286
     - name: bdd-gh-1612285135
+    - name: bdd-gh-1612286125
     - name: my-boot-jenkins
     - name: nodey534
     - name: nodey536
