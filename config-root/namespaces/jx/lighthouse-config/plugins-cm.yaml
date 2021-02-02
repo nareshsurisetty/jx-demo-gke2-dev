@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jstrachan/bdd-gh-1612284286
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/my-boot-jenkins
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -53,6 +57,22 @@ data:
     owners: {}
     plugins:
       jstrachan/bdd-gh-1612282705:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jstrachan/bdd-gh-1612284286:
       - approve
       - assign
       - blunderbuss
@@ -211,6 +231,9 @@ data:
       trusted_org: todo
     - repos:
       - jstrachan/bdd-gh-1612282705
+      trusted_org: todo
+    - repos:
+      - jstrachan/bdd-gh-1612284286
       trusted_org: todo
     - repos:
       - jstrachan/my-boot-jenkins
