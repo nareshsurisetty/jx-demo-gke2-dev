@@ -1,0 +1,8 @@
+# Source: bdd-gh-1612286898/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: bdd-gh-1612286898-bdd-gh-1612286898
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
