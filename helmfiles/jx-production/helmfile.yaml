@@ -11,5 +11,7 @@ releases:
 - chart: dev/bdd-gh-1612285135
   version: 0.0.1
   name: bdd-gh-1612285135
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
