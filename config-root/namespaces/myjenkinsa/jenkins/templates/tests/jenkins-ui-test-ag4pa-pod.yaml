@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-foio8"
+  name: "jenkins-ui-test-ag4pa"
   namespace: myjenkinsa
   annotations:
     "helm.sh/hook": test-success
