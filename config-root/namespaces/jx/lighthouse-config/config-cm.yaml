@@ -9,6 +9,7 @@ data:
       enabled:
         jstrachan/bdd-gh-1612282705: true
         jstrachan/bdd-gh-1612284286: true
+        jstrachan/bdd-gh-1612285135: true
         jstrachan/jx-demo-gke2-dev: true
         jstrachan/my-boot-jenkins: true
         jstrachan/nodey534: true
@@ -30,6 +31,7 @@ data:
       merge_method:
         jstrachan/bdd-gh-1612282705: merge
         jstrachan/bdd-gh-1612284286: merge
+        jstrachan/bdd-gh-1612285135: merge
         jstrachan/jx-demo-gke2-dev: merge
         jstrachan/my-boot-jenkins: merge
         jstrachan/nodey534: merge
@@ -51,6 +53,7 @@ data:
         - jstrachan/jx-demo-gke2-dev
         - jstrachan/bdd-gh-1612282705
         - jstrachan/bdd-gh-1612284286
+        - jstrachan/bdd-gh-1612285135
         - jstrachan/my-boot-jenkins
         - jstrachan/nodey534
         - jstrachan/nodey536
@@ -70,6 +73,7 @@ data:
         - jstrachan/jx-demo-gke2-dev
         - jstrachan/bdd-gh-1612282705
         - jstrachan/bdd-gh-1612284286
+        - jstrachan/bdd-gh-1612285135
         - jstrachan/my-boot-jenkins
         - jstrachan/nodey534
         - jstrachan/nodey536
