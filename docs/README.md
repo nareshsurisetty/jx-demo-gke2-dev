@@ -21,33 +21,6 @@
 	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx-staging</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey554 </a></td>
-	      <td>1.0.22</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey545 </a></td>
-	      <td>3.0.46</td>
-	      <td><a href='http://nodey545-jx-staging.34.105.246.143.xip.io'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey553 </a></td>
-	      <td>2.1.1</td>
-	      <td><a href='http://nodey553-jx-staging.34.105.246.143.xip.io'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey546 </a></td>
-	      <td>1.0.3</td>
-	      <td><a href='http://nodey546-jx-staging.34.105.246.143.xip.io'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
