@@ -1,0 +1,18 @@
+# Source: nodey534/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-02T08:43:52Z"
+  deletionTimestamp: null
+  name: 'nodey534-1.0.11'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  gitCloneUrl: https://github.com/jstrachan/nodey534.git
+  gitHttpUrl: https://github.com/jstrachan/nodey534
+  gitOwner: jstrachan
+  gitRepository: nodey534
+  name: 'nodey534'
+  version: v1.0.11
+status: {}

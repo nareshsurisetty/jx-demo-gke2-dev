@@ -33,5 +33,7 @@ releases:
 - chart: dev2/nodey534
   version: 1.0.11
   name: nodey534
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
