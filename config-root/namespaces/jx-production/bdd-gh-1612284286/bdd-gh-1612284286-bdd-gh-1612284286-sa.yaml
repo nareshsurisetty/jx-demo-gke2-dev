@@ -1,0 +1,8 @@
+# Source: bdd-gh-1612284286/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: bdd-gh-1612284286-bdd-gh-1612284286
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
