@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: bdd-gh-1612280387
     - name: my-boot-jenkins
     - name: nodey534
     - name: nodey536
@@ -17,10 +18,10 @@ spec:
     - name: nodey554
     scheduler: in-repo
   jenkinsServers:
-  - server: myjenkinsa
-    groups:
+  - groups:
     - owner: jstrachan
       provider: https://github.com
       providerKind: github
       repositories:
       - name: my-boot-jenkins
+    server: myjenkinsa
