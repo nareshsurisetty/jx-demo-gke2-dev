@@ -14,12 +14,5 @@ spec:
     - name: nodey546
     - name: nodey553
     - name: nodey554
+    - name: rust-demo
     scheduler: in-repo
-#  jenkinsServers:
-#  - groups:
-#    - owner: jstrachan
-#      provider: https://github.com
-#      providerKind: github
-#      repositories:
-#      - name: my-boot-jenkins
-#    server: myjenkinsa
