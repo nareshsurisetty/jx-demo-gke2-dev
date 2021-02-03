@@ -24,6 +24,19 @@
   path: helmfiles/jx-production/helmfile.yaml
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://bdd-gh-1612286898-jx-staging.34.105.246.143.xip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: bdd-gh-1612286898
+      url: http://bdd-gh-1612286898-jx-staging.34.105.246.143.xip.io
+    name: bdd-gh-1612286898
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/bdd-gh-1612286898
+    version: 0.0.1
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
