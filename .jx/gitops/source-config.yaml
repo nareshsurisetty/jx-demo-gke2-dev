@@ -15,4 +15,5 @@ spec:
     - name: nodey553
     - name: nodey554
     - name: rust-demo
+    - name: rust-demo2
     scheduler: in-repo
