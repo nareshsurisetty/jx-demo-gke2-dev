@@ -31,7 +31,8 @@ spec:
             value: "true"
           - name: VERSION
             value: $(inputs.params.version)
-          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/environment/release.yaml@versionStream
+          image: uses:
+          asks/environment/release.yaml@versionStream
           name: ""
           resources:
             requests:
