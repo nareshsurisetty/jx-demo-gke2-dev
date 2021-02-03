@@ -1,0 +1,59 @@
+# Source: rust-demo3/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-03T17:57:58Z"
+  deletionTimestamp: null
+  name: 'rust-demo3-0.0.1'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: 769593f0d45844e048c8702a61ee60716bdb3e4e
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: e93935a15cc439da5ad1d8f7baea87b8359a07ea
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: pipeline
+      sha: 609b07785aade0ea0bcf8b6ae471f2f87cfd86f4
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: Jenkins X build pack
+      sha: 3c606afc0e219228882c4e7d635354cdc2869f46
+  gitHttpUrl: https://github.com/jstrachan/rust-demo3
+  gitOwner: jstrachan
+  gitRepository: rust-demo3
+  name: 'rust-demo3'
+  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
