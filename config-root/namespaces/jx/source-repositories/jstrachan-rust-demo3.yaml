@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: rust-demo3
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jstrachan-rust-demo3
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jstrachan/rust-demo3.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: rust-demo3
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jstrachan/rust-demo3
