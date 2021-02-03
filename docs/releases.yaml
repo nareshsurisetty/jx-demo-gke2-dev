@@ -48,7 +48,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/rust-demo2
-    version: 0.0.1
+    version: 0.0.2
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
