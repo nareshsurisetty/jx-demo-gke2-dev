@@ -13,5 +13,8 @@ releases:
   name: bdd-gh-1612286898
   values:
   - jx-values.yaml
+- chart: dev/rust-demo2
+  version: 0.0.1
+  name: rust-demo2
 templates: {}
 renderedvalues: {}
