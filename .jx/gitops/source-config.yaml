@@ -15,6 +15,7 @@ spec:
     - name: nodey553
     - name: nodey554
     - name: rust-demo2
+    - name: rust-demo3
     scheduler: in-repo
   jenkinsServers:
   - groups:
