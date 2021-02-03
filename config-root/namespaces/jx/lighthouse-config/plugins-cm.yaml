@@ -34,6 +34,10 @@ data:
       repos:
       - jstrachan/rust-demo
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jstrachan/rust-demo2
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -177,6 +181,22 @@ data:
       - cat
       - dog
       - pony
+      jstrachan/rust-demo2:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -209,6 +229,9 @@ data:
       trusted_org: todo
     - repos:
       - jstrachan/rust-demo
+      trusted_org: todo
+    - repos:
+      - jstrachan/rust-demo2
       trusted_org: todo
     welcome:
     - message_template: Welcome
