@@ -16,7 +16,7 @@ spec:
             value: pullrequest
           - name: JX_BATCH_MODE
             value: "true"
-          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/pullrequest.yaml@versionStream
+          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/environment/pullrequest.yaml@versionStream
           name: ""
           resources:
             requests:
