@@ -11,11 +11,6 @@ spec:
       taskSpec:
         metadata: {}
         stepTemplate:
-          env:
-          - name: PIPELINE_KIND
-            value: pullrequest
-          - name: JX_BATCH_MODE
-            value: "true"
           image: uses:jenkins-x/jx3-pipeline-catalog/tasks/environment/pullrequest.yaml@versionStream
           name: ""
           resources:
