@@ -32,10 +32,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jstrachan/rust-demo
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jstrachan/rust-demo2
       require_self_approval: true
     cat: {}
@@ -165,22 +161,6 @@ data:
       - cat
       - dog
       - pony
-      jstrachan/rust-demo:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jstrachan/rust-demo2:
       - approve
       - assign
@@ -226,9 +206,6 @@ data:
       trusted_org: todo
     - repos:
       - jstrachan/nodey554
-      trusted_org: todo
-    - repos:
-      - jstrachan/rust-demo
       trusted_org: todo
     - repos:
       - jstrachan/rust-demo2

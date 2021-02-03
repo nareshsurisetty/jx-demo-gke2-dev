@@ -14,7 +14,6 @@ data:
         jstrachan/nodey546: true
         jstrachan/nodey553: true
         jstrachan/nodey554: true
-        jstrachan/rust-demo: true
         jstrachan/rust-demo2: true
     plank: {}
     pod_namespace: jx
@@ -34,7 +33,6 @@ data:
         jstrachan/nodey546: merge
         jstrachan/nodey553: merge
         jstrachan/nodey554: merge
-        jstrachan/rust-demo: merge
         jstrachan/rust-demo2: merge
       queries:
       - labels:
@@ -53,7 +51,6 @@ data:
         - jstrachan/nodey546
         - jstrachan/nodey553
         - jstrachan/nodey554
-        - jstrachan/rust-demo
         - jstrachan/rust-demo2
       - labels:
         - updatebot
@@ -71,7 +68,6 @@ data:
         - jstrachan/nodey546
         - jstrachan/nodey553
         - jstrachan/nodey554
-        - jstrachan/rust-demo
         - jstrachan/rust-demo2
       target_url: http://dashboard-jx.34.105.246.143.xip.io
 kind: ConfigMap

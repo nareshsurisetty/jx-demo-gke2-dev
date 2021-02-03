@@ -1,0 +1,49 @@
+# Source: bdd-gh-1612286898/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-02T17:33:39Z"
+  deletionTimestamp: null
+  name: 'bdd-gh-1612286898-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: 85aac5724b5f5d91d41ab6c83e99ab521782394a
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: f73ecd8aee2d43642e9f521522f06e6261d563ce
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jstrachan
+      message: |
+        chore: Jenkins X build pack
+      sha: 9779f9ea2290884ed4fb9ed30a4860ce9292fe36
+  gitHttpUrl: https://github.com/jstrachan/bdd-gh-1612286898
+  gitOwner: jstrachan
+  gitRepository: bdd-gh-1612286898
+  name: 'bdd-gh-1612286898'
+  releaseNotesURL: https://github.com/jstrachan/bdd-gh-1612286898/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
