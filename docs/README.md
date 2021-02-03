@@ -72,7 +72,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>0.0.922</td>
+	      <td>0.0.923</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
@@ -93,21 +93,6 @@
 	      <td>0.0.28</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
-	    </tr>
-    <tr>
-		      <td colspan='4'><h3>myjenkinsa</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='https://jenkins.io/' title='Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins </a></td>
-	      <td></td>
-	      <td><a href='http://jenkins-myjenkinsa.34.105.246.143.xip.io'>view</a></td>
-	      <td><a href='https://jenkins.io/'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title=''> <img src='' width='24px' height='24px'> jenkins-resources </a></td>
-	      <td></td>
-	      <td></td>
-	      <td></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>nginx</h3></td>
