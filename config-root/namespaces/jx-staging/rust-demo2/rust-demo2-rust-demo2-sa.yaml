@@ -1,8 +1,0 @@
-# Source: rust-demo2/templates/sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: rust-demo2-rust-demo2
-  namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
