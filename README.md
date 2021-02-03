@@ -6,7 +6,6 @@ This git repository installs Jenkins X with Google Secret Manager.
 
 Modify the `jx-requirements.yml` file
 
-
 Now git commit and push any changes...
 
 ```bash 
