@@ -1,0 +1,18 @@
+# Source: rust-demo3/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: rust-demo3
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: rust-demo3
+              servicePort: 80
+      host: rust-demo3-jx-staging.34.105.246.143.xip.io
