@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-04T10:57:10Z"
+  creationTimestamp: "2021-02-04T11:22:18Z"
   deletionTimestamp: null
-  name: 'rust-demo3-0.0.4'
+  name: 'rust-demo3-0.0.5'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.4
-      sha: 0cd5e2fcd9313841f0fbaed875a40434ff0391df
+        chore: release 0.0.5
+      sha: 907695cfd8f2ac025208a7000b1e19c34d356eb3
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,11 +29,11 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 8e9c69686178415b659226bdffac021baaf27f9c
+      sha: b315ae7c16d2d37ee243ae37a817103ca0a78376
   gitHttpUrl: https://github.com/jstrachan/rust-demo3
   gitOwner: jstrachan
   gitRepository: rust-demo3
   name: 'rust-demo3'
-  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.4
-  version: v0.0.4
+  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.5
+  version: v0.0.5
 status: {}
