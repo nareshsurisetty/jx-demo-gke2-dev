@@ -5,7 +5,7 @@ metadata:
   name: rust-demo3-rust-demo3
   labels:
     draft: draft-app
-    chart: "rust-demo3-0.0.5"
+    chart: "rust-demo3-0.0.6"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: rust-demo3-rust-demo3
       containers:
         - name: rust-demo3
-          image: "gcr.io/jenkins-x-labs-bdd/rust-demo3:0.0.5"
+          image: "gcr.io/jenkins-x-labs-bdd/rust-demo3:0.0.6"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.5
+              value: 0.0.6
           envFrom: null
           ports:
             - containerPort: 8080
