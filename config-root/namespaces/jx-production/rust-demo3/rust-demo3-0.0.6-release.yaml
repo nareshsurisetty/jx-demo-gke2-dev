@@ -1,0 +1,39 @@
+# Source: rust-demo3/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-04T12:00:46Z"
+  deletionTimestamp: null
+  name: 'rust-demo3-0.0.6'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.6
+      sha: 8ca247d46bfec8531af362d2e194e27f8eb1581c
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 0bcfef4fa75ed239d7c690d898591b6720945585
+  gitHttpUrl: https://github.com/jstrachan/rust-demo3
+  gitOwner: jstrachan
+  gitRepository: rust-demo3
+  name: 'rust-demo3'
+  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.6
+  version: v0.0.6
+status: {}
