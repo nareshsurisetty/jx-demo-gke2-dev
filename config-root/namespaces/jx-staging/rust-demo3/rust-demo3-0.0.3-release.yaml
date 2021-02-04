@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-03T18:07:01Z"
+  creationTimestamp: "2021-02-04T07:26:47Z"
   deletionTimestamp: null
-  name: 'rust-demo3-0.0.2'
+  name: 'rust-demo3-0.0.3'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.2
-      sha: 4576e62daeb3bc11bf7f50e881b1ae7b613127e8
+        chore: release 0.0.3
+      sha: eecd2c96d50f067ec53e36c7750793eb6182e6e5
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 477c92aff62c6b8aae9e537873540624a104818b
+      sha: d32aaf048034e65198611a2d701dbdf46e1e658b
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -38,8 +38,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        docs: typo
-      sha: 7c6ee7aea0ca82657d2e52a2501f0ee67698cbc5
+        fix: rust image
+      sha: 2fc7884edbe1a9d31fb1dc0e8a96a20f1452161d
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -48,12 +48,12 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: pipeline
-      sha: 24b119727ef2281d0ea9f2a4561d9a6d5b9af181
+        fix: rust
+      sha: fbd22cf576b4f454109dacced34b9c0394e54b6d
   gitHttpUrl: https://github.com/jstrachan/rust-demo3
   gitOwner: jstrachan
   gitRepository: rust-demo3
   name: 'rust-demo3'
-  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.2
-  version: v0.0.2
+  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.3
+  version: v0.0.3
 status: {}
