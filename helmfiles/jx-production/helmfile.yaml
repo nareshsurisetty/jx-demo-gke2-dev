@@ -11,5 +11,7 @@ releases:
 - chart: dev/rust-demo3
   version: 0.0.3
   name: rust-demo3
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
