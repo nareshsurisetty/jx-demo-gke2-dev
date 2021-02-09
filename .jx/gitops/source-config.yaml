@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: bdd-gh-1612887544
     - name: nodey534
     - name: nodey536
     - name: nodey545
