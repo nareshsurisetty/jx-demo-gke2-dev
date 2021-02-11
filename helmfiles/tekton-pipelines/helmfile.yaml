@@ -9,6 +9,9 @@ repositories:
   url: https://cdfoundation.github.io/tekton-helm-chart
 releases:
 - chart: doesNotExist3
+  name: doesNotExist3
+  values:
+  - jx-values.yaml
 - chart: cdf/tekton-pipeline
   version: 0.20.1
   name: tekton-pipeline
