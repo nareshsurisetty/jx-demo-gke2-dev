@@ -13,5 +13,8 @@ releases:
   name: rust-demo3
   values:
   - jx-values.yaml
+- chart: dev/nodey546
+  version: 1.0.4
+  name: nodey546
 templates: {}
 renderedvalues: {}
