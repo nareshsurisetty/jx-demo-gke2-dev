@@ -9,8 +9,18 @@ repositories:
   url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
 releases:
 - chart: dev/rust-demo3
-  version: 0.0.6
+  version: 0.0.7
   name: rust-demo3
+  values:
+  - jx-values.yaml
+- chart: dev/nodey554
+  version: 1.0.23
+  name: nodey554
+  values:
+  - jx-values.yaml
+- chart: dev/nodey546
+  version: 1.0.5
+  name: nodey546
   values:
   - jx-values.yaml
 templates: {}

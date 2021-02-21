@@ -273,6 +273,24 @@
 	      <td></td>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
 	    </tr>
+    <tr>
+		      <td colspan='4'><h3>tf-system</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='' title='A Helm chart to deploy the terraform-operator Controller and CRD.'> <img src='' width='24px' height='24px'> terraform-operator </a></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
+		      <td colspan='4'><h3>tf-system</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='' title='A Helm chart to deploy the terraform-operator Controller and CRD.'> <img src='' width='24px' height='24px'> terraform-operator </a></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	    </tr>
 
   </tbody>
 </table>

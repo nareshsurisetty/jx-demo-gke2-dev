@@ -1,49 +1,35 @@
-# Source: rust-demo3/templates/deployment.yaml
-apiVersion: apps/v1
-kind: Deployment
+# Source: nodey554/templates/ksvc.yaml
+apiVersion: serving.knative.dev/v1
+kind: Service
 metadata:
-  name: rust-demo3-rust-demo3
+  name: nodey554
   labels:
-    draft: draft-app
-    chart: "rust-demo3-0.0.7"
+    chart: "nodey554-1.0.23"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
-  annotations:
-    wave.pusher.com/update-on-config-change: 'true'
 spec:
-  selector:
-    matchLabels:
-      app: rust-demo3-rust-demo3
-  replicas: 1
   template:
     metadata:
-      labels:
-        draft: draft-app
-        app: rust-demo3-rust-demo3
+      annotations:
+        autoscaling.knative.dev/minScale: "0"
     spec:
-      serviceAccountName: rust-demo3-rust-demo3
       containers:
-        - name: rust-demo3
-          image: "gcr.io/jenkins-x-labs-bdd/rust-demo3:0.0.7"
+        - image: "gcr.io/jenkins-x-labs-bdd/nodey554:1.0.23"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.7
-          envFrom: null
-          ports:
-            - containerPort: 8080
+              value: 1.0.23
           livenessProbe:
             httpGet:
               path: /
-              port: 8080
             initialDelaySeconds: 60
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 1
           readinessProbe:
+            failureThreshold: 1
             httpGet:
               path: /
-              port: 8080
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 1
@@ -54,5 +40,3 @@ spec:
             requests:
               cpu: 200m
               memory: 128Mi
-      terminationGracePeriodSeconds:
-      imagePullSecrets:
