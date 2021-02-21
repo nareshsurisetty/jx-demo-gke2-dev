@@ -5,7 +5,7 @@ metadata:
   name: lighthouse-tekton-controller
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.933"
+    chart: "lighthouse-0.0.934"
     app: lighthouse-tekton-controller
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -28,7 +28,7 @@ spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.933
+          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.934
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
@@ -51,7 +51,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "76a4da94f008d065cdff34debcc52552675b60ee"
+              value: "9b3b80060a0861244f6e165af421d231d5ca8cfe"
           resources:
             limits:
               cpu: 100m
