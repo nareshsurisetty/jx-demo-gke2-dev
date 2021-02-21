@@ -12,11 +12,17 @@ spec:
     - name: nodey536
     - name: nodey545
     - name: nodey546
+      slack:
+        pipeline: all
     - name: nodey553
     - name: nodey554
     - name: rust-demo2
     - name: rust-demo3
     scheduler: in-repo
+    slack:
+      channel: testing-bot
+      kind: failureOrNextSuccess
+      pipeline: release
   jenkinsServers:
   - groups:
     - owner: jstrachan
