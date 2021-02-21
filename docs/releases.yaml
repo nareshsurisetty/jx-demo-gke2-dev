@@ -60,7 +60,27 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/rust-demo3
-    version: 0.0.6
+    version: 0.0.7
+  - apiVersion: v1
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    name: nodey554
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey554
+    version: 1.0.23
+  - apiVersion: v1
+    applicationUrl: http://nodey546-jx-staging.34.105.246.143.xip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: nodey546
+      url: http://nodey546-jx-staging.34.105.246.143.xip.io
+    name: nodey546
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey546
+    version: 1.0.5
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
@@ -75,7 +95,27 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/rust-demo3
-    version: 0.0.6
+    version: 0.0.7
+  - apiVersion: v1
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    name: nodey554
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey554
+    version: 1.0.23
+  - apiVersion: v1
+    applicationUrl: http://nodey546-jx-staging.34.105.246.143.xip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: nodey546
+      url: http://nodey546-jx-staging.34.105.246.143.xip.io
+    name: nodey546
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey546
+    version: 1.0.5
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -153,6 +193,7 @@
     applicationUrl: http://dashboard-jx.34.105.246.143.xip.io
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: jx-pipelines-visualizer
       url: http://dashboard-jx.34.105.246.143.xip.io
@@ -162,7 +203,7 @@
     resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
     sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-    version: 1.1.9
+    version: 1.1.10
   - apiVersion: v1
     description: |
       This chart installs the jx-preview CRD and garbagecollection job
@@ -174,7 +215,7 @@
     resourcePath: config-root/namespaces/jx/jx-preview
     version: 0.0.153
   - apiVersion: v1
-    appVersion: 0.0.933
+    appVersion: 0.0.934
     description: |
       This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
     home: https://github.com/jenkins-x/lighthouse
@@ -183,7 +224,7 @@
     repositoryName: jenkins-x
     repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 0.0.933
+    version: 0.0.934
   - apiVersion: v1
     description: A Helm chart for Kubernetes
     home: https://github.com/jenkins-x-charts/nexus
@@ -212,7 +253,7 @@
     appVersion: 3.0.0
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
     home: https://jenkins-x.io/
-    icon: https://jenkins-x.github.io/jenkins-x-website/img/profile.png
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
@@ -222,7 +263,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.0.31
+    version: 0.0.32
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -300,6 +341,7 @@
     applicationUrl: http://dashboard-jx.34.105.246.143.xip.io
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: jx-pipelines-visualizer
       url: http://dashboard-jx.34.105.246.143.xip.io
@@ -309,7 +351,7 @@
     resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
     sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-    version: 1.1.9
+    version: 1.1.10
   - apiVersion: v1
     description: |
       This chart installs the jx-preview CRD and garbagecollection job
@@ -321,7 +363,7 @@
     resourcePath: config-root/namespaces/jx/jx-preview
     version: 0.0.153
   - apiVersion: v1
-    appVersion: 0.0.933
+    appVersion: 0.0.934
     description: |
       This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
     home: https://github.com/jenkins-x/lighthouse
@@ -330,7 +372,7 @@
     repositoryName: jenkins-x
     repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 0.0.933
+    version: 0.0.934
   - apiVersion: v1
     description: A Helm chart for Kubernetes
     home: https://github.com/jenkins-x-charts/nexus
@@ -359,7 +401,7 @@
     appVersion: 3.0.0
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
     home: https://jenkins-x.io/
-    icon: https://jenkins-x.github.io/jenkins-x-website/img/profile.png
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
@@ -369,7 +411,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.0.31
+    version: 0.0.32
 - namespace: myjenkinsa
   path: helmfiles/myjenkinsa/helmfile.yaml
   releases:
@@ -508,21 +550,24 @@
   path: helmfiles/secret-infra/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 6.2.0
+    appVersion: 6.3.0
     description: Kubernetes External Secrets CustomResourceDefinition
     home: https://github.com/external-secrets/kubernetes-external-secrets
     keywords:
     - kubernetes-external-secrets
     - secrets
+    maintainers:
+    - name: external-secrets
+      url: https://github.com/external-secrets
     name: kubernetes-external-secrets
     repositoryName: external-secrets
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryUrl: https://external-secrets.github.io/kubernetes-external-secrets
     resourcePath: config-root/namespaces/secret-infra/kubernetes-external-secrets
     sources:
     - https://github.com/external-secrets/kubernetes-external-secrets
-    version: 6.2.2
+    version: 6.3.0
   - apiVersion: v1
-    appVersion: 0.4.12
+    appVersion: v0.4.0
     description: wave chart that runs on kubernetes
     home: https://github.com/pusher/wave
     keywords:
@@ -534,26 +579,29 @@
     resourcePath: config-root/namespaces/secret-infra/pusher-wave
     sources:
     - https://github.com/pusher/wave
-    version: 0.4.12
+    version: 0.4.16
 - namespace: secret-infra
   path: helmfiles/secret-infra/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 6.2.0
+    appVersion: 6.3.0
     description: Kubernetes External Secrets CustomResourceDefinition
     home: https://github.com/external-secrets/kubernetes-external-secrets
     keywords:
     - kubernetes-external-secrets
     - secrets
+    maintainers:
+    - name: external-secrets
+      url: https://github.com/external-secrets
     name: kubernetes-external-secrets
     repositoryName: external-secrets
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryUrl: https://external-secrets.github.io/kubernetes-external-secrets
     resourcePath: config-root/namespaces/secret-infra/kubernetes-external-secrets
     sources:
     - https://github.com/external-secrets/kubernetes-external-secrets
-    version: 6.2.2
+    version: 6.3.0
   - apiVersion: v1
-    appVersion: 0.4.12
+    appVersion: v0.4.0
     description: wave chart that runs on kubernetes
     home: https://github.com/pusher/wave
     keywords:
@@ -565,7 +613,7 @@
     resourcePath: config-root/namespaces/secret-infra/pusher-wave
     sources:
     - https://github.com/pusher/wave
-    version: 0.4.12
+    version: 0.4.16
 - namespace: tekton-pipelines
   path: helmfiles/tekton-pipelines/helmfile.yaml
   releases:
