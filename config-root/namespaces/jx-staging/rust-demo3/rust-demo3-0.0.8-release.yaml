@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-17T18:04:32Z"
+  creationTimestamp: "2021-02-22T09:46:29Z"
   deletionTimestamp: null
-  name: 'rust-demo3-0.0.7'
+  name: 'rust-demo3-0.0.8'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.7
-      sha: cc76aa7cb8cdb2acca0667da87822a2d898800f1
+        chore: release 0.0.8
+      sha: f2faded48c876c5817a6665687c7791ae81b28be
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: e2f1ae87faef0dcccb403f136221076128860098
+      sha: c9ad5582f5fc0a9c32a7e423c3b934ee8d8a1182
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -37,12 +37,12 @@ spec:
       committer:
         email: noreply@github.com
         name: GitHub
-      message: Update README.md
-      sha: dbb167af72a3b582d622cee6f1b69d18604585d4
+      message: Update Dockerfile
+      sha: 260409aa500b1c47d51c77eaec325f1fee2fd8e1
   gitHttpUrl: https://github.com/jstrachan/rust-demo3
   gitOwner: jstrachan
   gitRepository: rust-demo3
   name: 'rust-demo3'
-  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.7
-  version: v0.0.7
+  releaseNotesURL: https://github.com/jstrachan/rust-demo3/releases/tag/v0.0.8
+  version: v0.0.8
 status: {}
