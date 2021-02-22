@@ -2,14 +2,24 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-22T08:59:13Z"
+  creationTimestamp: "2021-02-22T09:13:10Z"
   deletionTimestamp: null
-  name: 'jx-slack-0.0.46'
+  name: 'jx-slack-0.0.47'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add git secret mount path
+      sha: 9588382023e4e5348e641fb392e6ec909e5fd7a6
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -30,19 +40,9 @@ spec:
       message: |
         chore: fix entry point
       sha: fc262a4209e1a56ec99400cd30d49f65f0aab97f
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: use nicer names
-      sha: 7386aa9d4e98c347c2a474937fdecf0d1a46011e
   gitHttpUrl: https://github.com/jenkins-x-plugins/jx-slack
   gitOwner: jenkins-x-plugins
   gitRepository: jx-slack
   name: 'jx-slack'
-  version: 0.0.46
+  version: 0.0.47
 status: {}

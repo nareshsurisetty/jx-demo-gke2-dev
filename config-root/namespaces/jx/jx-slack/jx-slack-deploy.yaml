@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: slack
-          image: "gcr.io/jenkinsxio/jx-slack:0.0.46"
+          image: "gcr.io/jenkinsxio/jx-slack:0.0.47"
           imagePullPolicy: IfNotPresent
           command:
             - "/jx-slack"
@@ -37,6 +37,8 @@ spec:
               cpu: 80m
               memory: 128Mi
           env:
+            - name: GIT_SECRET_MOUNT_PATH
+              value: /secrets/git
             - name: GIT_KIND
               value: "github"
             - name: GIT_SERVER
@@ -51,5 +53,13 @@ spec:
                 secretKeyRef:
                   key: token
                   name: jx-slack
+          volumeMounts:
+            - mountPath: /secrets/git
+              name: secrets-git
       terminationGracePeriodSeconds: 10
       serviceAccountName: jx-slack
+      volumes:
+        - name: secrets-git
+          secret:
+            defaultMode: 420
+            secretName: tekton-git
