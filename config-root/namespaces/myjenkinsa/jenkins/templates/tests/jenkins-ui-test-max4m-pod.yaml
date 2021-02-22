@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-jup7g"
+  name: "jenkins-ui-test-max4m"
   namespace: myjenkinsa
   annotations:
     "helm.sh/hook": test-success
