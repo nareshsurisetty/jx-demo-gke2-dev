@@ -12,9 +12,11 @@ rules:
     resources:
       - pipelineactivities
     verbs:
-      - watch
-      - update
+      - get
       - list
+      - watch
+      - patch
+      - update
   - apiGroups:
       - jenkins.io
     resources:
