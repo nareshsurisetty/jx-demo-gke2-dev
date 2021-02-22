@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: jx-slack-jx-slack
+  name: jx-slack
   labels:
     app: jx-slack
     release: jx-slack

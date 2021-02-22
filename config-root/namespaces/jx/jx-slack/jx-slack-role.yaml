@@ -2,7 +2,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: jx-slack-jx-slack
+  name: jx-slack
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
