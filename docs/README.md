@@ -137,6 +137,12 @@
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>
     <tr>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
+	      <td>0.0.43</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
@@ -200,6 +206,12 @@
 	      <td>0.0.32</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
+	      <td>0.0.43</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>myjenkinsa</h3></td>
