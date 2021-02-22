@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-22T08:54:17Z"
+  creationTimestamp: "2021-02-22T08:59:13Z"
   deletionTimestamp: null
-  name: 'jx-slack-0.0.45'
+  name: 'jx-slack-0.0.46'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: use nicer names
-      sha: 7386aa9d4e98c347c2a474937fdecf0d1a46011e
+        chore: fix command
+      sha: fd2d149d04c4bb1024498b49e607e5ef45d2babf
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -28,11 +28,21 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: fix chart
-      sha: adcc0c4aa398ea2698edec7652aa64c739d9bec9
+        chore: fix entry point
+      sha: fc262a4209e1a56ec99400cd30d49f65f0aab97f
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: use nicer names
+      sha: 7386aa9d4e98c347c2a474937fdecf0d1a46011e
   gitHttpUrl: https://github.com/jenkins-x-plugins/jx-slack
   gitOwner: jenkins-x-plugins
   gitRepository: jx-slack
   name: 'jx-slack'
-  version: 0.0.45
+  version: 0.0.46
 status: {}
