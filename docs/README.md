@@ -34,19 +34,19 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> rust-demo3 </a></td>
-	      <td>0.0.7</td>
+	      <td>0.0.10</td>
 	      <td><a href='http://rust-demo3-jx-staging.34.105.246.143.xip.io'>view</a></td>
 	      <td></td>
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey554 </a></td>
-	      <td>1.0.24</td>
+	      <td>1.0.25</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey546 </a></td>
-	      <td>1.0.5</td>
+	      <td>1.0.6</td>
 	      <td><a href='http://nodey546-jx-staging.34.105.246.143.xip.io'>view</a></td>
 	      <td></td>
 	    </tr>
@@ -55,19 +55,19 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> rust-demo3 </a></td>
-	      <td>0.0.7</td>
+	      <td>0.0.10</td>
 	      <td><a href='http://rust-demo3-jx-staging.34.105.246.143.xip.io'>view</a></td>
 	      <td></td>
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey554 </a></td>
-	      <td>1.0.24</td>
+	      <td>1.0.25</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey546 </a></td>
-	      <td>1.0.5</td>
+	      <td>1.0.6</td>
 	      <td><a href='http://nodey546-jx-staging.34.105.246.143.xip.io'>view</a></td>
 	      <td></td>
 	    </tr>

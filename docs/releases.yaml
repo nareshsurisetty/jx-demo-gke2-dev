@@ -60,7 +60,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/rust-demo3
-    version: 0.0.7
+    version: 0.0.10
   - apiVersion: v1
     description: A Helm chart for Kubernetes
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -68,7 +68,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey554
-    version: 1.0.24
+    version: 1.0.25
   - apiVersion: v1
     applicationUrl: http://nodey546-jx-staging.34.105.246.143.xip.io
     description: A Helm chart for Kubernetes
@@ -80,7 +80,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey546
-    version: 1.0.5
+    version: 1.0.6
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
@@ -95,7 +95,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/rust-demo3
-    version: 0.0.7
+    version: 0.0.10
   - apiVersion: v1
     description: A Helm chart for Kubernetes
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -103,7 +103,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey554
-    version: 1.0.24
+    version: 1.0.25
   - apiVersion: v1
     applicationUrl: http://nodey546-jx-staging.34.105.246.143.xip.io
     description: A Helm chart for Kubernetes
@@ -115,7 +115,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey546
-    version: 1.0.5
+    version: 1.0.6
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
