@@ -79,7 +79,7 @@ releases:
   - jx-values.yaml
 - chart: jx3/jx-slack
   name: jx-slack
-  version: 0.0.43
+  version: 0.0.44
   values:
   - jx-values.yaml
 templates: {}
