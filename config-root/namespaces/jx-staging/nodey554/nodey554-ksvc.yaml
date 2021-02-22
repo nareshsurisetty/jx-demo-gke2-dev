@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: nodey554
   labels:
-    chart: "nodey554-1.0.23"
+    chart: "nodey554-1.0.24"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
 spec:
@@ -14,11 +14,11 @@ spec:
         autoscaling.knative.dev/minScale: "0"
     spec:
       containers:
-        - image: "gcr.io/jenkins-x-labs-bdd/nodey554:1.0.23"
+        - image: "gcr.io/jenkins-x-labs-bdd/nodey554:1.0.24"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 1.0.23
+              value: 1.0.24
           livenessProbe:
             httpGet:
               path: /
