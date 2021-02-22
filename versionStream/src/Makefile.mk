@@ -5,6 +5,7 @@ KUBEAPPLY ?= kubectl-apply
 VAULT_ADDR ?= https://vault.jx-vault:8200
 VAULT_NAMESPACE ?= jx-vault
 VAULT_ROLE ?= jx-vault
+GIT_SHA ?= $(shell git rev-parse HEAD)
 
 # You can disable force mode on kubectl apply by modifying this line:
 KUBECTL_APPLY_FLAGS ?= --force
@@ -32,6 +33,7 @@ setup:
 
 .PHONY: init
 init: setup
+	echo "git sha is: $(GIT_SHA)"
 	mkdir -p $(FETCH_DIR)
 	mkdir -p $(TMP_TEMPLATE_DIR)
 	mkdir -p $(OUTPUT_DIR)/namespaces/jx
@@ -220,6 +222,10 @@ kapp-apply:
 
 	# lets apply any infrastructure specific labels or annotations to enable IAM roles on ServiceAccounts etc
 	jx gitops postprocess
+
+	echo "annotating some deployments with the latest git SHA: $(GIT_SHA)"
+	kubectl annotate deploy -n jx -l app=jx-slack git.jenkins-x.io/sha=$(GIT_SHA)
+	kubectl annotate deploy -n jx -l app=lighthouse-webhooks git.jenkins-x.io/sha=$(GIT_SHA)
 
 .PHONY: resolve-metadata
 resolve-metadata:
