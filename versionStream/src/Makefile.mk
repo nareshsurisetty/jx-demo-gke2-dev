@@ -190,7 +190,7 @@ regen-none:
 	# we just merged a PR so lets perform any extra checks after the merge but before the kubectl apply
 
 .PHONY: apply
-apply: regen-check kubectl-apply secrets-populate verify write-completed
+apply: regen-check $(KUBEAPPLY) annotate-resources secrets-populate verify write-completed
 
 .PHONY: report
 report:
