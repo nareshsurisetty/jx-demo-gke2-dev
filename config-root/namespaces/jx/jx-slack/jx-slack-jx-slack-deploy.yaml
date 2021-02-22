@@ -1,0 +1,55 @@
+# Source: jx-slack/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jx-slack-jx-slack
+  labels:
+    app: jx-slack
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jx-slack
+  template:
+    metadata:
+      labels:
+        app: jx-slack
+      annotations:
+        myannotation: abcd
+    spec:
+      containers:
+        - name: slack
+          image: "jenkinsxio/jx-slack:dev"
+          imagePullPolicy: IfNotPresent
+          command:
+            - "/slack"
+          args:
+            - run
+          resources:
+            limits:
+              cpu: 100m
+              memory: 256Mi
+            requests:
+              cpu: 80m
+              memory: 128Mi
+          env:
+            - name: GIT_KIND
+              value: "github"
+            - name: GIT_SERVER
+              value: "https://github.com"
+            - name: GIT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: password
+                  name: tekton-git
+            - name: SLACK_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: token
+                  name: jx-slack
+      terminationGracePeriodSeconds: 10
+      serviceAccountName: jx-slack-jx-slack

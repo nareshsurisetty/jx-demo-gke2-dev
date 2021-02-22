@@ -78,8 +78,8 @@ releases:
   - ../../versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/jx-slack
-  name: jx-slack
   version: 0.0.43
+  name: jx-slack
   values:
   - jx-values.yaml
 templates: {}
