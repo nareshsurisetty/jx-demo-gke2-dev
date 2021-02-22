@@ -226,8 +226,7 @@ kapp-apply:
 .PHONY: annotate-resources
 annotate-resources:
 	echo "annotating some deployments with the latest git SHA: $(GIT_SHA)"
-	kubectl annotate deploy --overwrite -n jx -l app=jx-slack git.jenkins-x.io/sha=$(GIT_SHA)
-	kubectl annotate deploy --overwrite -n jx -l app=lighthouse-webhooks git.jenkins-x.io/sha=$(GIT_SHA)
+	kubectl annotate deploy --overwrite -n jx -l git.jenkins-x.io/sha=annotate git.jenkins-x.io/sha=$(GIT_SHA)
 
 .PHONY: resolve-metadata
 resolve-metadata:
