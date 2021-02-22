@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-22T09:13:10Z"
+  creationTimestamp: "2021-02-22T09:34:09Z"
   deletionTimestamp: null
-  name: 'jx-slack-0.0.47'
+  name: 'jx-slack-0.0.49'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add git secret mount path
-      sha: 9588382023e4e5348e641fb392e6ec909e5fd7a6
+        chore: smaller base image
+      sha: 44af5ca3a1f9ddb7eccf70780112508c71e7b71c
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -28,8 +28,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: fix command
-      sha: fd2d149d04c4bb1024498b49e607e5ef45d2babf
+        chore: fix git clone
+      sha: 2e77321448cb977e2f0dec66e7d87c55a7e18a45
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -38,11 +38,11 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: fix entry point
-      sha: fc262a4209e1a56ec99400cd30d49f65f0aab97f
+        chore: fix git clone
+      sha: 1ec6d60180b8ffa7006071be9db3b15ac8c658cf
   gitHttpUrl: https://github.com/jenkins-x-plugins/jx-slack
   gitOwner: jenkins-x-plugins
   gitRepository: jx-slack
   name: 'jx-slack'
-  version: 0.0.47
+  version: 0.0.49
 status: {}
