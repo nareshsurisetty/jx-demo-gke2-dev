@@ -40,7 +40,7 @@
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey554 </a></td>
-	      <td>1.0.23</td>
+	      <td>1.0.24</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
@@ -61,7 +61,7 @@
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey554 </a></td>
-	      <td>1.0.23</td>
+	      <td>1.0.24</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
@@ -138,7 +138,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
-	      <td>0.0.49</td>
+	      <td>0.0.51</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
@@ -209,7 +209,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
-	      <td>0.0.49</td>
+	      <td>0.0.51</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
