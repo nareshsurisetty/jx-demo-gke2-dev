@@ -177,7 +177,7 @@ regen-check:
 	jx gitops apply
 
 .PHONY: regen-phase-1
-regen-phase-1: git-setup resolve-metadata all $(KUBEAPPLY) verify-ingress-ignore commit
+regen-phase-1: git-setup resolve-metadata all $(KUBEAPPLY) annotate-resources verify-ingress-ignore commit
 
 .PHONY: regen-phase-2
 regen-phase-2: verify-ingress-ignore all verify-ignore report commit
@@ -223,6 +223,8 @@ kapp-apply:
 	# lets apply any infrastructure specific labels or annotations to enable IAM roles on ServiceAccounts etc
 	jx gitops postprocess
 
+.PHONY: annotate-resources
+annotate-resources:
 	echo "annotating some deployments with the latest git SHA: $(GIT_SHA)"
 	kubectl annotate deploy -n jx -l app=jx-slack git.jenkins-x.io/sha=$(GIT_SHA)
 	kubectl annotate deploy -n jx -l app=lighthouse-webhooks git.jenkins-x.io/sha=$(GIT_SHA)
