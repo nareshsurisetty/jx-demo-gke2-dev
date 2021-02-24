@@ -4,12 +4,12 @@ kind: Deployment
 metadata:
   name: lighthouse-webhooks
   labels:
-    chart: "lighthouse-0.0.936"
+    chart: "lighthouse-0.0.938"
     app: lighthouse-webhooks
     git.jenkins-x.io/sha: annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: 0e88bf63f5551fca43d1364fed5f0fad8abedd2f30210f75d60e70d827ac2a0f
+    checksum/config: de255578ece311180ed64745aa9af3a1a200434dd4fcf636b6804fcb738213b2
     wave.pusher.com/update-on-config-change: 'true'
     jenkins-x.io/hash: '91cb9551a1b57b576af0b1766512588ffd24422b1acedb1b7b8475b2c854a654'
   namespace: jx
@@ -26,7 +26,7 @@ spec:
       serviceAccountName: lighthouse-webhooks
       containers:
         - name: lighthouse-webhooks
-          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.936
+          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.938
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -65,7 +65,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "e95af48b7931d5ee8cb27c530a5ff7edb08d81a3"
+              value: "a54cea77dba63b2c473f79ae151cb5ed9636b294"
           ports:
             - containerPort: 8080
           livenessProbe:
