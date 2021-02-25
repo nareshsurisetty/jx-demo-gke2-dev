@@ -16,6 +16,8 @@ repositories:
 - name: jenkinsci
   url: https://charts.jenkins.io
 releases:
+- chart: bitnami/rabbitmq
+  version: 8.11.0
 - chart: bitnami/external-dns
   version: 4.5.0
   condition: jxRequirementsIngressExternalDNS.enabled
