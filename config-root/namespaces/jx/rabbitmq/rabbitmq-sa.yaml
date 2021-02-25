@@ -1,0 +1,14 @@
+# Source: rabbitmq/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: rabbitmq
+  namespace: "jx"
+  labels:
+    app.kubernetes.io/name: rabbitmq
+    helm.sh/chart: rabbitmq-8.11.0
+    app.kubernetes.io/instance: rabbitmq
+    app.kubernetes.io/managed-by: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+secrets:
+  - name: rabbitmq

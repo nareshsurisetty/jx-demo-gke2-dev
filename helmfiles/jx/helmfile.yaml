@@ -18,6 +18,9 @@ repositories:
 releases:
 - chart: bitnami/rabbitmq
   version: 8.11.0
+  name: rabbitmq
+  values:
+  - jx-values.yaml
 - chart: bitnami/external-dns
   version: 4.5.0
   condition: jxRequirementsIngressExternalDNS.enabled
