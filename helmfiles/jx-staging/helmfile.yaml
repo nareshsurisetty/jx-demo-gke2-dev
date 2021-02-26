@@ -7,6 +7,8 @@ namespace: jx-staging
 repositories:
 - name: dev
   url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+- name: dev2
+  url: https://jstrachan.github.io/nodey545/
 releases:
 - chart: dev/rust-demo3
   version: 0.0.10
@@ -23,5 +25,8 @@ releases:
   name: nodey546
   values:
   - jx-values.yaml
+- chart: dev2/nodey545
+  version: 3.0.62
+  name: nodey545
 templates: {}
 renderedvalues: {}
