@@ -5,6 +5,7 @@ metadata:
   annotations:
     beer: stella
     kubernetes.io/ingress.class: nginx
+    wine: shiraz
   name: hook
   namespace: jx
   labels:

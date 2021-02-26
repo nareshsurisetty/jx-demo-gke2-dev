@@ -39,6 +39,7 @@ jxRequirements:
   ingress:
     annotations:
       beer: stella
+      wine: shiraz
     domain: 34.105.246.143.xip.io
     externalDNS: false
     kind: ingress
