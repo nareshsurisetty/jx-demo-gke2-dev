@@ -4,6 +4,7 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
+    beer: stella
   name: nodey546
   namespace: jx-staging
   labels:
