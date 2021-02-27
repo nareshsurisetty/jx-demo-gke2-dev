@@ -4,5 +4,12 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-production
+repositories:
+- name: dev
+  url: https://jstrachan.github.io/nodey545/
+releases:
+- chart: dev/nodey545
+  version: 3.0.64
+  name: nodey545
 templates: {}
 renderedvalues: {}
