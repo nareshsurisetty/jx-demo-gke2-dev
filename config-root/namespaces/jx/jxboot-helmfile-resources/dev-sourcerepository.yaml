@@ -14,7 +14,7 @@ spec:
   providerName: 'github'
   org: "jstrachan"
   repo: "jx-demo-gke2-dev"
-  httpCloneURL: "https://github.com/jstrachan/jx-demo-gke2-dev.git"
+  httpCloneURL: "https://github.com/jstrachan/jx-demo-gke2-dev"
   url: "https://github.com/jstrachan/jx-demo-gke2-dev.git"
   scheduler:
     kind: Scheduler
