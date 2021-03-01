@@ -1,0 +1,39 @@
+# Source: nodey546/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-01T11:28:02Z"
+  deletionTimestamp: null
+  name: 'nodey546-1.0.10'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.10
+      sha: 55c3cb7f203385819f7ee2d8cddbf1ffb56fe97b
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: fedf79680e1deb5c83d950626849e01ca09ee151
+  gitHttpUrl: https://github.com/jstrachan/nodey546
+  gitOwner: jstrachan
+  gitRepository: nodey546
+  name: 'nodey546'
+  releaseNotesURL: https://github.com/jstrachan/nodey546/releases/tag/v1.0.10
+  version: v1.0.10
+status: {}
