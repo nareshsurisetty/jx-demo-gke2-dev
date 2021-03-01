@@ -80,7 +80,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey546
-    version: 1.0.6
+    version: 1.0.11
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
@@ -115,7 +115,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey546
-    version: 1.0.6
+    version: 1.0.11
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -206,7 +206,7 @@
     repositoryName: jenkins-x
     repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.30
+    version: 1.0.31
   - apiVersion: v2
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
@@ -394,7 +394,7 @@
     repositoryName: jenkins-x
     repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.30
+    version: 1.0.31
   - apiVersion: v2
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
