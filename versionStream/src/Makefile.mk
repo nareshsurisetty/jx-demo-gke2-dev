@@ -150,6 +150,7 @@ verify-install:
 .PHONY: verify
 verify: dev-ns verify-ingress
 	jx gitops webhook update --warn-on-fail
+	jx health status -A
 
 .PHONY: dev-ns verify-ignore
 verify-ignore: verify-ingress-ignore
@@ -189,19 +190,18 @@ regen-none:
 	# we just merged a PR so lets perform any extra checks after the merge but before the kubectl apply
 
 .PHONY: apply
-apply: regen-check $(KUBEAPPLY) annotate-resources secrets-populate verify write-completed
+apply: regen-check $(KUBEAPPLY) annotate-resources secrets-populate verify apply-completed
 
 .PHONY: report
 report:
 	jx gitops helmfile report
 
-.PHONY: write-completed
-write-completed:
-	echo completed > jx-boot-completed.txt
-	echo wrote completed file
+.PHONY: apply-completed
+apply-completed:
+	echo completed
 
 .PHONY: failed
-failed: write-completed
+failed: apply-completed
 	exit 1
 
 .PHONY: kubectl-apply
