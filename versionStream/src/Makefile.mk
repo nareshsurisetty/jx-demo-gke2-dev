@@ -198,15 +198,16 @@ report:
 
 .PHONY: apply-completed
 apply-completed:
-	echo completed
+	@echo "completed the boot Job"
 
 .PHONY: failed
 failed: apply-completed
+	@echo "boot Job failed"
 	exit 1
 
 .PHONY: kubectl-apply
 kubectl-apply:
-	echo "using kubectl to apply resources"
+	@echo "using kubectl to apply resources"
 
 	# NOTE be very careful about these 2 labels as getting them wrong can remove stuff in you cluster!
 	kubectl apply $(KUBECTL_APPLY_FLAGS) --prune -l=gitops.jenkins-x.io/pipeline=customresourcedefinitions -R -f $(OUTPUT_DIR)/customresourcedefinitions
@@ -218,7 +219,7 @@ kubectl-apply:
 
 .PHONY: kapp-apply
 kapp-apply:
-	echo "using kapp to apply resources"
+	@echo "using kapp to apply resources"
 
 	kapp deploy -a jx -f $(OUTPUT_DIR) -y
 
@@ -227,7 +228,7 @@ kapp-apply:
 
 .PHONY: annotate-resources
 annotate-resources:
-	echo "annotating some deployments with the latest git SHA: $(GIT_SHA)"
+	@echo "annotating some deployments with the latest git SHA: $(GIT_SHA)"
 	kubectl annotate deploy --overwrite -n jx -l git.jenkins-x.io/sha=annotate git.jenkins-x.io/sha=$(GIT_SHA)
 
 .PHONY: resolve-metadata
