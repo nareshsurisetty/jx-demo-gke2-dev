@@ -29,7 +29,7 @@ spec:
         app.kubernetes.io/managed-by: Helm
       annotations:
         checksum/config: 8d47bdd060a173e0ec43c550f3375f7d602678010e7448ebeb1b1656adeca9fd
-        checksum/secret: 3e6e2c713c9ecab098847f3bf2c4e9a55f9b8f1adc2f59e637b3926df78421ea
+        checksum/secret: a44bae982d38ef60d6f3755db44a7f56111047c53c0c8b0de139350098d2b3dd
     spec:
       serviceAccountName: rabbitmq
       affinity:
