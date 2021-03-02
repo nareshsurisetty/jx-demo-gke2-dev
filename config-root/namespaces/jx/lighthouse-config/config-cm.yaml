@@ -14,6 +14,7 @@ data:
         jstrachan/nodey546: true
         jstrachan/nodey553: true
         jstrachan/nodey554: true
+        jstrachan/nodey560: true
         jstrachan/rust-demo2: true
         jstrachan/rust-demo3: true
     plank: {}
@@ -34,6 +35,7 @@ data:
         jstrachan/nodey546: merge
         jstrachan/nodey553: merge
         jstrachan/nodey554: merge
+        jstrachan/nodey560: merge
         jstrachan/rust-demo2: merge
         jstrachan/rust-demo3: merge
       queries:
@@ -53,6 +55,7 @@ data:
         - jstrachan/nodey546
         - jstrachan/nodey553
         - jstrachan/nodey554
+        - jstrachan/nodey560
         - jstrachan/rust-demo2
         - jstrachan/rust-demo3
       - labels:
@@ -71,6 +74,7 @@ data:
         - jstrachan/nodey546
         - jstrachan/nodey553
         - jstrachan/nodey554
+        - jstrachan/nodey560
         - jstrachan/rust-demo2
         - jstrachan/rust-demo3
       target_url: http://dashboard-jx.35.246.77.80.nip.io
