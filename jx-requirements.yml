@@ -27,7 +27,7 @@ spec:
     annotations:
       beer: stella
       wine: shiraz
-    domain: 34.105.246.143.xip.io
+    domain: change.me
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
