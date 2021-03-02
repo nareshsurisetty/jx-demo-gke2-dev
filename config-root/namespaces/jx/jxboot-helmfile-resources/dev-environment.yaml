@@ -11,7 +11,7 @@ metadata:
 spec:
   source:
     ref: "master"
-    url: https://github.com/jstrachan/jx-demo-gke2-dev
+    url: https://github.com/jstrachan/jx-demo-gke2-dev.git
   kind: Development
   label: Development
   namespace: jx

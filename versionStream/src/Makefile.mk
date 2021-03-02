@@ -33,11 +33,11 @@ setup:
 
 .PHONY: init
 init: setup
-	mkdir -p $(FETCH_DIR)
-	mkdir -p $(TMP_TEMPLATE_DIR)
-	mkdir -p $(OUTPUT_DIR)/namespaces/jx
-	cp -r versionStream/src/* build
-	mkdir -p $(FETCH_DIR)/cluster/crds
+	@mkdir -p $(FETCH_DIR)
+	@mkdir -p $(TMP_TEMPLATE_DIR)
+	@mkdir -p $(OUTPUT_DIR)/namespaces/jx
+	@cp -r versionStream/src/* build
+	@mkdir -p $(FETCH_DIR)/cluster/crds
 
 
 .PHONY: fetch
