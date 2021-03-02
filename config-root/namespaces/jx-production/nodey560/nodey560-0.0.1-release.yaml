@@ -1,0 +1,49 @@
+# Source: nodey560/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-02T16:19:44Z"
+  deletionTimestamp: null
+  name: 'nodey560-0.0.1'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: 3ded95d6fa292fbbd3d0b8cfcea24487a8c2766c
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 2951346f797b4cdb57cece3327f7066571aa06e5
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: Jenkins X build pack
+      sha: 540c14da1c289bbe2b02c62438b2c49fc859e2e3
+  gitHttpUrl: https://github.com/jstrachan/nodey560
+  gitOwner: jstrachan
+  gitRepository: nodey560
+  name: 'nodey560'
+  releaseNotesURL: https://github.com/jstrachan/nodey560/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
