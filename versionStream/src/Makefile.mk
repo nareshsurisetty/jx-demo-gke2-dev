@@ -1,7 +1,10 @@
 FETCH_DIR := build/base
 TMP_TEMPLATE_DIR := build/tmp
 OUTPUT_DIR := config-root
-KUBEAPPLY ?= kubectl-apply
+KUBEAPPLY ?= kapp-apply
+#KUBEAPPLY ?= kubectl-apply
+#APPLY_LABELS ?= kubectl-label
+APPLY_LABELS ?= kapp-migrate-label
 VAULT_ADDR ?= https://vault.jx-vault:8200
 VAULT_NAMESPACE ?= jx-vault
 VAULT_ROLE ?= jx-vault
@@ -95,17 +98,14 @@ build-nokustomise: copy-resources post-build
 .PHONY: pre-build
 pre-build:
 
-.PHONY: post-build
-post-build:
+.PHONY: dev-repo-scheduler
+dev-repo-scheduler:
 # lets generate the lighthouse configuration
 	jx gitops scheduler
 
-# lets add the kubectl-apply prune annotations
-#
-# NOTE be very careful about these 3 labels as getting them wrong can remove stuff in you cluster!
-	jx gitops label --dir $(OUTPUT_DIR)/cluster                   gitops.jenkins-x.io/pipeline=cluster
-	jx gitops label --dir $(OUTPUT_DIR)/customresourcedefinitions gitops.jenkins-x.io/pipeline=customresourcedefinitions
-	jx gitops label --dir $(OUTPUT_DIR)/namespaces                gitops.jenkins-x.io/pipeline=namespaces
+
+.PHONY: post-build
+post-build: dev-repo-scheduler $(APPLY_LABELS)
 
 # lets add kapp friendly change group identifiers to nginx-ingress and pusher-wave so we can write rules against them
 	jx gitops annotate --dir $(OUTPUT_DIR) --selector app=pusher-wave kapp.k14s.io/change-group=apps.jenkins-x.io/pusher-wave
@@ -120,6 +120,26 @@ post-build:
 
 # lets force a rolling upgrade of lighthouse pods whenever we update the lighthouse config...
 	jx gitops hash -s config-root/namespaces/jx/lighthouse-config/config-cm.yaml -s config-root/namespaces/jx/lighthouse-config/plugins-cm.yaml -d config-root/namespaces/jx/lighthouse
+
+
+.PHONY: kubectl-label
+kubectl-label:
+# lets add the kubectl-apply prune annotations
+#
+# NOTE be very careful about these 3 labels as getting them wrong can remove stuff in you cluster!
+	jx gitops label --dir $(OUTPUT_DIR)/cluster                   gitops.jenkins-x.io/pipeline=cluster
+	jx gitops label --dir $(OUTPUT_DIR)/customresourcedefinitions gitops.jenkins-x.io/pipeline=customresourcedefinitions
+	jx gitops label --dir $(OUTPUT_DIR)/namespaces                gitops.jenkins-x.io/pipeline=namespaces
+
+.PHONY: kapp-label
+kapp-label:
+
+.PHONY: kapp-migrate-label
+kapp-migrate-label:
+# lets add labels to migrate resources to kapp
+	jx gitops label --dir $(OUTPUT_DIR)/cluster kapp.k14s.io/disable-default-ownership-label-rules=
+	jx gitops label --dir $(OUTPUT_DIR)/cluster kapp.k14s.io/disable-default-label-scoping-rules=
+
 
 .PHONY: kustomize
 kustomize: pre-build
