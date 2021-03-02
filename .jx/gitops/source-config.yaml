@@ -16,6 +16,7 @@ spec:
         pipeline: all
     - name: nodey553
     - name: nodey554
+    - name: nodey560
     - name: rust-demo2
     - name: rust-demo3
     scheduler: in-repo
@@ -31,3 +32,7 @@ spec:
       repositories:
       - name: my-boot-jenkins
     server: myjenkinsa
+  slack:
+    channel: '#jenkins-x-pipelines'
+    kind: failureOrNextSuccess
+    pipeline: release
