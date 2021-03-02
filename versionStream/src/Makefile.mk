@@ -137,8 +137,10 @@ kapp-label:
 .PHONY: kapp-migrate-label
 kapp-migrate-label:
 # lets add labels to migrate resources to kapp
-	jx gitops label --dir $(OUTPUT_DIR)/cluster kapp.k14s.io/disable-default-ownership-label-rules=
-	jx gitops label --dir $(OUTPUT_DIR)/cluster kapp.k14s.io/disable-default-label-scoping-rules=
+# see https://github.com/vmware-tanzu/carvel-kapp/issues/138#issuecomment-683892457
+# TODO is there a better way to do this?
+	jx gitops label --dir $(OUTPUT_DIR) kapp.k14s.io/disable-default-ownership-label-rules=
+	jx gitops label --dir $(OUTPUT_DIR) kapp.k14s.io/disable-default-label-scoping-rules=
 
 
 .PHONY: kustomize
