@@ -1,10 +1,10 @@
 FETCH_DIR := build/base
 TMP_TEMPLATE_DIR := build/tmp
 OUTPUT_DIR := config-root
-KUBEAPPLY ?= kapp-apply
-#KUBEAPPLY ?= kubectl-apply
-#APPLY_LABELS ?= kubectl-label
-APPLY_LABELS ?= kapp-migrate-label
+#KUBEAPPLY ?= kapp-apply
+KUBEAPPLY ?= kubectl-apply
+APPLY_LABELS ?= kubectl-label
+#APPLY_LABELS ?= kapp-migrate-label
 VAULT_ADDR ?= https://vault.jx-vault:8200
 VAULT_NAMESPACE ?= jx-vault
 VAULT_ROLE ?= jx-vault
