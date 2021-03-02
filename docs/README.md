@@ -30,48 +30,6 @@
 	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx-staging</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> rust-demo3 </a></td>
-	      <td>0.0.10</td>
-	      <td><a href='http://rust-demo3-jx-staging.34.105.246.143.xip.io'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey554 </a></td>
-	      <td>1.0.25</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey546 </a></td>
-	      <td>1.0.11</td>
-	      <td><a href='http://nodey546-jx-staging.34.105.246.143.xip.io'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-		      <td colspan='4'><h3>jx-staging</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> rust-demo3 </a></td>
-	      <td>0.0.10</td>
-	      <td><a href='http://rust-demo3-jx-staging.34.105.246.143.xip.io'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey554 </a></td>
-	      <td>1.0.25</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey546 </a></td>
-	      <td>1.0.11</td>
-	      <td><a href='http://nodey546-jx-staging.34.105.246.143.xip.io'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
@@ -138,7 +96,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
-	      <td>0.0.32</td>
+	      <td>0.0.33</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>
@@ -215,7 +173,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
-	      <td>0.0.32</td>
+	      <td>0.0.33</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>

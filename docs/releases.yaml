@@ -48,74 +48,8 @@
   path: helmfiles/jx-production/helmfile.yaml
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
-  releases:
-  - apiVersion: v1
-    applicationUrl: http://rust-demo3-jx-staging.34.105.246.143.xip.io
-    description: A Helm chart for Kubernetes
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    ingresses:
-    - name: rust-demo3
-      url: http://rust-demo3-jx-staging.34.105.246.143.xip.io
-    name: rust-demo3
-    repositoryName: dev
-    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    resourcePath: config-root/namespaces/jx-staging/rust-demo3
-    version: 0.0.10
-  - apiVersion: v1
-    description: A Helm chart for Kubernetes
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    name: nodey554
-    repositoryName: dev
-    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    resourcePath: config-root/namespaces/jx-staging/nodey554
-    version: 1.0.25
-  - apiVersion: v1
-    applicationUrl: http://nodey546-jx-staging.34.105.246.143.xip.io
-    description: A Helm chart for Kubernetes
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    ingresses:
-    - name: nodey546
-      url: http://nodey546-jx-staging.34.105.246.143.xip.io
-    name: nodey546
-    repositoryName: dev
-    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    resourcePath: config-root/namespaces/jx-staging/nodey546
-    version: 1.0.11
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
-  releases:
-  - apiVersion: v1
-    applicationUrl: http://rust-demo3-jx-staging.34.105.246.143.xip.io
-    description: A Helm chart for Kubernetes
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    ingresses:
-    - name: rust-demo3
-      url: http://rust-demo3-jx-staging.34.105.246.143.xip.io
-    name: rust-demo3
-    repositoryName: dev
-    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    resourcePath: config-root/namespaces/jx-staging/rust-demo3
-    version: 0.0.10
-  - apiVersion: v1
-    description: A Helm chart for Kubernetes
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    name: nodey554
-    repositoryName: dev
-    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    resourcePath: config-root/namespaces/jx-staging/nodey554
-    version: 1.0.25
-  - apiVersion: v1
-    applicationUrl: http://nodey546-jx-staging.34.105.246.143.xip.io
-    description: A Helm chart for Kubernetes
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    ingresses:
-    - name: nodey546
-      url: http://nodey546-jx-staging.34.105.246.143.xip.io
-    name: nodey546
-    repositoryName: dev
-    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    resourcePath: config-root/namespaces/jx-staging/nodey546
-    version: 1.0.11
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -291,7 +225,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.0.32
+    version: 0.0.33
   - apiVersion: v1
     appVersion: latest
     description: A Slack bot for Jenkins X
@@ -479,7 +413,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.0.32
+    version: 0.0.33
   - apiVersion: v1
     appVersion: latest
     description: A Slack bot for Jenkins X
