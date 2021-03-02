@@ -1,7 +1,7 @@
 FETCH_DIR := build/base
 TMP_TEMPLATE_DIR := build/tmp
 OUTPUT_DIR := config-root
-KUBEAPPLY ?= kapp-apply
+KUBEAPPLY ?= kubectl-apply
 VAULT_ADDR ?= https://vault.jx-vault:8200
 VAULT_NAMESPACE ?= jx-vault
 VAULT_ROLE ?= jx-vault
