@@ -65,7 +65,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
 	      <td>1.1.11</td>
-	      <td><a href='http://dashboard-jx.34.105.246.143.xip.io'>view</a></td>
+	      <td><a href='http://dashboard-jx.35.246.77.80.nip.io'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
     <tr>
@@ -142,7 +142,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
 	      <td>1.1.11</td>
-	      <td><a href='http://dashboard-jx.34.105.246.143.xip.io'>view</a></td>
+	      <td><a href='http://dashboard-jx.35.246.77.80.nip.io'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
     <tr>
@@ -189,7 +189,7 @@
 	    <tr>
 	      <td><a href='https://jenkins.io/' title='Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins </a></td>
 	      <td></td>
-	      <td><a href='http://jenkins-myjenkinsa.34.105.246.143.xip.io'>view</a></td>
+	      <td><a href='http://jenkins-myjenkinsa.35.246.77.80.nip.io'>view</a></td>
 	      <td><a href='https://jenkins.io/'>source</a></td>
 	    </tr>
     <tr>
@@ -204,7 +204,7 @@
 	    <tr>
 	      <td><a href='https://jenkins.io/' title='Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins </a></td>
 	      <td></td>
-	      <td><a href='http://jenkins-myjenkinsa.34.105.246.143.xip.io'>view</a></td>
+	      <td><a href='http://jenkins-myjenkinsa.35.246.77.80.nip.io'>view</a></td>
 	      <td><a href='https://jenkins.io/'>source</a></td>
 	    </tr>
     <tr>

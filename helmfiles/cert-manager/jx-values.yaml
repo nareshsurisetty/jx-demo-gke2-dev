@@ -40,7 +40,7 @@ jxRequirements:
     annotations:
       beer: stella
       wine: shiraz
-    domain: change.me
+    domain: 35.246.77.80.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -cert-manager.
