@@ -3,10 +3,10 @@ kind: SourceRepository
 metadata:
   creationTimestamp: null
   labels:
-    gitops.jenkins-x.io/pipeline: namespaces
     owner: jstrachan
     provider: github
     repository: rust-demo3
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jstrachan-rust-demo3
   namespace: jx
 spec:

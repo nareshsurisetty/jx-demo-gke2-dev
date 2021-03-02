@@ -48,6 +48,7 @@ jxRequirements:
       email: ""
       enabled: false
       production: true
+  kuberhealthy: true
   pipelineUser:
     username: jstrachan
   repository: nexus
@@ -66,7 +67,7 @@ jxRequirementsIngressExternalDNS:
 jxRequirementsIngressTLS:
   enabled: false
 jxRequirementsKuberhealthy:
-  enabled: false
+  enabled: true
 jxRequirementsTLSCheck:
   enabled: false
 jxRequirementsVault:

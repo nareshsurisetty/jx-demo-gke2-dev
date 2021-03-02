@@ -35,6 +35,7 @@ spec:
       email: ""
       enabled: false
       production: true
+  kuberhealthy: true
   pipelineUser:
     username: jstrachan
   repository: nexus
