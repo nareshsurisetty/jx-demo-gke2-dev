@@ -8,6 +8,5 @@ helmfiles:
 - path: helmfiles/nginx/helmfile.yaml
 - path: helmfiles/secret-infra/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
-- path: helmfiles/tf-system/helmfile.yaml
 templates: {}
 renderedvalues: {}
