@@ -169,7 +169,7 @@ secrets-wait:
 .PHONY: git-setup
 git-setup:
 	jx gitops git setup
-	git pull
+	@git pull
 
 .PHONY: regen-check
 regen-check:
@@ -266,8 +266,8 @@ push-pr-branch:
 
 .PHONY: push
 push:
-	git pull
-	git push -f
+	@git pull
+	@git push -f
 
 .PHONY: release
 release: lint
