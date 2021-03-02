@@ -73,7 +73,7 @@ data:
         - jstrachan/nodey554
         - jstrachan/rust-demo2
         - jstrachan/rust-demo3
-      target_url: http://dashboard-jx.34.105.246.143.xip.io
+      target_url: http://dashboard-jx.change.me
 kind: ConfigMap
 metadata:
   creationTimestamp: null
