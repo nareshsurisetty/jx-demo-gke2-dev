@@ -150,7 +150,8 @@ verify-install:
 .PHONY: verify
 verify: dev-ns verify-ingress
 	jx gitops webhook update --warn-on-fail
-#	jx health status -A
+	jx health status -A
+	echo "health now done"
 
 .PHONY: dev-ns verify-ignore
 verify-ignore: verify-ingress-ignore
