@@ -1,0 +1,84 @@
+# source: https://github.com/bitnami/charts/blob/master/bitnami/harbor/values.yaml
+coreImage:
+  registry: docker.io
+  repository: bitnami/harbor-core
+  tag: 2.1.3-debian-10-r38
+
+chartMuseumImage:
+  repository: bitnami/chartmuseum
+  tag: 0.13.0-debian-10-r19
+
+ingress:
+  enabled: true
+
+  hosts:
+    core: core-harbor-jx.{{ .Values.jxRequirements.ingress.domain }}
+    notary: notary-harbor-jx.{{ .Values.jxRequirements.ingress.domain }}
+
+  annotations:
+    ingress.kubernetes.io/ssl-redirect: 'true'
+    ingress.kubernetes.io/proxy-body-size: '0'
+    nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+    nginx.ingress.kubernetes.io/proxy-body-size: '0'
+
+externalURL: http://core-harbor-jx.{{ .Values.jxRequirements.ingress.domain }}
+
+persistence:
+  enabled: true
+  persistentVolumeClaim:
+    registry:
+      size: 20Gi
+    jobservice:
+      size: 1Gi
+    chartmuseum:
+      size: 5Gi
+    trivy:
+      size: 5Gi
+
+  imageChartStorage:
+    type: filesystem
+    filesystem:
+      rootdirectory: /storage
+
+logLevel: debug
+forcePassword: false
+harborAdminPassword: "HarborInitialPassword"
+
+redis:
+  enabled: true
+  usePassword: false
+  cluster:
+    enabled: false
+  master:
+    persistence:
+      enabled: true
+  slave:
+    persistence:
+      enabled: true
+
+postgresql:
+  enabled: true
+  nameOverride:
+  postgresqlUsername: postgres
+  postgresqlPassword: not-secure-database-password
+  postgresqlExtendedConf:
+    maxConnections: 1024
+  replication:
+    enabled: false
+  persistence:
+    enabled: true
+  initdbScripts:
+    initial-notaryserver.sql: |
+      CREATE DATABASE notaryserver;
+      CREATE USER server;
+      alter user server with encrypted password 'password';
+      GRANT ALL PRIVILEGES ON DATABASE notaryserver TO server;
+    initial-notarysigner.sql: |
+      CREATE DATABASE notarysigner;
+      CREATE USER signer;
+      alter user signer with encrypted password 'password';
+      GRANT ALL PRIVILEGES ON DATABASE notarysigner TO signer;
+    initial-registry.sql: |
+      CREATE DATABASE registry ENCODING 'UTF8';
+      \c registry;
+      CREATE TABLE schema_migrations(version bigint not null primary key, dirty boolean not null);
