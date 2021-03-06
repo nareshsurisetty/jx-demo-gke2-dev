@@ -40,7 +40,7 @@ spec:
     versionStreamRef: "master"
     useGitOps: true
     storageLocations:
-      - bucketUrl: gs://logs-jstrachan-tekton2-d3ca9654053a
+      - bucketUrl: gs://logs-jstrachan-tekton3-d3ca9654053a
         classifier: logs
-      - bucketUrl: gs://reports-jstrachan-tekton2-d3ca9654053a
+      - bucketUrl: gs://reports-jstrachan-tekton3-d3ca9654053a
         classifier: reports

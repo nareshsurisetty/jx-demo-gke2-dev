@@ -38,9 +38,9 @@ spec:
             - -resync-interval
             - 60s
             - -archived-logs-url-template
-            - gs://logs-jstrachan-tekton2-d3ca9654053a/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
+            - gs://logs-jstrachan-tekton3-d3ca9654053a/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
             - -archived-pipelines-url-template
-            - gs://logs-jstrachan-tekton2-d3ca9654053a/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
+            - gs://logs-jstrachan-tekton3-d3ca9654053a/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
             - -log-level
             - INFO
           ports:

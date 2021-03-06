@@ -4,7 +4,7 @@ kind: ServiceAccount
 metadata:
   name: "tekton-bot"
   annotations:
-    iam.gke.io/gcp-service-account: jstrachan-tekton2-tekton@jenkins-x-labs-bdd.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: jstrachan-tekton3-tekton@jenkins-x-labs-bdd.iam.gserviceaccount.com
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
