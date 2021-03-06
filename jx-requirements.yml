@@ -24,10 +24,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    annotations:
-      beer: stella
-      wine: shiraz
-    domain: 35.246.77.80.nip.io
+    domain: ""
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
