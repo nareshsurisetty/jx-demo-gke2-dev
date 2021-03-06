@@ -31,7 +31,7 @@ spec:
       annotations:
         checksum/configmap-envvars: 6e7be5444360ab6ac6321cffc926627bd2be0262b3177b68ad1257868ab245c6
         checksum/secret: d534598d8e811997b19ee3aede7b73037727f4f94a2130ec48e729e3ac67fe2f
-        checksum/secret-core: 1c6452fa7f65f7db87d6cb77d134888e9f5094e0ff919607cf84472d09611a83
+        checksum/secret-core: 50dbc7d73fc3f26cc4f43dc2532721dc1344ccfb04a9ea8c5154332115a02cf7
     spec:
       automountServiceAccountToken: false
       affinity:
