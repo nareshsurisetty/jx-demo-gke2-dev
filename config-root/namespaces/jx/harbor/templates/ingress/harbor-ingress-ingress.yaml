@@ -19,7 +19,7 @@ spec:
   tls:
     - secretName: harbor-ingress
       hosts:
-        - core-harbor-jx.35.246.77.80.nip.io
+        - core-harbor-jx.change.me
   rules:
     - http:
         paths:
@@ -53,4 +53,4 @@ spec:
             backend:
               serviceName: harbor-core
               servicePort: http
-      host: core-harbor-jx.35.246.77.80.nip.io
+      host: core-harbor-jx.change.me
