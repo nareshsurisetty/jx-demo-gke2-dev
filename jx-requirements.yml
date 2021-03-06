@@ -13,7 +13,7 @@ spec:
     gitServer: https://github.com
     gke:
       projectNumber: "688875092189"
-    project: jenkins-x-labs-bdd
+    project: jenkins-x-labs-bdd1
     provider: gke
     registry: gcr.io
     zone: europe-west2-b
