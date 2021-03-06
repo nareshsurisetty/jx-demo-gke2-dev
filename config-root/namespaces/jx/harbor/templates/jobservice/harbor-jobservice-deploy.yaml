@@ -34,8 +34,8 @@ spec:
         checksum/configmap: 5b9bde0793a68d45bb4bf98b9ae8b48e7e07de75b4faa0c345ef6b01837b419a
         checksum/configmap-env: 2698332f77d63e048f01958493f1f1641c29ec8070dafe25019d9d6ef64fc3b0
         checksum/secret-env: 19d14ac270881d40440f2bb36429777960911506998c18906ca0a43a63b7a751
-        checksum/secret: 38d06118fddbef69abc98dc353e538793a2277f182113a3c42df1ffcab2215ce
-        checksum/secret-core: efaa7a922e578b166782b159a37dcf713992d1e4cc48409cbd98913cf3f034e2
+        checksum/secret: c75d1df037df412dfecca94f46a880e1e104d3828e82578b0762444a9fe44ec3
+        checksum/secret-core: 4b24034a37013de217aaa31812515b7b19eeb20eb9f9e05ec7c9cf0f8b53c3d4
     spec:
       automountServiceAccountToken: false
       affinity:
