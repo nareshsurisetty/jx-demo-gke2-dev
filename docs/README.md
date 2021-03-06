@@ -24,10 +24,10 @@
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
-	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq' title='Open source message broker software that implements the Advanced Message Queuing Protocol (AMQP)'> <img src='https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png' width='24px' height='24px'> rabbitmq </a></td>
-	      <td>8.11.0</td>
+	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/harbor' title='Harbor is an an open source trusted cloud native registry project that stores, signs, and scans content'> <img src='https://bitnami.com/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png' width='24px' height='24px'> harbor </a></td>
+	      <td>9.6.1</td>
 	      <td></td>
-	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq'>source</a></td>
+	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/harbor'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns' title='ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.'> <img src='https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-110x117.png' width='24px' height='24px'> external-dns </a></td>
@@ -62,7 +62,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
-	      <td>0.0.167</td>
+	      <td>0.0.168</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/jx-preview'>source</a></td>
 	    </tr>
