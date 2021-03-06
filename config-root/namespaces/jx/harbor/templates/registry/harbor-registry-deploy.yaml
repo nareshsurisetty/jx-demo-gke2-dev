@@ -32,9 +32,9 @@ spec:
         app.kubernetes.io/component: registry
       annotations:
         checksum/configmap: 20c720245638c4e9192f2a09d74c8c8a2f1b2ce58d76d46087884596590c2635
-        checksum/secret: 93054f7ad4c248be6bce275b0e9e41615fdd72fc15b72b80f0cd63f9287f99ed
-        checksum/secret-jobservice: 5f9bd1f74a853c6f3fec97021049cdc823c8561cd354c4a3ca20fa90c6198522
-        checksum/secret-core: 8ac049902e70b1887cc93f3318d73db92b0995aafb9fb1391d16c77f54b49a66
+        checksum/secret: 4e780ac82f87f07a49635747a1b3647cfcac643580060e0c0363db4cf934bfea
+        checksum/secret-jobservice: 043041f28ba38bc1325dc2f497c9547ba1c7cd1a31540d975487fe6b8de426c2
+        checksum/secret-core: 465ebfe6b75927d6a419dae66f561e6147cffc17983e1cf8dd8e7ba607cad1d3
     spec:
       automountServiceAccountToken: false
       affinity:

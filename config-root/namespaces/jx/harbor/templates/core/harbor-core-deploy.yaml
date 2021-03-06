@@ -30,10 +30,10 @@ spec:
         app.kubernetes.io/component: core
       annotations:
         checksum/configmap: 836639e106a03dc96081ef4d8bd9134519e614710a842a2832e5fabcd731fe4f
-        checksum/configmap-envvars: 909f0fe86a79c542a2316d53b68cee7834dad0304dd3da680f0817ba8d56c4c2
-        checksum/secret: 12222ca46a2dbbb9f1abdf38ee65ba79d1c509c5e88566222aa1317324dd9c7a
-        checksum/secret-envvars: ecf87ff835bf72e9660001bfc1341e98c0d511a12ed77ec59a20431efceb78f5
-        checksum/secret-jobservice: 4bfed113fb0fe7c5dd7ca0ebfcaf306ffa305f191fc84ec7357eb5119a28b5ff
+        checksum/configmap-envvars: 8ef217f0c44b0faff23074a343f3bd0aa5bd92b7b132e616583b7558c7379d49
+        checksum/secret: e6b4eb46d8c6d87929aadd48d53254ffc9cb0fefb35478aac2046490deed134d
+        checksum/secret-envvars: d2b2bbb9864c5f028d3c3f9594116e9fff0831ca9017513cc3b46b94b25ea7af
+        checksum/secret-jobservice: 404bf5c4735baeb1656eecec06148886f055491fa4f33a3e8f1911046d8f2d4b
     spec:
       automountServiceAccountToken: false
       affinity:
