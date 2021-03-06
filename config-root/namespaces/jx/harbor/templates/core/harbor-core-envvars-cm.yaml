@@ -19,7 +19,7 @@ data:
   POSTGRESQL_USERNAME: "postgres"
   POSTGRESQL_DATABASE: "registry"
   POSTGRESQL_SSLMODE: "disable"
-  EXT_ENDPOINT: "http://core-harbor-jx.change.me"
+  EXT_ENDPOINT: "http://core-harbor-jx.34.89.8.12.nip.io"
   CORE_URL: "http://harbor-core:80"
   JOBSERVICE_URL: "http://harbor-jobservice"
   REGISTRY_URL: "http://harbor-registry:5000"

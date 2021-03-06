@@ -18,4 +18,4 @@ spec:
           - backend:
               serviceName: jenkins
               servicePort: 8080
-      host: "jenkins-myjenkinsa.change.me"
+      host: "jenkins-myjenkinsa.34.89.8.12.nip.io"

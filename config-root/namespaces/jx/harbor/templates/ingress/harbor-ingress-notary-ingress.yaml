@@ -19,7 +19,7 @@ spec:
   tls:
     - secretName: harbor-ingress
       hosts:
-        - notary-harbor-jx.change.me
+        - notary-harbor-jx.34.89.8.12.nip.io
   rules:
     - http:
         paths:
@@ -28,4 +28,4 @@ spec:
             backend:
               serviceName: harbor-notary-server
               servicePort: 4443
-      host: notary-harbor-jx.change.me
+      host: notary-harbor-jx.34.89.8.12.nip.io
