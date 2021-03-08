@@ -18,13 +18,6 @@ repositories:
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
 releases:
-#- chart: bitnami/harbor
-#  version: 9.6.1
-#  name: harbor
-#  namespace: harbor
-#  values:
-#  - harbor-values.yaml.gotmpl
-#  - jx-values.yaml
 - chart: bitnami/external-dns
   version: 4.5.0
   condition: jxRequirementsIngressExternalDNS.enabled
