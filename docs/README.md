@@ -24,12 +24,6 @@
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
-	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/harbor' title='Harbor is an an open source trusted cloud native registry project that stores, signs, and scans content'> <img src='https://bitnami.com/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png' width='24px' height='24px'> harbor </a></td>
-	      <td>9.6.1</td>
-	      <td></td>
-	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/harbor'>source</a></td>
-	    </tr>
-    <tr>
 	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns' title='ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.'> <img src='https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-110x117.png' width='24px' height='24px'> external-dns </a></td>
 	      <td>4.5.0</td>
 	      <td></td>
@@ -90,12 +84,6 @@
 	      <td>0.0.33</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
-	      <td>0.0.55</td>
-	      <td></td>
-	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>myjenkinsa</h3></td>
