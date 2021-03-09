@@ -172,48 +172,6 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.0.33
-- namespace: myjenkinsa
-  path: helmfiles/myjenkinsa/helmfile.yaml
-  releases:
-  - annotations:
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
-        - name: Jenkins
-          url: https://www.jenkins.io/
-    apiVersion: v2
-    appVersion: 2.263.3
-    applicationUrl: http://jenkins-myjenkinsa.34.89.8.12.nip.io
-    description: Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
-    home: https://jenkins.io/
-    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
-    ingresses:
-    - name: jenkins
-      url: http://jenkins-myjenkinsa.34.89.8.12.nip.io
-    maintainers:
-    - email: maor.friedman@redhat.com
-      name: maorfr
-    - email: mail@torstenwalter.de
-      name: torstenwalter
-    - email: garridomota@gmail.com
-      name: mogaal
-    - email: wmcdona89@gmail.com
-      name: wmcdona89
-    - email: timjacomb1@gmail.com
-      name: timja
-    name: jenkins
-    repositoryName: jenkinsci
-    repositoryUrl: https://charts.jenkins.io
-    resourcePath: config-root/namespaces/myjenkinsa/jenkins
-    sources:
-    - https://github.com/jenkinsci/jenkins
-    - https://github.com/jenkinsci/docker-inbound-agent
-    - https://github.com/maorfr/kube-tasks
-    - https://github.com/jenkinsci/configuration-as-code-plugin
-  - name: jenkins-resources
-    repositoryName: jx3
-    repositoryUrl: https://charts.jenkins.io
-    resourcePath: config-root/namespaces/myjenkinsa/jenkins-resources
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
