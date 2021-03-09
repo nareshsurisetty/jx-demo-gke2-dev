@@ -9,7 +9,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
   annotations:
-    jenkins-x.io/hash: '3cf8107b8407c56ce16dbd0c26192b72aa20f70c8702bc89af4fb54b8eb4a99c'
+    jenkins-x.io/hash: 'b1bf714ca73ff076580611b25218a8c59454990786ce90420a4cd0e030579922'
     wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1
