@@ -22,8 +22,46 @@
     version: 1.1.0
 - namespace: jx-production
   path: helmfiles/jx-production/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://nodey560-jx-production.34.89.8.12.nip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: nodey560
+      url: http://nodey560-jx-production.34.89.8.12.nip.io
+    name: nodey560
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-production/nodey560
+    version: 0.0.2
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://nodey560-jx-staging.34.89.8.12.nip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: nodey560
+      url: http://nodey560-jx-staging.34.89.8.12.nip.io
+    name: nodey560
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey560
+    version: 0.0.2
+  - apiVersion: v1
+    applicationUrl: http://nodey554-jx-staging.34.89.8.12.nip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: nodey554
+      url: http://nodey554-jx-staging.34.89.8.12.nip.io
+    name: nodey554
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey554
+    version: 1.0.27
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -83,10 +121,10 @@
     - name: nexus
       url: http://nexus-jx.34.89.8.12.nip.io/
     name: jxboot-helmfile-resources
-    repositoryName: jenkins-x
-    repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    repositoryName: jx3
+    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.31
+    version: 1.0.37
   - apiVersion: v2
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
