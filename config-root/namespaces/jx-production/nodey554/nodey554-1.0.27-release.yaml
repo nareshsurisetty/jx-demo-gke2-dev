@@ -1,0 +1,48 @@
+# Source: nodey554/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-09T06:04:35Z"
+  deletionTimestamp: null
+  name: 'nodey554-1.0.27'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.27
+      sha: b3e1c27add734585df8a0407e22996f087435a3a
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 66fcf78e8b2b34adac52149946140c9046ffa3c3
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update values.yaml
+      sha: 7f0fa1fb4e8409b86a6c28e6cbb857ed99b1de08
+  gitHttpUrl: https://github.com/jstrachan/nodey554
+  gitOwner: jstrachan
+  gitRepository: nodey554
+  name: 'nodey554'
+  releaseNotesURL: https://github.com/jstrachan/nodey554/releases/tag/v1.0.27
+  version: v1.0.27
+status: {}
