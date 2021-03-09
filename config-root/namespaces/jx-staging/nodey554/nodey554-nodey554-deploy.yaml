@@ -1,35 +1,49 @@
-# Source: nodey554/templates/ksvc.yaml
-apiVersion: serving.knative.dev/v1
-kind: Service
+# Source: nodey554/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: nodey554
+  name: nodey554-nodey554
   labels:
-    chart: "nodey554-1.0.26"
+    draft: draft-app
+    chart: "nodey554-1.0.27"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
+  selector:
+    matchLabels:
+      app: nodey554-nodey554
+  replicas: 1
   template:
     metadata:
-      annotations:
-        autoscaling.knative.dev/minScale: "0"
+      labels:
+        draft: draft-app
+        app: nodey554-nodey554
     spec:
+      serviceAccountName: nodey554-nodey554
       containers:
-        - image: "gcr.io/jenkins-x-labs-bdd1/nodey554:1.0.26"
+        - name: nodey554
+          image: "gcr.io/jenkins-x-labs-bdd1/nodey554:1.0.27"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 1.0.26
+              value: 1.0.27
+          envFrom: null
+          ports:
+            - containerPort: 8080
           livenessProbe:
             httpGet:
               path: /
+              port: 8080
             initialDelaySeconds: 60
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 1
           readinessProbe:
-            failureThreshold: 1
             httpGet:
               path: /
+              port: 8080
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 1
@@ -40,3 +54,5 @@ spec:
             requests:
               cpu: 200m
               memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:
