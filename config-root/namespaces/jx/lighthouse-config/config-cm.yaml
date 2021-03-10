@@ -8,7 +8,6 @@ data:
     in_repo_config:
       enabled:
         jstrachan/jx-demo-gke2-dev: true
-        jstrachan/nodey534: true
         jstrachan/nodey536: true
         jstrachan/nodey545: true
         jstrachan/nodey546: true
@@ -28,7 +27,6 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jstrachan/jx-demo-gke2-dev: merge
-        jstrachan/nodey534: merge
         jstrachan/nodey536: merge
         jstrachan/nodey545: merge
         jstrachan/nodey546: merge
@@ -47,7 +45,6 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-gke2-dev
-        - jstrachan/nodey534
         - jstrachan/nodey536
         - jstrachan/nodey545
         - jstrachan/nodey546
@@ -65,7 +62,6 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx-demo-gke2-dev
-        - jstrachan/nodey534
         - jstrachan/nodey536
         - jstrachan/nodey545
         - jstrachan/nodey546
