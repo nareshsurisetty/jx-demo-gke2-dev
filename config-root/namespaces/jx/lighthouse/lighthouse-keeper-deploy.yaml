@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
   annotations:
-    jenkins-x.io/hash: 'b1bf714ca73ff076580611b25218a8c59454990786ce90420a4cd0e030579922'
     wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1
@@ -25,6 +24,7 @@ spec:
     metadata:
       annotations:
         ad.datadoghq.com/keeper.logs: '[{"source":"lighthouse","service":"keeper"}]'
+        jenkins-x.io/hash: 'b1bf714ca73ff076580611b25218a8c59454990786ce90420a4cd0e030579922'
       labels:
         app: lighthouse-keeper
     spec:
@@ -32,7 +32,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-SNAPSHOT-PR-1254-35
+          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-PR-1254-5-SNAPSHOT
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
