@@ -20,7 +20,7 @@ data:
     pod_namespace: jx
     prowjob_namespace: jx
     push_gateway:
-      serve_metrics: false
+      serve_metrics: true
     tide:
       context_options:
         from-branch-protection: true

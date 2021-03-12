@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-03-09T10:18:29Z"
+  creationTimestamp: "2021-03-12T16:04:15Z"
   deletionTimestamp: null
-  name: 'jxboot-helmfile-resources-1.0.37'
+  name: 'jxboot-helmfile-resources-1.0.38'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.37
-      sha: 82a47c9327a21db5c981b8b92a64a678451c079c
+        chore: release 1.0.38
+      sha: 09d99c83585c810c4406323744cbdf122b11cbd1
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,23 +29,25 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: ba1fc1ba07896a67f45351fdffb1bcf339deb559
+      sha: 2208519cf00be323adb93039f3020d0707659e96
     - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-test-bot
       branch: master
       committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-test-bot
       message: |
-        fix: switch to the jx3 repo
+        fix: add new GC jobs
 
-        Signed-off-by: James Strachan <james.strachan@gmail.com>
-      sha: 4a2130c6ed6b9ad23e613b1c8ea2da3e6a2c1453
+        and remove the old v2 chart dependency
+
+        Signed-off-by: jenkins-x-test-bot <jenkins-x@googlegroups.com>
+      sha: dbdcf11b046379a55cb4f3b67c0acd9b22f51a9b
   gitHttpUrl: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
   gitOwner: jenkins-x-charts
   gitRepository: jxboot-helmfile-resources
   name: 'jxboot-helmfile-resources'
-  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.37
-  version: v1.0.37
+  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.38
+  version: v1.0.38
 status: {}

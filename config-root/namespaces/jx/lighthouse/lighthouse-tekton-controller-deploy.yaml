@@ -19,7 +19,7 @@ spec:
     metadata:
       labels:
         app: lighthouse-tekton-controller
-      annotations: {jenkins-x.io/hash: 'b1bf714ca73ff076580611b25218a8c59454990786ce90420a4cd0e030579922'}
+      annotations: {jenkins-x.io/hash: '85d6e67cdec0c4d3e747fb771a035e9426657e67403b8115079dfec8cd163b97'}
     spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
@@ -47,7 +47,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "12532c620a5ca81428b8a6794efd68e977cd4860"
+              value: "cc285ecd1b504ae53217e0e2138d18475259d14d"
           resources:
             limits:
               cpu: 100m
