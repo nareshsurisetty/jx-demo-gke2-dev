@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-03-12T16:04:15Z"
+  creationTimestamp: "2021-03-13T06:41:21Z"
   deletionTimestamp: null
-  name: 'jxboot-helmfile-resources-1.0.38'
+  name: 'jxboot-helmfile-resources-1.0.39'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.38
-      sha: 09d99c83585c810c4406323744cbdf122b11cbd1
+        chore: release 1.0.39
+      sha: f82b5319f5a5e38dab9d2434bd6ddf7c06e249ce
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 2208519cf00be323adb93039f3020d0707659e96
+      sha: 148ca3131a814021b8891acd39ea2ab50eea120f
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-test-bot
@@ -38,16 +38,14 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-test-bot
       message: |
-        fix: add new GC jobs
-
-        and remove the old v2 chart dependency
+        fix: use correct command line
 
         Signed-off-by: jenkins-x-test-bot <jenkins-x@googlegroups.com>
-      sha: dbdcf11b046379a55cb4f3b67c0acd9b22f51a9b
+      sha: 0e0935f7836c01d85c424805bb776ea40429340c
   gitHttpUrl: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
   gitOwner: jenkins-x-charts
   gitRepository: jxboot-helmfile-resources
   name: 'jxboot-helmfile-resources'
-  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.38
-  version: v1.0.38
+  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.39
+  version: v1.0.39
 status: {}
