@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jx-demo-gke2-prod
     - name: nodey534
     - name: nodey536
     - name: nodey545
@@ -23,14 +24,6 @@ spec:
       channel: testing-bot
       kind: failureOrNextSuccess
       pipeline: release
-#  jenkinsServers:
-#  - groups:
-#    - owner: jstrachan
-#      provider: https://github.com
-#      providerKind: github
-#      repositories:
-#      - name: my-boot-jenkins
-#    server: myjenkinsa
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess

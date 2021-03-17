@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: jx-demo-gke2-prod
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jstrachan-jx-demo-gke2-prod
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jstrachan/jx-demo-gke2-prod.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-demo-gke2-prod
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jstrachan/jx-demo-gke2-prod
