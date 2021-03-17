@@ -35,7 +35,6 @@ jxRequirements:
     owner: jstrachan
     repository: jx-demo-gke2-dev
   - key: staging
-  - key: production
   - gitKind: github
     gitServer: https://github.com
     key: jx-demo-gke2-prod
