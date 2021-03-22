@@ -10,6 +10,8 @@ metadata:
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: 1000m
   name: jenkins
 spec:
   rules:
