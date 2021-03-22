@@ -1,7 +1,8 @@
 # custom Jenkins chart configuration
 # see https://github.com/jenkinsci/helm-charts/blob/main/charts/jenkins/VALUES_SUMMARY.md
 
-ingress:
-  annotations:
-    nginx.ingress.kubernetes.io/proxy-body-size: 1000m
+controller:
+  ingress:
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: 1000m
 
