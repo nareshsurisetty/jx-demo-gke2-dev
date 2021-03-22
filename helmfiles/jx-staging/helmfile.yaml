@@ -18,5 +18,8 @@ releases:
   name: nodey554
   values:
   - jx-values.yaml
+- chart: dev/nodey546
+  version: 1.0.14
+  name: nodey546
 templates: {}
 renderedvalues: {}
