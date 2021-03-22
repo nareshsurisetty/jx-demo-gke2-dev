@@ -25,6 +25,7 @@ releases:
 - chart: jx3/jxboot-helmfile-resources
   version: 1.0.41
   name: jxboot-helmfile-resources
+  namespace: jx
   values:
   - ../../versionStream/charts/jx3/jxboot-helmfile-resources/values.yaml.gotmpl
   - jx-values.yaml
