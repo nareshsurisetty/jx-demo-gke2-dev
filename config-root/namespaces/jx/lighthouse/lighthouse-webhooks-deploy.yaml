@@ -22,12 +22,15 @@ spec:
       labels:
         app: lighthouse-webhooks
       annotations:
+        prometheus.io/port: "2112"
+        prometheus.io/scrape: "true"
+        key: value
         jenkins-x.io/hash: '1b1d7d63b00a61be301dd1d13a767564bac37516ef44ab6c8473a2392f2b1d69'
     spec:
       serviceAccountName: lighthouse-webhooks
       containers:
         - name: lighthouse-webhooks
-          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.0-PR-1254-5-SNAPSHOT
+          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.0-PR-1254-2-SNAPSHOT
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -66,7 +69,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "a64172c2b8b887eb366fdf80e6066e4a8c73c815"
+              value: "5bcc288cf00cdfc7d263cc5ecf8d710054e0ff99"
           ports:
             - containerPort: 8080
           livenessProbe:
