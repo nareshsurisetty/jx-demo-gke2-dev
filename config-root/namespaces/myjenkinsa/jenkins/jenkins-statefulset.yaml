@@ -6,7 +6,7 @@ metadata:
   namespace: myjenkinsa
   labels:
     "app.kubernetes.io/name": 'jenkins'
-    "helm.sh/chart": "jenkins-3.2.4"
+    "helm.sh/chart": "jenkins-3.2.5"
     "app.kubernetes.io/managed-by": "Helm"
     "app.kubernetes.io/instance": "jenkins"
     "app.kubernetes.io/component": "jenkins-controller"
@@ -26,7 +26,7 @@ spec:
         "app.kubernetes.io/instance": "jenkins"
         "app.kubernetes.io/component": "jenkins-controller"
       annotations:
-        checksum/config: a8712f9b72d67a5e2a31b7ccb1bde455c316a57cf3d270ae979ff46e5729c37f
+        checksum/config: 15b1b7b62eed707095d274546aff720c59432b9f81590fb45c8de01680456ec8
     spec:
       securityContext:
         runAsUser: 1000
