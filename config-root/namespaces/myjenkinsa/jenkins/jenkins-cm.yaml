@@ -40,3 +40,4 @@ data:
     github-branch-source:2.10.2
     kubernetes-credentials-provider:0.16
     jx-resources:1.0.38
+    tekton-client:1.0-alpha3+110
