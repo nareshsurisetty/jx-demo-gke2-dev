@@ -66,6 +66,19 @@
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey554
     version: 1.0.27
+  - apiVersion: v1
+    applicationUrl: http://nodey546-jx-staging.34.89.8.12.nip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: nodey546
+      url: http://nodey546-jx-staging.34.89.8.12.nip.io
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkins-x-labs-bdd1&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjstrachan-tekton3%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fnodey546&dateRangeUnbound=both
+    name: nodey546
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey546
+    version: 1.0.14
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -112,11 +125,11 @@
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: chartmuseum
-      url: http://chartmuseum-jx.34.89.8.12.nip.io/
+      url: http://chartmuseum-myjenkinsa.34.89.8.12.nip.io/
     - name: hook
-      url: http://hook-jx.34.89.8.12.nip.io/hook
+      url: http://hook-myjenkinsa.34.89.8.12.nip.io/hook
     - name: nexus
-      url: http://nexus-jx.34.89.8.12.nip.io/
+      url: http://nexus-myjenkinsa.34.89.8.12.nip.io/
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkins-x-labs-bdd1&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjstrachan-tekton3%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjxboot-helmfile-resources&dateRangeUnbound=both
     name: jxboot-helmfile-resources
     repositoryName: jx3
@@ -264,6 +277,15 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/myjenkinsa/jenkins-resources
+  - apiVersion: v1
+    description: A Helm chart for the resources for JX Boot
+    home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkins-x-labs-bdd1&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjstrachan-tekton3%2Fnamespace_name%2Fmyjenkinsa%2Fcontainer_name%2Fjxboot-helmfile-resources&dateRangeUnbound=both
+    name: jxboot-helmfile-resources
+    repositoryName: jx3
+    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    version: 1.0.41
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:

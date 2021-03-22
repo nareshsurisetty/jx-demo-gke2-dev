@@ -45,6 +45,12 @@
 	      <td></td>
 	    </tr>
     <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey546 </a></td>
+	      <td>1.0.14</td>
+	      <td><a href='http://nodey546-jx-staging.34.89.8.12.nip.io'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
@@ -123,6 +129,12 @@
 	      <td></td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources'>source</a></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
+	      <td>1.0.41</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>nginx</h3></td>
