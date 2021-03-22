@@ -73,14 +73,14 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
-	      <td>1.1.11</td>
+	      <td>1.2.0</td>
 	      <td><a href='http://dashboard-jx.34.89.8.12.nip.io'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
-	      <td>0.0.169</td>
+	      <td>0.0.170</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/jx-preview'>source</a></td>
 	    </tr>
@@ -105,9 +105,24 @@
 	    </tr>
     <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
-	      <td>0.0.34</td>
+	      <td>0.1.0</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
+	    </tr>
+    <tr>
+		      <td colspan='4'><h3>myjenkinsa</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='https://jenkins.io/' title='Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins </a></td>
+	      <td></td>
+	      <td><a href='http://jenkins-myjenkinsa.34.89.8.12.nip.io'>view</a></td>
+	      <td><a href='https://jenkins.io/'>source</a></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources' title='A Helm chart for Jenkins Resources'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins-resources </a></td>
+	      <td></td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources'>source</a></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>nginx</h3></td>
@@ -138,7 +153,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart' title='A Helm chart for Tekton Pipelines'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> tekton-pipeline </a></td>
-	      <td>0.21.1</td>
+	      <td>0.22.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
 	    </tr>
