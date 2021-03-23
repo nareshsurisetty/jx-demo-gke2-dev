@@ -4,14 +4,4 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-production
-repositories:
-- name: dev
-  url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-releases:
-- chart: dev/nodey560
-  version: 0.0.2
-  name: nodey560
-  values:
-  - jx-values.yaml
-templates: {}
 renderedvalues: {}
