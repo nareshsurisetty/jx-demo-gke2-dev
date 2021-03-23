@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: gallery
     - name: jx-demo-gke2-prod
     - name: nodey534
     - name: nodey536
