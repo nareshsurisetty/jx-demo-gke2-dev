@@ -4,4 +4,5 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-production
+templates: {}
 renderedvalues: {}
