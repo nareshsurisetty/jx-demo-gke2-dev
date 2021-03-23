@@ -2,6 +2,8 @@
 # see https://github.com/jenkinsci/helm-charts/blob/main/charts/jenkins/VALUES_SUMMARY.md
 
 controller:
+  numExecutors: 40
+
   ingress:
     annotations:
       nginx.ingress.kubernetes.io/proxy-body-size: 1000m
