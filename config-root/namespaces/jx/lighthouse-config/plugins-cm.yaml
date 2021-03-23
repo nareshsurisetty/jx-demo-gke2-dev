@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jstrachan/gallery
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/jx-demo-gke2-prod
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -60,6 +64,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      jstrachan/gallery:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jstrachan/jx-demo-gke2-dev:
       - config-updater
       - approve
@@ -235,6 +255,9 @@ data:
       trusted_org: todo
     - repos:
       - jstrachan/jx-demo-gke2-prod
+      trusted_org: todo
+    - repos:
+      - jstrachan/gallery
       trusted_org: todo
     - repos:
       - jstrachan/jx-demo-gke2-prod
