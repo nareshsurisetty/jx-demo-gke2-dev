@@ -1,0 +1,20 @@
+# Source: jxboot-helmfile-resources/templates/environments.yaml
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  labels:
+    env: "jx-demo-gke2-prod"
+    team: jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: "jx-demo-gke2-prod"
+  namespace: myjenkinsa
+spec:
+  source:
+    ref: "master"
+    url: https://github.com/jstrachan/jx-demo-gke2-prod.git
+  kind: Permanent
+  label: Jx-Demo-Gke2-Prod
+  order: 500
+  promotionStrategy: "Auto"
+  namespace: "jx-jx-demo-gke2-prod"
+  remoteCluster: true

@@ -1,12 +1,12 @@
-# Source: jxboot-helmfile-resources/templates/700-nexus-ing.yaml
+# Source: jxboot-helmfile-resources/templates/700-hook-ing.yaml
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/proxy-body-size: 1000m
-  name: nexus
-  namespace: jx
+  name: hook
+  namespace: myjenkinsa
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
@@ -14,7 +14,7 @@ spec:
     - http:
         paths:
           - backend:
-              serviceName: nexus
+              serviceName: hook
               servicePort: 80
-            path: "/"
-      host: nexus-jx.34.89.8.12.nip.io
+            path: "/hook"
+      host: hook-myjenkinsa.34.89.8.12.nip.io
