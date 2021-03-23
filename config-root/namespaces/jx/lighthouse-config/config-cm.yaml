@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jstrachan/gallery: true
         jstrachan/jx-demo-gke2-dev: true
         jstrachan/jx-demo-gke2-prod: true
         jstrachan/nodey534: true
@@ -28,6 +29,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        jstrachan/gallery: merge
         jstrachan/jx-demo-gke2-dev: merge
         jstrachan/jx-demo-gke2-prod: merge
         jstrachan/nodey534: merge
@@ -50,6 +52,7 @@ data:
         repos:
         - jstrachan/jx-demo-gke2-dev
         - jstrachan/jx-demo-gke2-prod
+        - jstrachan/gallery
         - jstrachan/nodey534
         - jstrachan/nodey536
         - jstrachan/nodey545
@@ -69,6 +72,7 @@ data:
         repos:
         - jstrachan/jx-demo-gke2-dev
         - jstrachan/jx-demo-gke2-prod
+        - jstrachan/gallery
         - jstrachan/nodey534
         - jstrachan/nodey536
         - jstrachan/nodey545
