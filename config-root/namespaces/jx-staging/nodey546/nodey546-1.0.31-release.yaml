@@ -1,0 +1,48 @@
+# Source: nodey546/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-25T08:49:35Z"
+  deletionTimestamp: null
+  name: 'nodey546-1.0.31'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.31
+      sha: 53d093d93c02a8353e5e2dde6afd6761d1299360
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 2c567fd41df297b8b11123e5f637c631497ec2d1
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update index.html
+      sha: 4f67dacc1b453ca4e357377187f5fed3679e06b1
+  gitHttpUrl: https://github.com/jstrachan/nodey546
+  gitOwner: jstrachan
+  gitRepository: nodey546
+  name: 'nodey546'
+  releaseNotesURL: https://github.com/jstrachan/nodey546/releases/tag/v1.0.31
+  version: v1.0.31
+status: {}
