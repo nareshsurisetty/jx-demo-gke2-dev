@@ -1,0 +1,48 @@
+# Source: nodey560/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-26T11:43:59Z"
+  deletionTimestamp: null
+  name: 'nodey560-0.0.7'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.7
+      sha: a7c7cf1cab010e97bd0afcde2357d5f1c9c091f2
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: d60958e9894d45c143a5b487dfbd6e7c7d7e69b1
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update index.html
+      sha: f9792cfcf148845f23a2d6dda816cbd93cfa15d9
+  gitHttpUrl: https://github.com/jstrachan/nodey560
+  gitOwner: jstrachan
+  gitRepository: nodey560
+  name: 'nodey560'
+  releaseNotesURL: https://github.com/jstrachan/nodey560/releases/tag/v0.0.7
+  version: v0.0.7
+status: {}
