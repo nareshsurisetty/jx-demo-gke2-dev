@@ -35,11 +35,10 @@ jxRequirements:
     owner: jstrachan
     repository: jx-demo-gke2-dev
   - key: staging
-  - gitKind: github
-    gitServer: https://github.com
-    key: jx-demo-gke2-prod
+  - key: production
+    namespace: myapps
     owner: jstrachan
-    promotionStrategy: Auto
+    promotionStrategy: Manual
     remoteCluster: true
     repository: jx-demo-gke2-prod
   ingress:

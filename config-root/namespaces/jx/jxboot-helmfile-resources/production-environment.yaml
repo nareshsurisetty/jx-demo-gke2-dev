@@ -3,18 +3,18 @@ apiVersion: jenkins.io/v1
 kind: Environment
 metadata:
   labels:
-    env: "jx-demo-gke2-prod"
-    team: jx
+    env: "production"
+    team: myapps
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: "jx-demo-gke2-prod"
-  namespace: myjenkinsa
+  name: "production"
+  namespace: jx
 spec:
   source:
     ref: "master"
     url: https://github.com/jstrachan/jx-demo-gke2-prod.git
   kind: Permanent
-  label: Jx-Demo-Gke2-Prod
+  label: Production
   order: 500
-  promotionStrategy: "Auto"
-  namespace: "jx-jx-demo-gke2-prod"
+  promotionStrategy: "Manual"
+  namespace: "myapps"
   remoteCluster: true

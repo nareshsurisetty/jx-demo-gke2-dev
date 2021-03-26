@@ -23,8 +23,8 @@ spec:
     repository: jx-demo-gke2-dev
   - key: staging
   - key: production
-    owner: jstrachan
     namespace: myapps
+    owner: jstrachan
     promotionStrategy: Manual
     remoteCluster: true
     repository: jx-demo-gke2-prod
