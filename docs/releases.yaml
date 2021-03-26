@@ -36,7 +36,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey560
-    version: 0.0.9
+    version: 0.0.12
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
