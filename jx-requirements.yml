@@ -22,11 +22,10 @@ spec:
     owner: jstrachan
     repository: jx-demo-gke2-dev
   - key: staging
-  - gitKind: github
-    gitServer: https://github.com
-    key: jx-demo-gke2-prod
+  - key: production
     owner: jstrachan
-    promotionStrategy: Auto
+    namespace: myapps
+    promotionStrategy: Manual
     remoteCluster: true
     repository: jx-demo-gke2-prod
   ingress:
