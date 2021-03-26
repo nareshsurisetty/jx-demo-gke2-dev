@@ -23,7 +23,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: jx3/jxboot-helmfile-resources
-  version: 1.0.41
+  version: 1.0.42
   name: jxboot-helmfile-resources
   namespace: myjenkinsa
   values:
