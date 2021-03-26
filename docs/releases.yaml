@@ -21,8 +21,6 @@
     sources:
     - https://github.com/jetstack/cert-manager
     version: 1.1.0
-- namespace: jx-production
-  path: helmfiles/jx-production/helmfile.yaml
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
 - namespace: jx
@@ -81,7 +79,7 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.41
+    version: 1.0.42
   - apiVersion: v2
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
@@ -119,19 +117,18 @@
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-preview
-    version: 0.0.170
+    version: 0.0.171
   - apiVersion: v1
-    appVersion: 0.0.939
     description: |
       This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkins-x-labs-bdd1&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjstrachan-tekton3%2Fnamespace_name%2Fjx%2Fcontainer_name%2Flighthouse&dateRangeUnbound=both
     name: lighthouse
-    repositoryName: jenkins-x
-    repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    repositoryName: jx3
+    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 0.0.939
+    version: 1.0.11
   - apiVersion: v1
     description: A Helm chart for Kubernetes
     home: https://github.com/jenkins-x-charts/nexus
@@ -239,7 +236,7 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/myjenkinsa/jxboot-helmfile-resources
-    version: 1.0.41
+    version: 1.0.42
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
