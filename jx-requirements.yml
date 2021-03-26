@@ -25,7 +25,7 @@ spec:
   - key: production
     namespace: myapps
     owner: jstrachan
-    promotionStrategy: Manual
+    promotionStrategy: Auto
     remoteCluster: true
     repository: jx-demo-gke2-prod
   ingress:
