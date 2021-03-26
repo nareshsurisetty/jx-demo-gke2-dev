@@ -23,6 +23,20 @@
     version: 1.1.0
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://nodey560-jx-staging.34.89.8.12.nip.io
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: nodey560
+      url: http://nodey560-jx-staging.34.89.8.12.nip.io
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkins-x-labs-bdd1&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjstrachan-tekton3%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fnodey560&dateRangeUnbound=both
+    name: nodey560
+    repositoryName: dev
+    repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    resourcePath: config-root/namespaces/jx-staging/nodey560
+    version: 0.0.9
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
