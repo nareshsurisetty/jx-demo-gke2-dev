@@ -7,9 +7,11 @@ namespace: jx-staging
 repositories:
 - name: dev
   url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+- name: dev2
+  url: http://chartmuseum-jx.34.89.8.12.nip.io/
 releases:
 - chart: dev/nodey560
-  version: 0.0.15
+  version: 0.0.16
   name: nodey560
   values:
   - jx-values.yaml
