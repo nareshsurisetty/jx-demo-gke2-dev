@@ -36,7 +36,7 @@
     repositoryName: dev
     repositoryUrl: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     resourcePath: config-root/namespaces/jx-staging/nodey560
-    version: 0.0.12
+    version: 0.0.15
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -131,7 +131,7 @@
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-preview
-    version: 0.0.171
+    version: 0.0.172
   - apiVersion: v1
     description: |
       This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).

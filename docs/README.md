@@ -25,7 +25,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey560 </a></td>
-	      <td>0.0.12</td>
+	      <td>0.0.15</td>
 	      <td><a href='http://nodey560-jx-staging.34.89.8.12.nip.io'>view</a></td>
 	      <td></td>
 	    </tr>
@@ -65,7 +65,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
-	      <td>0.0.171</td>
+	      <td>0.0.172</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/jx-preview'>source</a></td>
 	    </tr>
