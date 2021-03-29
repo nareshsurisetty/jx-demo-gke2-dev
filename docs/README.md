@@ -95,12 +95,12 @@
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>myjenkinsa</h3></td>
+		      <td colspan='4'><h3>myjenkinsb</h3></td>
 		    </tr>
 	    <tr>
 	      <td><a href='https://jenkins.io/' title='Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins </a></td>
 	      <td></td>
-	      <td><a href='http://jenkins-myjenkinsa.34.89.8.12.nip.io'>view</a></td>
+	      <td><a href='http://jenkins-myjenkinsb.34.89.8.12.nip.io'>view</a></td>
 	      <td><a href='https://jenkins.io/'>source</a></td>
 	    </tr>
     <tr>
@@ -108,12 +108,6 @@
 	      <td></td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.0.42</td>
-	      <td></td>
-	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>nginx</h3></td>
