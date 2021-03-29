@@ -1,8 +1,0 @@
-# Source: jxboot-helmfile-resources/templates/jx-gcactivities-sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: jx-gcactivities
-  namespace: myjenkinsa
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
