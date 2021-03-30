@@ -32,7 +32,7 @@ spec:
       providerKind: github
       repositories:
       - name: my-boot-jenkins
-    server: myjenkinsb
+    server: myjenkinsc
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
