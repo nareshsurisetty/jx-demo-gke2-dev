@@ -19,10 +19,7 @@ releases:
   - jx-values.yaml
 - chart: jx3/jenkins-resources
   name: jenkins-resources
-  values:
-  - jx-values.yaml
-- chart: ./resources
-  name: resources
+  version: 0.0.5
   values:
   - jx-values.yaml
 templates: {}
