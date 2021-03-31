@@ -18,5 +18,7 @@ releases:
 - chart: dev2/nodey546
   version: 1.0.33
   name: nodey546
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
