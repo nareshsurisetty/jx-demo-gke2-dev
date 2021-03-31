@@ -18,3 +18,11 @@ rules:
       - watch
       - create
       - update
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+      - pods/log
+    verbs:
+      - list
+      - get
