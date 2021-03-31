@@ -116,6 +116,12 @@
 	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources'>source</a></td>
 	    </tr>
     <tr>
+	      <td><a href='' title=''> <img src='' width='24px' height='24px'> resources </a></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>nginx</h3></td>
 		    </tr>
 	    <tr>
