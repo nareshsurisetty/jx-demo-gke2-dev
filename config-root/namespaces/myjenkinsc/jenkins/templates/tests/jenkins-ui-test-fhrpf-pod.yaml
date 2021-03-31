@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-akueo"
+  name: "jenkins-ui-test-fhrpf"
   namespace: myjenkinsc
   annotations:
     "helm.sh/hook": test-success
