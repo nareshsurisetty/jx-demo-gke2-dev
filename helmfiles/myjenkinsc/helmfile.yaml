@@ -23,5 +23,7 @@ releases:
   - jx-values.yaml
 - chart: ./resources
   name: resources
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
