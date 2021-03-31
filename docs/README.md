@@ -111,15 +111,9 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources' title='A Helm chart for Jenkins Resources'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins-resources </a></td>
-	      <td></td>
+	      <td>0.0.5</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title=''> <img src='' width='24px' height='24px'> resources </a></td>
-	      <td></td>
-	      <td></td>
-	      <td></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>nginx</h3></td>

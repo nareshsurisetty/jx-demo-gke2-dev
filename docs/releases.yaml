@@ -256,10 +256,7 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/myjenkinsc/jenkins-resources
-  - logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkins-x-labs-bdd1&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fjstrachan-tekton3%2Fnamespace_name%2Fmyjenkinsc%2Fcontainer_name%2Fresources&dateRangeUnbound=both
-    name: resources
-    repositoryName: .
-    resourcePath: config-root/namespaces/myjenkinsc/resources
+    version: 0.0.5
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
