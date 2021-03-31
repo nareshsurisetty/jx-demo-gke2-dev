@@ -1,5 +1,4 @@
-# Source: resources/templates/tekton-clusterrolebinding.yaml
-# Source: resources/templates/tekton-clusterrolebinding.yaml
+# Source: jenkins-resources/templates/tekton-clusterrolebinding.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
@@ -12,5 +11,5 @@ roleRef:
   name: jenkins-tekton-pipelines
 subjects:
   - kind: ServiceAccount
-    name: jenkins
+    name: "jenkins"
     namespace: myjenkinsc

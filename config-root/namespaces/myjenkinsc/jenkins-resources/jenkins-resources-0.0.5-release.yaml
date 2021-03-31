@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-03-01T12:21:32Z"
+  creationTimestamp: "2021-03-31T16:18:31Z"
   deletionTimestamp: null
-  name: 'jenkins-resources-0.0.4'
+  name: 'jenkins-resources-0.0.5'
   namespace: myjenkinsc
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -14,5 +14,5 @@ spec:
   gitOwner: jenkins-x-charts
   gitRepository: jenkins-resources
   name: 'jenkins-resources'
-  version: v0.0.4
+  version: v0.0.5
 status: {}

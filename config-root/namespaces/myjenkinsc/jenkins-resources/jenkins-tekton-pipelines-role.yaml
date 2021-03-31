@@ -1,5 +1,4 @@
-# Source: resources/templates/tekton-role.yaml
-# Source: resources/templates/tekton-role.yaml
+# Source: jenkins-resources/templates/tekton-role.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

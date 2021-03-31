@@ -18,8 +18,8 @@ releases:
   - ../../versionStream/charts/jenkinsci/jenkins/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/jenkins-resources
-  name: jenkins-resources
   version: 0.0.5
+  name: jenkins-resources
   values:
   - jx-values.yaml
 templates: {}
