@@ -3,7 +3,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: tekton-pipelines
+  name: jenkins-tekton-pipelines
   namespace: myjenkinsc
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
