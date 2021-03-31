@@ -3,6 +3,7 @@ environments:
   default:
     values:
     - jx-values.yaml
+namespace: myjenkinsc
 repositories:
 - name: jenkinsci
   url: https://charts.jenkins.io
@@ -11,7 +12,6 @@ repositories:
 releases:
 - chart: jenkinsci/jenkins
   name: jenkins
-  namespace: myjenkinsc
   values:
   - job-values.yaml
   - values.yaml
@@ -19,8 +19,9 @@ releases:
   - jx-values.yaml
 - chart: jx3/jenkins-resources
   name: jenkins-resources
-  namespace: myjenkinsc
   values:
   - jx-values.yaml
+- chart: ./resources
+  name: resources
 templates: {}
 renderedvalues: {}
