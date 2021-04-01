@@ -101,17 +101,17 @@
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>myjenkinsc</h3></td>
+		      <td colspan='4'><h3>myjenkinsd</h3></td>
 		    </tr>
 	    <tr>
 	      <td><a href='https://jenkins.io/' title='Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins </a></td>
 	      <td></td>
-	      <td><a href='http://jenkins-myjenkinsc.34.89.8.12.nip.io'>view</a></td>
+	      <td><a href='http://jenkins-myjenkinsd.34.89.8.12.nip.io'>view</a></td>
 	      <td><a href='https://jenkins.io/'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources' title='A Helm chart for Jenkins Resources'> <img src='https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png' width='24px' height='24px'> jenkins-resources </a></td>
-	      <td>0.0.5</td>
+	      <td></td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jenkins-resources'>source</a></td>
 	    </tr>
