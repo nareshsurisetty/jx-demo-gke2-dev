@@ -3,6 +3,7 @@ helmfiles:
 - path: helmfiles/cert-manager/helmfile.yaml
 - path: helmfiles/jx-staging/helmfile.yaml
 - path: helmfiles/jx/helmfile.yaml
+- path: helmfiles/myjenkinsd/helmfile.yaml
 - path: helmfiles/nginx/helmfile.yaml
 - path: helmfiles/secret-infra/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
