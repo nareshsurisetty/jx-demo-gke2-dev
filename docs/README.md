@@ -25,7 +25,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodey560 </a></td>
-	      <td>0.0.26</td>
+	      <td>0.0.27</td>
 	      <td><a href='http://nodey560-jx-staging.34.89.8.12.nip.io'>view</a></td>
 	      <td></td>
 	    </tr>
