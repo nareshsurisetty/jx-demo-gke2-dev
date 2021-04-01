@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-glx4d"
+  name: "jenkins-ui-test-0hhtt"
   namespace: myjenkinsc
   annotations:
     "helm.sh/hook": test-success
