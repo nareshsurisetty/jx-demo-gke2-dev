@@ -25,7 +25,7 @@ repositories:
   - https://storage.googleapis.com/chartmuseum.jenkins-x.io
 - prefix: jenkinsci
   urls:
-  - https://charts.jenkins.io
+  -  https://charts.jenkins.io
 - prefix: jetstack
   urls:
   - https://charts.jetstack.io
@@ -47,3 +47,6 @@ repositories:
 - prefix: prometheus-community
   urls:
   - https://prometheus-community.github.io/helm-charts
+- prefix: osiris
+  urls:
+  - https://dailymotion-oss.github.io/osiris/charts
