@@ -3,7 +3,7 @@ kind: Requirements
 spec:
   autoUpdate:
     enabled: true
-    schedule: "0 * * * *"
+    schedule: 0 * * * *
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: jstrachan-tekton3

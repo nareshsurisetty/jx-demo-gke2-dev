@@ -1,0 +1,44 @@
+# Source: jxboot-helmfile-resources/templates/upgrade-cj.yaml
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: jx-boot-upgrade
+  labels:
+    app: jenkins-x-updatebot
+    release: jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+spec:
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: jenkins-x-updatebot
+        spec:
+          containers:
+            - args:
+                - env
+                - --git-setup
+              command:
+                - jx-updatebot
+              env:
+                - name: HOME
+                  value: /home
+              image: gcr.io/jenkinsxio/jx-updatebot:0.0.57
+              imagePullPolicy: Always
+              name: updatebot
+              resources: {}
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+          dnsPolicy: ClusterFirst
+          restartPolicy: Never
+          schedulerName: default-scheduler
+          securityContext: {}
+          terminationGracePeriodSeconds: 30
+          serviceAccountName: tekton-bot
+  successfulJobsHistoryLimit: 3
+  schedule: "0 * * * *"
+  suspend: false

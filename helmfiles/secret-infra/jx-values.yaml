@@ -15,8 +15,8 @@ jx:
       username: jenkins-x-labs-bot
 jxRequirements:
   autoUpdate:
-    enabled: false
-    schedule: ""
+    enabled: true
+    schedule: 0 * * * *
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: jstrachan-tekton3
