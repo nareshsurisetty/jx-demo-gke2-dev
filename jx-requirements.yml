@@ -2,9 +2,9 @@ apiVersion: core.jenkins-x.io/v4beta1
 kind: Requirements
 spec:
   autoUpdate:
+    autoMerge: true
     enabled: true
     schedule: 0 * * * *
-    autoMerge: true
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: jstrachan-tekton3
