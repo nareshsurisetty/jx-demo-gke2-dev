@@ -22,12 +22,13 @@ spec:
             - args:
                 - env
                 - --git-setup
+                - --auto-merge
               command:
                 - jx-updatebot
               env:
                 - name: HOME
                   value: /home
-              image: gcr.io/jenkinsxio/jx-updatebot:0.0.57
+              image: gcr.io/jenkinsxio/jx-updatebot:0.0.58
               imagePullPolicy: Always
               name: updatebot
               resources: {}
