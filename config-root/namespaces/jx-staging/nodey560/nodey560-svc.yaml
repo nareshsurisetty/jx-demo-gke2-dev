@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: nodey560
   labels:
-    chart: "nodey560-0.0.36"
+    chart: "nodey560-0.0.38"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
 spec:
