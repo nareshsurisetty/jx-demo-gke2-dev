@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-qwiam"
+  name: "jenkins-ui-test-ioifn"
   namespace: myjenkinsd
   annotations:
     "helm.sh/hook": test-success
