@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-wflix"
+  name: "jenkins-ui-test-ccun1"
   namespace: myjenkinsd
   annotations:
     "helm.sh/hook": test-success
