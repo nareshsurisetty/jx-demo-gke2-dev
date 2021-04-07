@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-texsd"
+  name: "jenkins-ui-test-zkvxf"
   namespace: myjenkinsd
   annotations:
     "helm.sh/hook": test-success
