@@ -43,6 +43,8 @@ spec:
             - gs://logs-jstrachan-tekton3-d3ca9654053a/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
             - -archived-pipelineruns-url-template
             - gs://logs-jstrachan-tekton3-d3ca9654053a/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
+            - -pipeline-trace-url-template
+            - http://grafana-jx-observability.34.89.8.12.nip.io/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
             - -log-level
             - INFO
           ports:
