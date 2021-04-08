@@ -15,7 +15,6 @@ jx:
       username: jenkins-x-labs-bot
 jxRequirements:
   autoUpdate:
-    autoMerge: true
     enabled: true
     schedule: 0 * * * *
   cluster:
