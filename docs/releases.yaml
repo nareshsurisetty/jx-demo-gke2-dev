@@ -195,7 +195,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.1.1
+    version: 0.1.2
 - namespace: myjenkinsd
   path: helmfiles/myjenkinsd/helmfile.yaml
   releases:
