@@ -23,6 +23,7 @@ spec:
     owner: jstrachan
     repository: jx-demo-gke2-dev
   - key: staging
+    promotionStrategy: Manual
   - key: production
     namespace: myapps
     owner: jstrachan
