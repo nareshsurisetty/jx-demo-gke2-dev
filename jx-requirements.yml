@@ -48,10 +48,10 @@ spec:
   secretStorage: gsm
   storage:
   - name: logs
-    url: gs://logs-jstrachan-tekton3-d3ca9654053a
+    url: gs://logs-jstrachan-tekton3-2006a08dcfd0
   - name: reports
-    url: gs://reports-jstrachan-tekton3-d3ca9654053a
+    url: gs://reports-jstrachan-tekton3-2006a08dcfd0
   - name: repository
-    url: gs://repository-jstrachan-tekton3-d3ca9654053a
+    url: gs://repository-jstrachan-tekton3-2006a08dcfd0
   vault: {}
   webhook: lighthouse
