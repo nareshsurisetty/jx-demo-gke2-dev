@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-lhdmg"
+  name: "jenkins-ui-test-unffe"
   namespace: myjenkinsd
   annotations:
     "helm.sh/hook": test-success
