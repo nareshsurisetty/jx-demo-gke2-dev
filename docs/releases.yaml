@@ -153,7 +153,7 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 1.0.21
+    version: 1.0.22
   - apiVersion: v1
     description: A Helm chart for Kubernetes
     home: https://github.com/jenkins-x-charts/nexus
@@ -195,7 +195,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.1.2
+    version: 0.2.1
 - namespace: myjenkinsd
   path: helmfiles/myjenkinsd/helmfile.yaml
   releases:
