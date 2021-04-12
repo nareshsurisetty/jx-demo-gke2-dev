@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-er4oc"
+  name: "jenkins-ui-test-xenpy"
   namespace: myjenkinsd
   annotations:
     "helm.sh/hook": test-success
